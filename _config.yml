@@ -83,7 +83,7 @@ author:
   bio              : "Postdoc Research Associate at The University of Manchester, runner"
   location         : "Manchester, UK"
   employer         :
-  googlescholar    : "http://yourfullgooglescholarurl.com"
+  googlescholar    : "https://scholar.google.de/citations?user=Ig3N8j0AAAAJ&hl=en"
   email            :
   uri              :
   bitbucket        :
@@ -98,10 +98,10 @@ author:
   instagram        :
   lastfm           :
   linkedin         :
-  orcid            : "http://orcid.org/yourorcidurl"
+  orcid            : 
   pinterest        :
   soundcloud       :
-  stackoverflow    : # http://stackoverflow.com/users/123456/username
+  stackoverflow    : "625218/snatverk"
   steam            :
   tumblr           :
   twitter          : "snatverk"
