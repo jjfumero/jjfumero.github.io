@@ -80,11 +80,11 @@ analytics:
 author:
   name             : "PhD Juan Fumero"
   avatar           : "me.jpg"
-  bio              : "Postdoc Research Associate at The University of Manchester, runner"
+  bio              : "Research Associate at The University of Manchester, runner"
   location         : "Manchester, UK"
-  employer         :
+  employer         : 
   googlescholar    : "https://scholar.google.de/citations?user=Ig3N8j0AAAAJ&hl=en"
-  email            :
+  email            : "juan.fumero@manchester.ac.uk"
   uri              :
   bitbucket        :
   codepen          :

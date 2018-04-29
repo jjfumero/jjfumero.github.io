@@ -1,20 +1,14 @@
 ---
-title: "Teaching experience 2"
+title: "Object Oriented Programming (Java course)"
 collection: teaching
-type: "Workshop"
-permalink: /teaching/2015-spring-teaching-1
-venue: "University 1, Department"
+type: "Tutoring"
+permalink: /teaching/2015-spring-teaching-2
+venue: "The University of Edinburgh"
 date: 2015-01-01
-location: "City, Country"
+location: "The University of Edinburgh, UK"
 ---
 
-This is a description of a teaching experience. You can use markdown like any other post.
+I was tutoring groups of 8-10 of undergraduate students in Spring 2015 and 2016 during his Java course. 
+We covered an introduction to Object Oriented Programming, Java collections, Threads and introduction to concurrency.
+We also covered some material about how the JVM works. 
 
-Heading 1
-======
-
-Heading 2
-======
-
-Heading 3
-======
