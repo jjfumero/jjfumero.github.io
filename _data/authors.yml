@@ -1,18 +1,12 @@
 # Authors
 
-Name Name:
-  name        : "Name Name"
-  uri         : "http://name.com"
-  email       : "name@name.com"
+Juan Fumero:
+  name        : "Juan Fumero"
+  uri         : "https://jjfumero.github.io/"
+  email       : "juan.fumero@manchester.ac.uk"
   bio         : "This is the first name."
   avatar      : "bio-photo-2.jpg"
-  twitter     : "name"
-  google_plus : "Name"
+  twitter     : "snatverk"
+  googlescholar    : "https://scholar.google.de/citations?user=Ig3N8j0AAAAJ&hl=en"
 
-Name2 Name2:
-  name        : "Name2 Name2"
-  email       : "name2@name2.com"
-  bio         : "I ordered what?"
-  avatar      : "bio-photo.jpg"
-  twitter     : "name2"
-  google_plus : "Name"
+
