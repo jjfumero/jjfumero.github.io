@@ -11,30 +11,27 @@ redirect_from:
 
 Education
 ======
-* B.S. in Github, Github University, 2012
-* M.S. in Jekyll, Github University, 2014
-* Ph.D in Version Control Theory, Github University, 2018 (expected)
+* BSc in Computer Science, Universidad de La Laguna (Spain), 2010
+* MSc in Computer Science, University de La Laguna (Spain), 2013
+* Ph.D in Dynamic Compilation for GPUs, The University of Edinburgh (UK), 2017 
 
 Work experience
 ======
-* Summer 2015: Research Assistant
-  * Github University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
+* June-November 2015: Intern at Oracle Labs, Linz
+  * R compiler for automatic distributed computing (FatR-Flink)
 
-* Fall 2015: Research Assistant
-  * Github University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
-  
-Skills
-======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+* June-August 2013: Internship at CERN Openlab 
+  * Vectorization with AVX and AVX2 using the Intel Cilk+ compiler for the ROOT framework
+ 
+* June 2012-May 2013: Intern at ITER (Instituto Tecnologico de Energias Renovables, Spain)
+  * System administration of an HPC data center
+  * Infiniband and parallel file systems
+  * Cobler 
+
+* Setember 2010-June 2012: Intern at SAII (Universidad de La Laguna, Spain)
+  * System administration of an HPC data center
+  * Dev-ops 
+  * Ruby-on-Rails and Django web developer
 
 Publications
 ======
@@ -56,4 +53,4 @@ Teaching
   
 Service and leadership
 ======
-* Currently signed in to 43 different slack teams
+* Scrum master of a group of 5 software engineers at SAII (The University of La Laguna, Spain).
