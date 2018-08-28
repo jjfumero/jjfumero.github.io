@@ -19,5 +19,15 @@ var addressPoints = [
     43.7102,
     7.2620
   ],
+  [
+    "Xian, China",
+    34.34,
+    108.93
+  ],
+  [
+    "Melbourne, Florida, US",
+    28.083,
+    -80.60,
+  ],
  
 ];
