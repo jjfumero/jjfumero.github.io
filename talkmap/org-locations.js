@@ -29,5 +29,24 @@ var addressPoints = [
     28.083,
     -80.60,
   ],
- 
+  [
+	"Linz, Austria",
+	48.3069,
+    14.2858,
+  ],
+  [
+	"Amsterdam, Netherlands",
+	52.368,
+    4.903,
+  ],
+  [
+	"Prague, Czech Republic",
+    50.075,
+    14.437,
+  ],
+  [ 
+	"CERN, Geneva, Switzerland",
+  	46.204,
+    6.143,
+  ]	
 ];
