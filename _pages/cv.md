@@ -11,9 +11,9 @@ redirect_from:
 
 Education
 ======
-* BSc in Computer Science, Universidad de La Laguna (Spain), 2010
-* MSc in Computer Science, University de La Laguna (Spain), 2013
 * Ph.D in Dynamic Compilation for GPUs, The University of Edinburgh (UK), 2017 
+* MSc in Computer Science, University de La Laguna (Spain), 2013
+* BSc in Computer Science, Universidad de La Laguna (Spain), 2010
 
 Work experience
 ======
@@ -53,5 +53,6 @@ Teaching
   
 Service and leadership
 ======
+* Artifact Evaluation Committee (AEC) ECOOP 2019.
 * Peer reviewer: [XtremeCloud'18](http://xtremecloud2018.cslab.ece.ntua.gr/)
 * Scrum master of a group of 5 software engineers at SAII (The University of La Laguna, Spain).
