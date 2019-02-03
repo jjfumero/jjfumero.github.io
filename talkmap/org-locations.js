@@ -48,5 +48,10 @@ var addressPoints = [
 	"CERN, Geneva, Switzerland",
   	46.204,
     6.143,
-  ]	
+  ],
+  [
+    "Cambridge, UK",
+    52.200,
+    0.121,
+  ]
 ];
