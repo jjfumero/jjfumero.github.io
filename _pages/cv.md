@@ -17,6 +17,10 @@ Education
 
 Work experience
 ======
+* October 2017 - onwards: Research Associate @ The University of Manchester, UK
+  * Software engineer, research associate working on dynamic compilation for Heterogeneous Systems (GPUs, FPGAs and multi-cores).
+  * Working on the E2Data European Project
+  * Software Outcome: TornadoVM, KFusion-Tornado, Docker-Tornado
 * June-November 2015: Intern at Oracle Labs, Linz
   * R compiler for automatic distributed computing (FatR-Flink)
 
@@ -53,6 +57,7 @@ Teaching
   
 Service and leadership
 ======
+* PC member in DLS'19.
 * Artifact Evaluation Committee (AEC) ECOOP 2019.
 * Peer reviewer: [XtremeCloud'18](http://xtremecloud2018.cslab.ece.ntua.gr/)
 * Scrum master of a group of 5 software engineers at SAII (The University of La Laguna, Spain).
