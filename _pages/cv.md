@@ -9,12 +9,6 @@ redirect_from:
 
 {% include base_path %}
 
-Education
-======
-* Ph.D in Dynamic Compilation for GPUs, The University of Edinburgh (UK), 2017 
-* MSc in Computer Science, University de La Laguna (Spain), 2013
-* BSc in Computer Science, Universidad de La Laguna (Spain), 2010
-
 Work experience
 ======
 * October 2017 - onwards: Research Associate @ The University of Manchester, UK
@@ -36,9 +30,18 @@ Work experience
   * System administration of an HPC data center
   * Dev-ops 
   * Ruby-on-Rails and Django web developer
+  
+Education
+======
+* Ph.D in Dynamic Compilation for GPUs, The University of Edinburgh (UK), 2017 
+* MSc in Computer Science, University de La Laguna (Spain), 2013
+* BSc in Computer Science, Universidad de La Laguna (Spain), 2010
 
 Publications
 ======
+
+Here some of the latests publications. Please visit [ACM-DL](https://dl.acm.org/author_page.cfm?id=81548008457) or [Google Scholar](https://scholar.google.de/citations?user=Ig3N8j0AAAAJ) for a full list.
+
   <ul>{% for post in site.publications %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
@@ -49,6 +52,12 @@ Talks
     {% include archive-single-talk-cv.html %}
   {% endfor %}</ul>
   
+Memberships
+====== 
+I am currently member of:
+* HiPEAC Network [link](https://www.hipeac.net/~jjfumero/)
+* Heterogeneity Alliance, I am coordinating the working group of Heterogeneous Hardware, [link](http://heterogeneityalliance.eu/)
+ 
 Teaching
 ======
   <ul>{% for post in site.teaching %}
