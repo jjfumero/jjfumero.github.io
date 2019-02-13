@@ -11,7 +11,7 @@ redirect_from:
 
 Work experience
 ======
-* October 2017 - onwards: Research Associate @ The University of Manchester, UK
+* October 2017 - present: Research Associate @ The University of Manchester, UK
   * Software engineer, research associate working on dynamic compilation for Heterogeneous Systems (GPUs, FPGAs and multi-cores).
   * Working on the E2Data European Project
   * Software Outcome: TornadoVM, KFusion-Tornado, Docker-Tornado
