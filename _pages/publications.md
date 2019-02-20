@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "Publications"
+title: "\cite{publications}"
 permalink: /publications/
 author_profile: true
 ---
