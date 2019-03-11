@@ -4,6 +4,10 @@ permalink: /projects/
 author_profile: true
 ---
 
+Mostly I work on open-source projects. Almost everything I have done is available and open-source. My current work, and hobby, is to increase, improve and mature our current project at the University of Manchester, TornadoVM. More details below. 
+
+If you find any of these projects interesting, feel free to drop me an email. 
+
 ## TornadoVM: Heterogeneous Virtual Machine 
 
 October 2017 - present
