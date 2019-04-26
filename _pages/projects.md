@@ -4,7 +4,7 @@ permalink: /projects/
 author_profile: true
 ---
 
-Mostly I work on open-source projects. Almost everything I have done is available and open-source. My current work, and hobby, is to increase, improve and mature our current project at the University of Manchester, TornadoVM. More details below. 
+Almost everything I have done is open-source. My current work, and hobby, is to increase, improve and mature TornadoVM, ongoing project at the University of Manchester. More below for more details. 
 
 If you find any of these projects interesting, feel free to drop me an email. 
 
@@ -21,7 +21,7 @@ TornadoVM is open-source, and it is fully available at [https://github.com/beehi
 
 March 2016 - August 2016
 
-Using the Marawacc compiler framework (see below), I extended the existing OpenCL JIT compiler (Marawacc) and the Partial Evaluation (in GraalVM) to allow compiler developers automatic GPU JIT compilation and execution of the R dynamic typed language. This project was part of my PhD.
+Using the Marawacc compiler framework (see below), I extended the existing OpenCL JIT compiler and the Partial Evaluation (in GraalVM) to allow compiler developers automatic GPU JIT compilation and execution of the R dynamic typed language. This project was part of my PhD.
 
 This compiler is now open-source and it is available at [https://bitbucket.org/juanfumero/fastr-gpu]([https://bitbucket.org/juanfumero/fastr-gpu]).
 
