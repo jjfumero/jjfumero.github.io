@@ -66,7 +66,7 @@ Teaching
   
 Service and leadership
 ======
-* PC member in DLS'19.
-* Artifact Evaluation Committee (AEC) ECOOP 2019.
+* PC co-chair in [DLS'19](https://conf.researchr.org/home/dls-2019).
+* Artifact Evaluation Committee (AEC) [ECOOP 2019](https://2019.ecoop.org/track/ecoop-2019-artifacts).
 * Peer reviewer: [XtremeCloud'18](http://xtremecloud2018.cslab.ece.ntua.gr/)
 * Scrum master of a group of 5 software engineers at SAII (The University of La Laguna, Spain).
