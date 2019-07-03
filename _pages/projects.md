@@ -4,7 +4,7 @@ permalink: /projects/
 author_profile: true
 ---
 
-Almost everything I have done is open-source. My current work, and hobby, is to increase, improve and mature TornadoVM, an ongoing project at the University of Manchester. More below for more details. 
+Almost everything I have done is open-source. My current work, and hobby, is to increase, improve and mature TornadoVM, an ongoing project at the University of Manchester. See below for more details. 
 
 If you find any of these projects interesting, feel free to drop me an email. 
 
