@@ -140,6 +140,7 @@ exclude:
   - Rakefile
   - README
   - tmp
+  - run.sh
 keep_files:
   - .git
   - .svn
