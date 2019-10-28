@@ -53,5 +53,15 @@ var addressPoints = [
     "Cambridge, UK",
     52.200,
     0.121,
+  ],
+  [
+    "Santa Clara, CA, US",
+    37.3541,
+    121.955,
+  ],
+  [
+    "Saint Petersburg, Russia",
+    59.93,
+    30.33,
   ]
 ];
