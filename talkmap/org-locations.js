@@ -57,7 +57,7 @@ var addressPoints = [
   [
     "Santa Clara, CA, US",
     37.3541,
-    121.955,
+    -121.955,
   ],
   [
     "Saint Petersburg, Russia",
