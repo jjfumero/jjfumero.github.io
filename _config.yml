@@ -79,8 +79,8 @@ analytics:
 # Site Author
 author:
   name             : "PhD Juan Fumero"
-  avatar           : "me.jpg"
-  bio              : "Passionate about compilers and parallelism, Research Associate at The University of Manchester, runner"
+  avatar           : "JuanFumero.jpg"
+  bio              : "Passionate about compilers and parallelism. Research Associate at The University of Manchester. Runner"
   location         : "Manchester, UK"
   employer         : 
   googlescholar    : "https://scholar.google.de/citations?user=Ig3N8j0AAAAJ&hl=en"
@@ -97,7 +97,7 @@ author:
   keybase          :
   instagram        :
   lastfm           :
-  linkedin         :
+  linkedin         : "https://www.linkedin.com/in/juanjosefumeroalfonso/"
   orcid            : 
   pinterest        :
   soundcloud       :
