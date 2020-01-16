@@ -5,9 +5,9 @@ permalink: /service/
 author_profile: true
 ---
 
-* [PC co-chair] : DLS'19, 
-* [PC]: CLOUD COMPUTING 2020, XtremeCloud’19
-* [Artifact Evaluation Committee (AEC)]: ECOOP 2019.
+* PC co-chair: DLS'19, 
+* PC: CLOUD COMPUTING 2020, XtremeCloud’19
+* Artifact Evaluation Committee (AEC): ECOOP 2019.
 * Subreviewer:
   * MULTIPROG 2018
   * PDP 2017
