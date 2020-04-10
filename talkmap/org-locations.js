@@ -68,5 +68,5 @@ var addressPoints = [
     "London, UK,
     51.5,
     0.12,
-  ]
+  ],
 ];
