@@ -12,6 +12,7 @@ author_profile: true
   * DLS'19, 
 * PC: 
   * CLOUD COMPUTING 2020
+  * DLS'19
   * XtremeCloud’19
 * Artifact Evaluation Committee (AEC): 
   * ECOOP 2019.
