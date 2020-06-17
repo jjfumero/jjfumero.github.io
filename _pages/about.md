@@ -8,7 +8,8 @@ redirect_from:
   - /about.html
 ---
 
-I am a research associate working as part of the Advanced Processor Technologies ([APT](http://apt.cs.manchester.ac.uk)) Research Group at [The University of Manchester](http://www.manchester.ac.uk) on Heterogeneous High-Level Languages Virtual Machines using GPUs and FPGAs.
+
+I am a research associate working as part of the Advanced Processor Technologies ([APT](http://apt.cs.manchester.ac.uk)) Research Group at [The University of Manchester](http://www.manchester.ac.uk) on Heterogeneous Virtual Machines for Graphics Processing Units (GPUs) and Field Programmable Gate Arrays (FPGAs).
 Currently, I am working as part of the [E2Data](https://e2data.eu/) European project for bringing automatic GPU and FPGA JIT compilation and execution for Java programs. 
 I am interested in combining GPGPU computing and FPGA acceleration with interpreted programming languages such as R, Ruby and Java through automatic parallelisation, compilation and transparent execution.
 
