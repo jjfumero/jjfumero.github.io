@@ -6,6 +6,7 @@ author_profile: true
 ---
 
 * Publicity Chair: 
+  * SPLASH 2021
   * MPLR 2020
 * PC co-chair:
   * VMIL'20
