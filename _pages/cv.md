@@ -62,7 +62,12 @@ Teaching
   <ul>{% for post in site.teaching %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
-  
+
+Grants
+======
+
+* Intel Grant collaboration to work on Intel oneAPI (2020 - Present)
+* PhD fully funded by Oracle Labs (2014-2017) 
 
 Leadership
 ======================
@@ -72,13 +77,21 @@ Leadership
 
 Academic Service 
 ======
-* Peer reviewer in [CLOUD COMPUTING 2020](http://www.iaria.org/conferences2020/CLOUDCOMPUTING20.html).
-* PC co-chair in [DLS'19](https://conf.researchr.org/home/dls-2019).
-* Artifact Evaluation Committee (AEC) [ECOOP 2019](https://2019.ecoop.org/track/ecoop-2019-artifacts).
-* Peer reviewer: [XtremeCloud'18](http://xtremecloud2018.cslab.ece.ntua.gr/)
+* Publicity Chair: 
+  * SPLASH 2021
+  * MPLR 2020
+* PC co-chair:
+  * VMIL'20
+  * DLS'19, 
+* PC: 
+  * CLOUD COMPUTING 2020
+  * DLS'19
+  * XtremeCloud’19
+* Artifact Evaluation Committee (AEC): 
+  * ECOOP 2019.
 * Subreviewer:
-  *  MULTIPROG 2018
-  * PDP 2017 
+  * MULTIPROG 2018
+  * PDP 2017
   * PDP 2016
-  * HLPP 2015.
+  * HLPP 2015
 
