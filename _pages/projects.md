@@ -23,7 +23,7 @@ March 2016 - August 2016
 
 Using the Marawacc compiler framework (see below), I extended the existing OpenCL JIT compiler and the Partial Evaluation (in GraalVM) to allow compiler developers automatic GPU JIT compilation and execution of the R dynamic typed language. This project was part of my PhD.
 
-This compiler is now open-source and it is available at [https://bitbucket.org/juanfumero/fastr-gpu]([https://bitbucket.org/juanfumero/fastr-gpu]).
+This compiler is now open-source and it is available at [https://github.com/jjfumero/fastr-gpu](https://github.com/jjfumero/fastr-gpu).
 
 
 ## Marawacc: Java JIT compiler for GPUs
@@ -33,7 +33,7 @@ January 2014 - August 2017
 Marawacc is a compiler framework for executing Java applications on GPUs automatically.  
 It is composed of an API for parallel and heterogeneous programming (we called it JPAI), a JIT compiler that transforms, at runtime, Java bytecode intro OpenCL, and a runtime system that optimises the code and efficiently manages data transformations between Java and OpenCL. This project was part of my PhD.
 
-This project is now open-source and it is available at [https://bitbucket.org/juanfumero/marawacc](https://bitbucket.org/juanfumero/marawacc)
+This project is now open-source and it is available at [https://github.com/jjfumero/marawacc](https://github.com/jjfumero/marawacc)
 
 
 ## FastR + Apache Flink: R for distributed computing
