@@ -1,0 +1,35 @@
+---
+title: "Multiple-Tasks on Multiple-Devices (MTMD): Exploiting Concurrency in Heterogeneous Managed Runtimes"
+collection: publications
+permalink: /publication/2021-04-16-VEE21-ML
+excerpt: ''
+date: 16/04/2021
+venue: 'VEE 2021, Virtual Execution Environments'
+paperurl: ''
+citation: 'Michail Papadimitriou, Eleni Markou, Juan Funero, Athanasios Stratikopoulos, Florin Blanaru and Christos Kotselidis. Multiple-Tasks on Multiple-Devices (MTMD): Exploiting Concurrency in Heterogeneous Managed Runtimes . VEE 2021.' 
+---
+
+### Abstract
+
+Authors: Michail Papadimitriou, Eleni Markou, Juan Funero, Athanasios Stratikopoulos, Florin Blanaru and Christos Kotselidis.
+
+Modern commodity devices are nowadays equipped with a plethora of heterogeneous devices serving different purposes. 
+Being able to exploit such heterogeneous hardware accelerators to their full potential is of paramount importance in
+the pursuit of higher performance and energy efficiency. Towards these objectives, the reduction of idle time of each
+device as well as the concurrent program execution across different accelerators can lead to better scalability within
+the computing platform. 
+
+
+In this work, we propose a novel approach for enabling a Java-based heterogeneous managed runtime to automatically and 
+efficiently deploy multiple tasks on multiple devices. We extend TornadoVM with parallel execution of bytecode interpreters 
+to dynamically and concurrently manage and execute arbitrary tasks across multiple OpenCL-compatible devices. In addition, 
+in order to achieve an efficient device-task allocation, we employ a machine learning approach with a multiple-classification 
+architecture of Extra-Trees-Classifiers. Our proposed solution has been evaluated over a suite of 12 applications split into 
+three different groups. Our experimental results showcase performance improvements up 83% compared to all tasks running on the
+single best device, while reaching up to 91% of the oracle performance.
+
+
+
+* Pre-print: It will available soon! 
+
+* Video recording: It will available soon
