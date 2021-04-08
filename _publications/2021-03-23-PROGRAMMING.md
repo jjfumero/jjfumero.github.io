@@ -1,7 +1,7 @@
 ---
 title: "Transparent Compiler and Runtime Specializations for Accelerating Managed Languages on FPGAs"
 collection: publications
-permalink: /publication/2021-03-23-PROGRAMMING.md
+permalink: /publication/2021-03-23-PROGRAMMING
 excerpt: ''
 date: 23/03/2021
 venue: 'The Art, Science, and Engineering of Programming (Programming) 2021'
