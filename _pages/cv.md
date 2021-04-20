@@ -32,7 +32,7 @@ Work experience
   
 Education
 ======
-* Ph.D in Dynamic Compilation for GPUs, The University of Edinburgh (UK), 2017 
+* Ph.D in Dynamic Compilation for GPUs, The University of Edinburgh (UK), August 2017 
 * MSc in Computer Science, University de La Laguna (Spain), 2013
 * BSc in Computer Science, Universidad de La Laguna (Spain), 2010
 
@@ -54,6 +54,7 @@ Talks
 Memberships
 ====== 
 I am currently member of:
+* ACM Member
 * HiPEAC Network [link](https://www.hipeac.net/~jjfumero/)
 * Heterogeneity Alliance, I am coordinating the working group of Heterogeneous Hardware, [link](http://heterogeneityalliance.eu/)
  
@@ -66,12 +67,12 @@ Teaching
 Grants
 ======
 
-* Intel Grant collaboration to work on Intel oneAPI (2020 - Present)
+* Intel Grant collaboration to work on Intel oneAPI (Nov 2020 - Present)
 * PhD fully funded by Oracle Labs (2014-2017) 
 
 Leadership
 ======================
-* Technical lead developer of [TornadoVM](https://github.com/beehive-lab/TornadoVM)
+* Lead architect and lead developer of the [TornadoVM](https://github.com/beehive-lab/TornadoVM) project.
 * Scrum master of a group of 5 software engineers at SAII (The University of La Laguna, Spain).
 
 
@@ -84,6 +85,7 @@ Academic Service
   * VMIL'20
   * DLS'19, 
 * PC: 
+  * MPLR 2021
   * CLOUD COMPUTING 2021
   * CLOUD COMPUTING 2020
   * DLS'19
