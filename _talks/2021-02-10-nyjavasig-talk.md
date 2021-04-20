@@ -8,7 +8,7 @@ date: 2021-02-10
 location: "Virtual"
 ---
 
-Slides available [here]()
+Slides available [here](https://github.com/jjfumero/jjfumero.github.io/blob/master/files/NYJavaSIG21-TornadoVM1.pdf)
 
 
 ## Abstract
