@@ -58,7 +58,6 @@ It is important to highlight two basic data types in Level-Zero: handlers, and d
 
 
 ```cpp
-
 // descriptor
 ze_context_desc_t contextDescription = {};
 contextDescription.stype = ZE_STRUCTURE_TYPE_CONTEXT_DESC;
@@ -67,9 +66,7 @@ contextDescription.flags = 0;
 // handler
 ze_context_handle_t context;
 zeContextCreate(driverHandle, &contextDescription, &context);
-
 ```
-
 
 Using the device and context objects, we can create the rest of the objects needed for running a Level-Zero application, such as command queues and command lists, modules and kernels as well as creating buffers and image objects.
 
