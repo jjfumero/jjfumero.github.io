@@ -18,8 +18,8 @@ main:
   - title: "|Service|"
     url: /service/
 
-#  - title: "/blog"
-#    url: /year-archive/
+  - title: "/blog"
+    url: /year-archive/
 
   - title: "CV"
     url: /cv/
