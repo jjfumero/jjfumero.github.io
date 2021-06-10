@@ -6,7 +6,7 @@ tags:
   - level-zero
   - GPGPU
   - Heterogeneous Programming
-excerpt: "Overview of the Intel Level-Zero API and a practical example to dispatch a SPIR-V kernel on the Intel HD Graphics"
+excerpt: "Overview of the Intel Level-Zero API and a practical example to dispatch a SPIR-V kernel on the Intel HD Graphics: https://jjfumero.github.io/posts/2021/09/introduction-to-level-zero/"
 ---
 
 ### Key Takeaways & Outline
