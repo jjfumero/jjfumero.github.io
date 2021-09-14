@@ -309,7 +309,7 @@ You can find the whole source code used as well as all scripts for measuring per
 
 ## Discussions
 
-For discussions, feel free to add your comments and feedback on (GitHub)[https://github.com/jjfumero/jjfumero.github.io/discussions/2].
+For discussions, feel free to add your comments and feedback on [GitHub](https://github.com/jjfumero/jjfumero.github.io/discussions/2).
 
 
 
