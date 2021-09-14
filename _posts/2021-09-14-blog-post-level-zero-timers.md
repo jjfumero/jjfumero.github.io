@@ -17,7 +17,7 @@ excerpt: "Measuring Kernel Time and Data Transfers with Level Zero
 
 
 - Profiling and Timing Kernel Execution, as well as timing copies and data transfers between host and devices, are essential for every GPU and FPGA developer. 
-- This post shows how to time GPU kernel execution on Intel GPUs with LevelZero as well as buffer copies between host and devices. 
+- This post shows how to time GPU kernel execution and buffer copies between host and devices on Intel GPUs with LevelZero. 
 - As an example, this post also shows how to measure and evaluate the performance of GPU kernels that perform matrix multiplication. Additionally, it provides an analysis of throughput for data copies between host <-> devices when using different buffer allocations in Level Zero. 
 - We found out that buffer copies between host <-> devices are generally faster when using `zeMallocHost` compared to heap memory for host buffers. 
 
