@@ -29,7 +29,7 @@ excerpt: "Measuring Kernel Time and Data Transfers with Level Zero
 
 Measuring and timing our code are essential tasks that every programmer and software engineer should have in their toolbox. Understanding potential bottlenecks and measuring the performance of different versions give the ability to programmers to improve their code and the overall performance of the applications. This is especially beneficial for developers programming heterogeneous hardware, such as GPUs and FPGAs. 
 
-In this post, we explain how to measure and time Level Zero applications. We will start by looking at how to time kernel execution on a GPU. Then, we will show how to time data transfers from host to device and vice-versa. All examples shown in this post are available on GitHub (link)[https://github.com/jjfumero/codeBlogArticles/tree/master/september2021]; so, feel free to download and follow the explanations in this post.
+In this post, we explain how to measure and time Level Zero applications. We will start by looking at how to time kernel execution on a GPU. Then, we will show how to time data transfers from host to device and vice-versa. All examples shown in this post are available on GitHub [link](https://github.com/jjfumero/codeBlogArticles/tree/master/september2021); so, feel free to download and follow the explanations in this post.
 
 Finally, we put into practice what we will learn in this post by timing a GPU kernel on Intel HD graphics. We also measured data transfers using the different types of buffer (device, shared and hosts buffers) allocations that are available in Level Zero. 
 
@@ -133,7 +133,7 @@ ze_device_properties_t deviceProperties = {};
 zeDeviceGetProperties(device, &deviceProperties);
 ```
 
-We can query the time resolution in nanoseconds for the GPU [https://spec.oneapi.io/level-zero/latest/core/api.html?highlight=ze_device_properties_t#_CPPv422ze_device_properties_t ], as it follows:
+We can query the time resolution in [nanoseconds for the GPU](https://spec.oneapi.io/level-zero/latest/core/api.html?highlight=ze_device_properties_t#_CPPv422ze_device_properties_t), as it follows:
 
 ```cpp
 uint64_t timerResolution = deviceProperties.timerResolution;
@@ -152,7 +152,7 @@ if (version1_2) {
 }
 ```
 
-You can check the whole example on GitHub [https://github.com/jjfumero/codeBlogArticles/tree/master/september2021 ]. If you run the example, you will see something similar to this:
+You can check the whole example on GitHub ([link](https://github.com/jjfumero/codeBlogArticles/tree/master/september2021)). If you run the example, you will see something similar to this:
 
 ```bash
 ./mxm 
@@ -265,7 +265,7 @@ We measure the throughput, in GB/s for different input sizes, for each type of b
 - Compute-Runtime: 21.35.20826 
 - LevelZero: Using the latest commit: https://github.com/oneapi-src/level-zero/commit/72b9765ddd5bc788fb1d1c020473c5a12b9c3a78 
 - CPU: i7-8700K 
-- GPU: Intel HD Graphics 630 (Coffee Lake)[https://www.google.com/url?q=https://ark.intel.com/content/www/us/en/ark/products/codename/97787/coffee-lake.html&sa=D&source=editors&ust=1631606460408000&usg=AOvVaw1Y8aRPtXuaKyRzxoLPnn3w]
+- GPU: Intel HD Graphics 630 [Coffee Lake](https://www.google.com/url?q=https://ark.intel.com/content/www/us/en/ark/products/codename/97787/coffee-lake.html&sa=D&source=editors&ust=1631606460408000&usg=AOvVaw1Y8aRPtXuaKyRzxoLPnn3w)
 
 
 **How to read the performance graphs (Figures 2 and 3)**: X-axis shows the input size in bytes (from 8KB to 4MB) for the first graph and 8MB - 1GB for the second graph. Y-axis shows the throughput in GB/s (the higher the better). For each data size, there are six different versions shown as bars.
@@ -284,7 +284,7 @@ Theoretically, copies of buffers allocated on the C/C++ heap (red and yellow bar
 ![Alt text](https://raw.githubusercontent.com/jjfumero/jjfumero.github.io/master/files/blog/levelzero-events/Figure2.png "Figure 2")
 
 
-Figure 3 shows the same throughput graph for large data sizes (8MB up to 1GB of memory). In this case, we see a general performance drop, from ~25 GB/s to 13 GB/s compared to small and medium data sizes (Figure 2). This is due to paging https://forums.developer.nvidia.com/t/how-to-understand-cpu-memory-transfer-data-to-gpu-memory-speed-problem/56270, with large page sizes (usually 4MB). 
+Figure 3 shows the same throughput graph for large data sizes (8MB up to 1GB of memory). In this case, we see a general performance drop, from ~25 GB/s to 13 GB/s compared to small and medium data sizes (Figure 2). [This is due to paging](https://forums.developer.nvidia.com/t/how-to-understand-cpu-memory-transfer-data-to-gpu-memory-speed-problem/56270), with large page sizes (usually 4MB). 
 
 
 ![Alt text](https://raw.githubusercontent.com/jjfumero/jjfumero.github.io/master/files/blog/levelzero-events/Figure3.png "Figure 3")
@@ -301,13 +301,15 @@ This post has explained how to measure GPU kernel time with Intel LevelZero. Bes
 
 Finally, this post has provided an initial performance analysis by illustrating the performance of the matrix multiplication kernel and analyzed the performance of copies between different buffers in Level Zero. We have found that on the tested hardware platform, copies using the host malloc perform better than copies from the C/C++ heap to the device and vice-versa. 
 
-You can find the whole source code used as well as all scripts for measuring performance on GitHub: https://github.com/jjfumero/codeBlogArticles/tree/master/september2021 
+You can find the whole source code used as well as all scripts for measuring performance on GitHub: 
+
+[Code Samples](https://github.com/jjfumero/codeBlogArticles/tree/master/september2021)
 
 
 
 ## Acks
 
-Thanks to (Christos Kotselidis)[https://www.kotselidis.net/], (Thanos Stratikopoulos)[https://personalpages.manchester.ac.uk/staff/athanasios.stratikopoulos/] from the University of Manchester for their constructive feedback, and (Jaime Arteaga)[https://github.com/jandres742] from Intel for the support and answering all my questions. 
+Thanks to [Christos Kotselidis](https://www.kotselidis.net/), [Thanos Stratikopoulos](https://personalpages.manchester.ac.uk/staff/athanasios.stratikopoulos/) from the University of Manchester for their constructive feedback, and [Jaime Arteaga](https://github.com/jandres742) from Intel for the support and answering all my questions. 
 
 
 _________________________________
