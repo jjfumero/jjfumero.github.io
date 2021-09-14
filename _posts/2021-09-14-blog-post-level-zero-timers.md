@@ -33,6 +33,7 @@ In this post, we explain how to measure and time Level Zero applications. We wil
 
 Finally, we put into practice what we will learn in this post by timing a GPU kernel on Intel HD graphics. We also measured data transfers using the different types of buffer (device, shared and hosts buffers) allocations that are available in Level Zero. 
 
+Note that the examples shown are based on the tests for the Intel compute runtime and Level Zero found in [GitHub](https://github.com/intel/compute-runtime/blob/master/level_zero/core/test/black_box_tests/zello_timestamp.cpp).
 
 ## 1. Measuring GPU Kernel Time with Level Zero
 
