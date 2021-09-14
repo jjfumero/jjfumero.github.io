@@ -262,8 +262,8 @@ We measure the throughput, in GB/s for different input sizes, for each type of b
 **Hardware & Software details:**
 
 
-- Compute-Runtime: 21.35.20826 
-- LevelZero: Using the latest commit: https://github.com/oneapi-src/level-zero/commit/72b9765ddd5bc788fb1d1c020473c5a12b9c3a78 
+- Intel Compute-Runtime: 21.35.20826 
+- Level Zero: [Using the latest commit](https://github.com/oneapi-src/level-zero/commit/72b9765ddd5bc788fb1d1c020473c5a12b9c3a78)
 - CPU: i7-8700K 
 - GPU: Intel HD Graphics 630 [Coffee Lake](https://www.google.com/url?q=https://ark.intel.com/content/www/us/en/ark/products/codename/97787/coffee-lake.html&sa=D&source=editors&ust=1631606460408000&usg=AOvVaw1Y8aRPtXuaKyRzxoLPnn3w)
 
