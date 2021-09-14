@@ -9,7 +9,7 @@ tags:
   - Profiling
   - Timers
 excerpt: "Measuring Kernel Time and Data Transfers with Level Zero
-: https://jjfumero.github.io/posts/2021/09/timers-with-level-zero/"
+: [https://jjfumero.github.io/posts/2021/09/timers-with-level-zero/](https://jjfumero.github.io/posts/2021/09/timers-with-level-zero/)"
 ---
 
 
