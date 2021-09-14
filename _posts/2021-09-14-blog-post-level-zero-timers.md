@@ -306,6 +306,11 @@ You can find the whole source code used as well as all scripts for measuring per
 [Code Samples](https://github.com/jjfumero/codeBlogArticles/tree/master/september2021)
 
 
+## Discussions
+
+For discussions, feel free to add your comments and feedback on (GitHub)[https://github.com/jjfumero/jjfumero.github.io/discussions/2].
+
+
 
 ## Acks
 
