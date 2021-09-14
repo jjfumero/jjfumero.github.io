@@ -11,7 +11,7 @@ redirect_from:
 Work experience
 ======
 * October 2017 - present: Research Associate @ The University of Manchester, UK
-  * Software engineer, research associate working on dynamic compilation for Heterogeneous Systems (GPUs, FPGAs and multi-cores).
+  * Software engineer and Research Fellow working on dynamic compilation for Heterogeneous Systems (GPUs, FPGAs and multi-cores).
   * Working on the E2Data European Project
   * Software Outcome: TornadoVM, KFusion-Tornado, Docker-Tornado
 * June-November 2015: Intern at Oracle Labs, Linz
