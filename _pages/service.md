@@ -12,11 +12,14 @@ author_profile: true
   * VMIL'20
   * DLS'19, 
 * PC: 
+  * VEE 2022
   * MPLR 2021 
   * CLOUD COMPUTING 2021
   * CLOUD COMPUTING 2020
   * DLS'19
   * XtremeCloud’19
+* Journal Reviewer:
+  * Journal of Supercomputing 2021 
 * Artifact Evaluation Committee (AEC): 
   * ECOOP 2019.
 * Subreviewer:
