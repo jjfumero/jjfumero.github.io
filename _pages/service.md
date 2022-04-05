@@ -19,6 +19,7 @@ author_profile: true
   * DLS'19
   * XtremeCloud’19
 * Journal Reviewer:
+  * Cogent Engineering 2022
   * Journal of Supercomputing 2021 
 * Artifact Evaluation Committee (AEC): 
   * ECOOP 2019.
@@ -27,4 +28,3 @@ author_profile: true
   * PDP 2017
   * PDP 2016
   * HLPP 2015
-
