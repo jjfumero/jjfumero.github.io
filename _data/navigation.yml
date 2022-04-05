@@ -15,6 +15,10 @@ main:
   - title: "{ Projects } "
     url: /projects/
 
+  - title: "#supervision# "
+    url: /supervision/
+
+
   - title: "|Service|"
     url: /service/
 
