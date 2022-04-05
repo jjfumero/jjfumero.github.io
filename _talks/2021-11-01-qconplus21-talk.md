@@ -3,12 +3,12 @@ title: "Level Up Your Java Performance with TornadoVM"
 collection: talks
 type: "Talk"
 permalink: /talks/2021-11-01-qconplus21-talk
-venue: "QCon Plus 2021, Virtual"
+venue: "QCon Plus 2021"
 date: 2021-11-01
 location: "Virtual"
 ---
 
-[Video](https://plus.qconferences.com/plus2021/presentation/level-your-java-performance-tornadovm) [Summary](https://www.infoq.com/articles/java-performance-tornadovm/)
+[Video](https://plus.qconferences.com/plus2021/presentation/level-your-java-performance-tornadovm) | [Summary](https://www.infoq.com/articles/java-performance-tornadovm/)
 
 
 ## Abstract
