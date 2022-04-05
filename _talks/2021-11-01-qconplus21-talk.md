@@ -8,6 +8,9 @@ date: 2021-11-01
 location: "Virtual"
 ---
 
+[Video](https://plus.qconferences.com/plus2021/presentation/level-your-java-performance-tornadovm) [Summary](https://www.infoq.com/articles/java-performance-tornadovm/)
+
+
 ## Abstract
 
 Heterogeneous hardware such as Graphics Processing Units (GPUs) and Field Programmable Gate Arrays (FPGAs) are widely used for specific domains of applications such as Machine Learning, Data Science, Numerical Analytics and Fintech, due to the offer of a higher level of performance.
@@ -20,6 +23,7 @@ This talk will give an overview of the TornadoVM project, a parallel programming
 
 * Link to the recording: [link](https://plus.qconferences.com/plus2021/presentation/level-your-java-performance-tornadovm)
 * [Demos used in the presentatiopn](https://github.com/jjfumero/qconplus2021-tornadovm)
+* Article for InfoQ: [link](https://www.infoq.com/articles/java-performance-tornadovm/)
 
 
 ### TornadoVM source code
