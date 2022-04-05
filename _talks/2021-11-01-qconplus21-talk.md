@@ -8,8 +8,7 @@ date: 2021-11-01
 location: "Virtual"
 ---
 
-[Video](https://plus.qconferences.com/plus2021/presentation/level-your-java-performance-tornadovm) | [Summary](https://www.infoq.com/articles/java-performance-tornadovm/)
-
+[Summary](https://www.infoq.com/articles/java-performance-tornadovm/)
 
 ## Abstract
 

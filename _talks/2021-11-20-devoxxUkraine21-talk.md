@@ -8,8 +8,7 @@ date: 2021-11-20
 location: "Virtual"
 ---
 
-[Video](https://www.youtube.com/watch?v=HxhO4hMKi5M) | [Slides](https://github.com/jjfumero/jjfumero.github.io/blob/master/files/presentations/TornadoVM-DevoxxUkraine2021.pdf)
-
+[Video](https://www.youtube.com/watch?v=HxhO4hMKi5M)
 
 ## Abstract
 
@@ -19,9 +18,11 @@ A prime example is the two most popular heterogeneous programming languages, CUD
 
 In this talk, we present TornadoVM, a plug-in for OpenJDK that allows JVM programmers to automatically run their applications on multi-core CPUs, GPUs, and FPGAs. Furthermore, TornadoVM performs task-migration from one device to another at runtime, entirely transparent for the user. In this talk, we will summarize the TornadoVM project, and we will explain, via examples, how TornadoVM optimizes, offloads and executes applications on heterogeneous hardware, including GPUs and FPGAs for different backends, such as OpenCL, NVIDIA PTX and the brand new SPIR-V backend.
 
+
 ### Additional Resources
 
 * Link to the recording: [link](https://www.youtube.com/watch?v=HxhO4hMKi5M)
+* [Slides](https://github.com/jjfumero/jjfumero.github.io/blob/master/files/presentations/TornadoVM-DevoxxUkraine2021.pdf)
 * [Demos used in the presentatiopn](https://github.com/jjfumero/qconplus2021-tornadovm)
 
 
