@@ -17,6 +17,35 @@ A brand new Virtual Machine for Heterogeneous Computing developed at The Univers
 TornadoVM is open-source, and it is fully available at [https://github.com/beehive-lab/TornadoVM](https://github.com/beehive-lab/TornadoVM)
 
 
+## SPIR-V Beehive Toolkit 
+
+2021 - Present 
+
+This is a prototype written in Java to disassemble and assemble SPIR-V binary modules. It provides a Java programming framework to allow client Java applications to assemble binary modules and dissasemble binary modules into text. More information on the format of SPIR-V can be found here:  
+
+[https://github.com/beehive-lab/spirv-beehive-toolkit](https://github.com/beehive-lab/spirv-beehive-toolkit)
+
+
+## Level Zero JNI Programming Interface 
+
+2021 - Present 
+
+Baremetal GPU and FPGA programming for Java using the LevelZero API. This project is a Java Native Interface (JNI) binding for Intel's Level Zero. This library is as designed to be as closed as possible to the LevelZero API for C++.
+
+[https://github.com/beehive-lab/levelzero-jni](https://github.com/beehive-lab/levelzero-jni)
+
+
+## ProtonVM 
+
+2020 - Present 
+
+ProtoVM is a tiny Parallel Java Bytecode Interpreter (BC) implemented in OpenCL capable of executing on heterogeneous architectures (multi-core CPUs, GPUs and FPGAs).
+
+ProtonVM is a proof-of-concept for running a subset of the Java bytecodes in C++ and OpenCL. The bytecodes defined correspond to an extension of the small-subset of Java bytecode explained by Terence Parr, from the University of San Francisco of how to build a simple Virtual Machine. This project extends this simple bytecode interpreter to study the feasibility of running, as efficiently as possible, parallel bytecode interpreters on heterogeneous computer architectures.
+
+
+[https://github.com/beehive-lab/ProtonVM](https://github.com/beehive-lab/ProtonVM)
+
 ## FastR-OpenCL Compiler: R JIT compiler and runtime for GPUs
 
 March 2016 - August 2016
