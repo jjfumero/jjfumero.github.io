@@ -4,7 +4,7 @@ collection: talks
 type: "Invited Talk"
 permalink: /talks/2021-01-25-kentUniversity2021-talk
 venue: "University of Kent - Seminars "
-date: 2021-11-20
+date: 2021-01-25
 location: "Virtual"
 ---
 
