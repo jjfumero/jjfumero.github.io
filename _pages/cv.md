@@ -10,21 +10,22 @@ redirect_from:
 
 Work experience
 ======
-* October 2017 - present: Research Associate @ The University of Manchester, UK
-  * Software engineer and Research Fellow working on dynamic compilation for Heterogeneous Systems (GPUs, FPGAs and multi-cores).
+* August 2021 - Present: Research Fellow @ The University of Manchester, UK
+  * Research software engineer working on dynamic compilation for Heterogeneous Systems (GPUs, FPGAs and multi-cores).
+  * Collaborating with Intel and EU Project Elegant H2020
+  * Software Outcome: TornadoVM, SPIR-V Beehive Toolkit, Level-Zero JNI 
+* October 2017 - July 2021: Research Associate @ The University of Manchester, UK
+  * Research software engineer working on dynamic compilation for Heterogeneous Systems (GPUs, FPGAs and multi-cores).
   * Working on the E2Data European Project
   * Software Outcome: TornadoVM, KFusion-Tornado, Docker-Tornado
 * June-November 2015: Intern at Oracle Labs, Linz
   * R compiler for automatic distributed computing (FatR-Flink)
-
 * June-August 2013: Internship at CERN Openlab 
   * Vectorization with AVX and AVX2 using the Intel Cilk+ compiler for the ROOT framework
- 
 * June 2012-May 2013: Intern at ITER (Instituto Tecnologico de Energias Renovables, Spain)
   * System administration of an HPC data center
   * Infiniband and parallel file systems
   * Cobler 
-
 * Setember 2010-June 2012: Intern at SAII (Universidad de La Laguna, Spain)
   * System administration of an HPC data center
   * Dev-ops 
@@ -85,11 +86,15 @@ Academic Service
   * VMIL'20
   * DLS'19, 
 * PC: 
-  * MPLR 2021
+  * VEE 2022
+  * MPLR 2021 
   * CLOUD COMPUTING 2021
   * CLOUD COMPUTING 2020
   * DLS'19
   * XtremeCloud’19
+* Journal Reviewer:
+  * Cogent Engineering 2022
+  * Journal of Supercomputing 2021 
 * Artifact Evaluation Committee (AEC): 
   * ECOOP 2019.
 * Subreviewer:
@@ -97,4 +102,3 @@ Academic Service
   * PDP 2017
   * PDP 2016
   * HLPP 2015
-
