@@ -185,6 +185,9 @@ collections:
   projects: 
     output: true
     permalink: /:collection/:path/
+  supervision: 
+    output: true
+    permalink: /:collection/:path/
   service:
     output: true
     permalink: /:service/:path/
