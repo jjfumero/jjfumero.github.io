@@ -2,6 +2,7 @@
 title: 'Understanding Memory Allocation Size Limitations with Level Zero'
 date: 2022-04-07
 permalink: /posts/2022/04/understanding-memory-allocation-size-limitations-with-levelzero/
+author_profile: false
 tags:
   - Level Zero
   - oneAPI 
