@@ -2,6 +2,7 @@
 title: 'Measuring Kernel Time and Data Transfers with Level Zero'
 date: 2021-09-14
 permalink: /posts/2021/09/timers-with-level-zero/
+author_profile: false
 tags:
   - level-zero
   - GPGPU

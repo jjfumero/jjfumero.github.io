@@ -2,6 +2,7 @@
 title: 'Profiling OpenCL and SPIRV code from TornadoVM using VTune'
 date: 2022-02-14
 permalink: /posts/2022/02/profiling-tornadovm-with-intel-vtune/
+author_profile: false
 tags:
   - Intel VTune
   - oneAPI 

@@ -2,6 +2,7 @@
 title: 'Introduction to Level Zero API for Heterogeneous Programming'
 date: 2021-06-09
 permalink: /posts/2021/09/introduction-to-level-zero/
+author_profile: false
 tags:
   - level-zero
   - GPGPU
