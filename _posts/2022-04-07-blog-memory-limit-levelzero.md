@@ -6,7 +6,7 @@ tags:
   - Level Zero
   - oneAPI 
   - Memory Allocation
-excerpt: "Understanding Memory Allocation Size Limitations with Level Zero"
+excerpt: "In this post we want to explore the memory capabilities of the Level Zero API, and, examine its constraints with respect to memory allocation."
 ---
 
 ## Key Takeaways
