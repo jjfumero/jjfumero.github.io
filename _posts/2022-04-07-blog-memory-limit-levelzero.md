@@ -160,10 +160,10 @@ Additionally, if you have any comments or suggestions feel free to contact me or
 
 ## References
 
-1. https://github.com/oneapi-src/level-zero/issues/88 
-1. https://spec.oneapi.io/level-zero/latest/core/api.html?highlight=device_memory_properties#_CPPv429ze_device_memory_properties_t 
+1. [https://github.com/oneapi-src/level-zero/issues/88](https://github.com/oneapi-src/level-zero/issues/88)
+1. [Device Memory Properties](https://spec.oneapi.io/level-zero/latest/core/api.html?highlight=device_memory_properties#_CPPv429ze_device_memory_properties_t) 
 1. [Laptop Configuration](https://gist.github.com/jjfumero/bf9988dbfd40c7084c6c36a970b9eff6)
-1. https://github.com/oneapi-src/level-zero/issues/89
+1. [https://github.com/oneapi-src/level-zero/issues/89](https://github.com/oneapi-src/level-zero/issues/89)
 
 
 ## Acks
