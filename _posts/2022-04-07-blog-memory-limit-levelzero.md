@@ -153,7 +153,7 @@ This post showcased how to check the maximum size of buffer allocation in Level 
 
 Additionally, if you have any comments or suggestions feel free to contact me or interact in the following thread for this entry post:
 
-https://github.com/jjfumero/jjfumero.github.io/discussions/5.
+[https://github.com/jjfumero/jjfumero.github.io/discussions/5](https://github.com/jjfumero/jjfumero.github.io/discussions/5)
 
 
 
