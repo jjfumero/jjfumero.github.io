@@ -143,7 +143,7 @@ As a side note, device buffer are residency allocations, or lazy allocations. Qu
 
 
 If you are interested in this topic, you can follow the discussions online for more information:
-https://github.com/oneapi-src/level-zero/issues/89 
+[https://github.com/oneapi-src/level-zero/issues/89](https://github.com/oneapi-src/level-zero/issues/89)
 
 ## Summary
 
