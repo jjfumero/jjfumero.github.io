@@ -362,9 +362,9 @@ As follows, we set up the arguments to the kernel and we launch it from the comm
 
 ```cpp
 // Push arguments
-zeKernelSetArgumentValue(kernel, 0, sizeof(dstResult), &dstResult);
-zeKernelSetArgumentValue(kernel, 1, sizeof(sharedA), &sharedA);
-zeKernelSetArgumentValue(kernel, 2, sizeof(sharedB), &sharedB);
+zeKernelSetArgumentValue(kernel, 0, sizeof(sharedA), &sharedA);
+zeKernelSetArgumentValue(kernel, 1, sizeof(sharedB), &sharedB);
+zeKernelSetArgumentValue(kernel, 2, sizeof(dstResult), &dstResult);
 zeKernelSetArgumentValue(kernel, 3, sizeof(int), &items);
 
 // Kernel thread-dispatch
