@@ -25,7 +25,7 @@ Integrated GPUs, such as Intel HD graphics, share the memory with the main CPU, 
 
 ## Unified Shared Memory Allocation Types
 
-Before digging into Level Zero shared memory, let's take a look at the [different allocation types](https://spec.oneapi.io/level-zero/latest/core/PROG.html#memory) of Unified Shared Memory that are available in Level Zero [1]. 
+Before digging into Level Zero shared memory, let's take a look at the [different allocation types](https://spec.oneapi.io/level-zero/latest/core/PROG.html#memory) of Unified Shared Memory that are available in Level Zero. 
 
 
 There are three main types of allocations:
