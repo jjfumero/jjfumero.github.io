@@ -38,8 +38,8 @@ There are three main types of allocations:
 
 We provide two use cases: one GPU kernel that performs a data copy (no computation) and another kernel that performs a compute-intensive application (we choose the canonical example of matrix multiplication). 
 
-The code to reproduce the following experiments is available on GitHub:
-https://github.com/jjfumero/codeBlogArticles/tree/master/may2022/sharedMemoryEffect.
+The code to reproduce the following experiments is available on [GitHub](
+https://github.com/jjfumero/codeBlogArticles/tree/master/may2022/sharedMemoryEffect).
 
 
 Additionally, all numbers reported are taken after a warm-up phase (last iteration of 10 runs). Note that page migration is done for shared memory when running multiple times. However, similar results can be found even including the first iteration compared to other types of allocators. The reported times show end-to-end (which includes copy-in, kernel and copy-out). Since the GPU kernel is the same for all versions, we want to measure the overall impact of each buffer type in the total time. The total time was obtained [using Level Zero timers](https://jjfumero.github.io/posts/2021/09/timers-with-level-zero/). 
@@ -83,8 +83,8 @@ The takeaway from this experiment is that for shared memory systems, such as an 
 
 ### b) High-intensive compute application 
 
-Similarly, we conduct the experiment for a compute-intensive application: 
-https://github.com/jjfumero/codeBlogArticles/tree/master/may2022/sharedMemoryEffect/matrixMultiply 
+Similarly, we conduct the experiment for a [compute-intensive application](
+https://github.com/jjfumero/codeBlogArticles/tree/master/may2022/sharedMemoryEffect/matrixMultiply).
 
 
 The following Figure shows the performance numbers running on the laptop setup (Intel Core [i9-10885H CPU](https://www.intel.com/content/www/us/en/products/sku/203682/intel-core-i910885h-processor-16m-cache-up-to-5-30-ghz/specifications.html)). We see that there is not much difference between allocators on a shared memory system between the GPU and the CPU. This is due to data migration overheads being shifted by the actual computation. So in this example, the bottleneck is not the data transfer, but the computation of the kernel. While there are some minor differences I would not conclude they are significant (running on the desktop CPU along with other background applications). 
