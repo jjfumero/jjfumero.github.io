@@ -120,7 +120,7 @@ Of course, this story might change when running on discrete GPUs (e.g., the upco
 
 Additionally, if you have any comments or suggestions feel free to contact me or interact in the following thread for this entry post:
 
-https://github.com/jjfumero/jjfumero.github.io/discussions/7
+[https://github.com/jjfumero/jjfumero.github.io/discussions/7](https://github.com/jjfumero/jjfumero.github.io/discussions/7)
 
 
 
