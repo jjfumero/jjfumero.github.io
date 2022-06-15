@@ -5,6 +5,12 @@ permalink: /service/
 author_profile: true
 ---
 
+## Technical Boards
+
+* [2022-Current] Participation in the [Level Zero Technical Advisory Board](https://github.com/oneapi-src/oneAPI-tab/tree/main/tab-level-zero)
+
+
+## Academic Service 
 * Publicity Chair: 
   * SPLASH 2021
   * MPLR 2020
