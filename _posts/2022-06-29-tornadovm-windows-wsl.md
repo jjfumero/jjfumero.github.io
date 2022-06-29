@@ -15,7 +15,7 @@ excerpt: "In this post, I will show you how we can enable TornadoVM to run on In
 
 ## Intro
 
-Windows Subsystem Linux (WSL) [1] is a powerful tool to bring native Linux applications to Windows 10 and 11. What is even more appealing though is that we can also execute native applications on GPUs (e.g., NVIDIA GPUs and Intel Integrated Graphics) [2].
+Windows Subsystem Linux ([WSL](https://docs.microsoft.com/en-us/windows/wsl)) is a powerful tool to bring native Linux applications to Windows 10 and 11. What is even more appealing though is that we can also execute native applications on GPUs (e.g., [NVIDIA GPUs and Intel Integrated Graphics](https://docs.microsoft.com/en-us/windows/ai/directml/gpu-tensorflow-wsl#intel)).
 
 
 In this post, I will show you how we can enable TornadoVM to run on Intel HD Graphics via the OpenCL and SPIR-V Backends within WSL using Windows 11.
@@ -37,7 +37,7 @@ You can obtain this information by pressing right-click over the Windows icon >>
 
 ## Installing the Intel GPU Driver under WSL (Ubuntu 22.04)
 
-Once we have the integrated GPU visible, we need to install the GPU driver within our console in WSL. I am assuming the Linux distribution used is the default when installing WSL, which is Ubuntu. To install the latest Intel GPU drivers, you can check the Intel Compute Runtime GitHub page [3]:
+Once we have the integrated GPU visible, we need to install the GPU driver within our console in WSL. I am assuming the Linux distribution used is the default when installing WSL, which is Ubuntu. To install the latest Intel GPU drivers, you can check the [Intel Compute Runtime GitHub page](https://github.com/intel/compute-runtime/releases/tag/22.25.23529):
 
 
 ```bash
@@ -115,12 +115,12 @@ Note that, even running on the same device, the performance is different. This i
 
 ## Links
 
-[1] https://docs.microsoft.com/en-us/windows/wsl  
+[1] [https://docs.microsoft.com/en-us/windows/wsl](https://docs.microsoft.com/en-us/windows/wsl)
 
-[2] https://docs.microsoft.com/en-us/windows/ai/directml/gpu-tensorflow-wsl#intel  
+[2] [https://docs.microsoft.com/en-us/windows/ai/directml/gpu-tensorflow-wsl#intel](https://docs.microsoft.com/en-us/windows/ai/directml/gpu-tensorflow-wsl#intel)
 
 
-[3] https://github.com/intel/compute-runtime/releases/tag/22.25.23529
+[3] [https://github.com/intel/compute-runtime/releases/tag/22.25.23529](https://github.com/intel/compute-runtime/releases/tag/22.25.23529)
 
 
 ________________________________
