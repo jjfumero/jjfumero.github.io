@@ -19,7 +19,6 @@ excerpt: "In this post, we will show how to launch and accelerate Java programs 
 - TornadoVM can be used with a Docker image that extends the Intel oneAPI one, to enable Java programs to access Intel Integrated GPUs, multi-core CPUs and FPGAs.
 - This post explains, with an example, how to run Java applications using the TornadoVM APIs on Intel accelerators. 
 
-
 ## Intro
 
 The more hardware we have available, the more drivers, software stacks, configuration files, etc., we need to deal with. This is especially cumbersome when installing and configuring FPGAs. Fortunately, solutions such as Docker containers can provide a much higher level of abstraction to all of these configurations. 
