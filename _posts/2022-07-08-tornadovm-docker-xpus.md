@@ -120,21 +120,19 @@ $../run_intel_openjdk.sh tornado --printKernel --threadInfo -cp target/example-1
 ; Generator ID: 32
 ; Bound: 137
 ; Schema: 0
-
-                                   OpCapability Addresses
-                                   OpCapability Linkage
-                                   OpCapability Kernel
-                                   OpCapability Int64
-                                   OpCapability Int8
-                              %1 = OpExtInstImport "OpenCL.std"
-                                   OpMemoryModel Physical64 OpenCL
-                                   OpEntryPoint Kernel %41 "matrixMultiplication" %spirv_BuiltInGlobalInvocationId %spirv_BuiltInGlobalSize 
-                                   OpSource OpenCL_C 300000  
-                                   OpName %spirv_BuiltInGlobalInvocationId "spirv_BuiltInGlobalInvocationId"
-                                   OpName %spirv_BuiltInGlobalSize "spirv_BuiltInGlobalSize"
-                                   OpName %__kernelContextF0 "__kernelContextF0"
-                                   OpName %__kernelContextF0_ptr "__kernelContextF0_ptr"
-
+	OpCapability Addresses
+	OpCapability Linkage
+	OpCapability Kernel
+	OpCapability Int64
+	OpCapability Int8
+	%1 = OpExtInstImport "OpenCL.std"
+	OpMemoryModel Physical64 OpenCL
+	OpEntryPoint Kernel %41 "matrixMultiplication" %spirv_BuiltInGlobalInvocationId %spirv_BuiltInGlobalSize 
+	OpSource OpenCL_C 300000  
+	OpName %spirv_BuiltInGlobalInvocationId "spirv_BuiltInGlobalInvocationId"
+	OpName %spirv_BuiltInGlobalSize "spirv_BuiltInGlobalSize"
+	OpName %__kernelContextF0 "__kernelContextF0"
+	OpName %__kernelContextF0_ptr "__kernelContextF0_ptr"
 ...
 ```
 
