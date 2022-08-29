@@ -8,7 +8,7 @@ date: 2021-11-01
 location: "Virtual"
 ---
 
-[Summary](https://www.infoq.com/articles/java-performance-tornadovm/)
+[Summary](https://www.infoq.com/presentations/java-performance-tornadovm/)
 
 ## Abstract
 
@@ -20,8 +20,8 @@ This talk will give an overview of the TornadoVM project, a parallel programming
 
 ### Additional Resources
 
-* Link to the recording: [link](https://plus.qconferences.com/plus2021/presentation/level-your-java-performance-tornadovm)
-* [Demos used in the presentatiopn](https://github.com/jjfumero/qconplus2021-tornadovm)
+* Link to the recording: [link](https://www.infoq.com/presentations/java-performance-tornadovm/)
+* [Demos used in the presentation](https://github.com/jjfumero/qconplus2021-tornadovm)
 * Article for InfoQ: [link](https://www.infoq.com/articles/java-performance-tornadovm/)
 
 
