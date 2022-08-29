@@ -14,7 +14,7 @@ I am a Research Fellow working as part of the Advanced Processor Technologies ([
 Currently, I am collaborating with Intel to bring oneAPI into the TornadoVM framework to perform optimisations for Intel compute architectures (xPUs). 
 I am also an [Intel Innovator](https://www.intel.com/content/www/us/en/developer/community/innovators.html) and I participate in the [Level Zero Technical Advisory Board](https://github.com/oneapi-src/oneAPI-tab) for helping to shape the next versions of the Level Zero APIs for managed runtime programming languages. 
 
-Furthermore, I do [public speaking](https://jjfumero.github.io/talks/) about my research at the University of Manchester and software engineering topics. I have presented in several academic and Industry conferences, including JVMLS, QCon, Devoxx, JavaZone, and Java User Groups, such as NYJavaSIG.
+Furthermore, I do [public speaking](https://jjfumero.github.io/talks/) about my research at the University of Manchester and software engineering topics. I have presented in several academic and Industry conferences, including JVMLS, QCon, Devoxx, JavaZone, JAX, and Java User Groups, such as NYJavaSIG.
 
 
 I obtained my PhD at The University of Edinburgh on [Accelerating Interpreted Programming Languages on GPUs with Just-In-Time and Runtime Optimisations](https://jjfumero.github.io/publication/2017-08-22-PhDThesis). I extended the Graal JIT compiler and the Partial Evaluator to allow programmers to automatically execute Java, R and Ruby programs on GPUs via OpenCL. 
