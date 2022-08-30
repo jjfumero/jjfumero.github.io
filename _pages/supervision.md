@@ -4,15 +4,15 @@ permalink: /supervision/
 author_profile: true
 ---
 
-I have the priviledge to work with and co-supervise many bright students.
+I have the privilege to work with and co-supervise many bright students.
 
 Co-supervised PhD Students:
 
-- Michail Papadimitriou - Project Compiler optimizations for FPGA execution. Graduated 2021. Currently @ OctoML
-- Maria Xekalaki - Heterogeneous acceleration of Big Data stacks (Since 2017)
+- Michail Papadimitriou - Project Compiler optimizations for FPGA execution. Graduated 2021. Currently @ OctoML, US.
+- Maria Xekalaki - Heterogeneous acceleration of Big Data stacks. Graduated in 2022. Currently Postdoc @ The University of Manchester, UK.
 
 Co-supervised MSc Students:
-- Florin Blanaru (The University of Manchester). Graduated June-2021. Currently Software Engineer with the TornadoVM team.
+- Florin Blanaru (The University of Manchester). Graduated June-2021. Currently, Software Engineer @ OctoML, US. 
 
 Co-supervised BSc Students:
 
