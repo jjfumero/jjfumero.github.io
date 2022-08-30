@@ -8,8 +8,6 @@ redirect_from:
   - /about.html
 ---
 
-## Who am I? 
-
 I am a Research Fellow working as part of the Advanced Processor Technologies ([APT](http://apt.cs.manchester.ac.uk)) Research Group at [The University of Manchester](http://www.manchester.ac.uk) on Heterogeneous Virtual Machines and language runtime systems for the acceleration of applications using Graphics Processing Units (GPUs) and Field Programmable Gate Arrays (FPGAs). I am also software architect of the [TornadoVM](https://github.com/beehive-lab/TornadoVM) project (a Java framework for automatically running JVM applications on heterogeneous hardware).
 
 ## What do I do? 
