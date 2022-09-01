@@ -46,7 +46,7 @@ This post shows a way of how to interact with some of the core components of Tor
 
 To compile and execute Java code suitable for the target accelerator, we need two things: a) to compile the Java method to a GPU-friendly code (i.e., SPIR-V); and b) a way to reserve memory, allocate resources and launch kernels on the accelerator. In other words, we need a way to orchestrate the execution. Now, let’s explain each of those steps in more detail.  
 
-## A - Interaction with the JIT compiler for translation of Java bytecode to SPIR-V.  
+## A) Interaction with the JIT compiler for translation of Java bytecode to SPIR-V.  
 
 To interact with the core API of the TornadoVM JIT compiler, we are going to build a function that transforms a Java method represented as an array of bytes into an optimized SPIR-V binary module. In pseudocode, we will need to implement a method with the following signature: 
 
@@ -150,7 +150,7 @@ public MetaCompilation compileMethod(Class<?> klass, String methodName, Object..
 } 
 ```
 
-## B- Execute the generated code under the TornadoVM Runtime APIs.  
+## B) Execute the generated code under the TornadoVM Runtime APIs.  
 
 To execute the generated code on a GPU, we need to allocate a GPU buffer for each Java input array, perform data transfers (send the data from the main CPU to the GPU), create a call stack, launch the kernel and transfer the result back from the GPU to the CPU. However, depending on the parallel programming model underneath, this can lead to the writing of a lot of boilerplate code. This process is particularly verbose when dispatching SPIR-V code within TornadoVM, which is implemented using the [Level Zero API](https://spec.oneapi.io/level-zero/latest/index.html) (a close bare-metal API for managing heterogeneous resources). 
 
