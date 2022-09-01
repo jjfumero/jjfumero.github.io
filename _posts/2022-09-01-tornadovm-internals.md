@@ -16,7 +16,7 @@ excerpt: "This post shows how to use the internal APIs to interact directly with
 - Developers can use internal TornadoVM APIs to interact with the JIT compiler and the runtime system. 
 - The internal APIs are designed using a microkernel software architecture. 
 - This post shows how to use the internal APIs to interact directly with the TornadoVM JIT compiler interface and runtime system.  
-- This post targets system programmers that want to know more details about how to TornadoVM JIT compiler and runtime works.  
+- This post targets system programmers that want to know more details about how to TornadoVM JIT compiler and runtime work.  
 
 
 [TornadoVM](https://github.com/beehive-lab/TornadoVM) is a Java parallel programming framework that allows developers to accelerate applications by transparently using heterogeneous hardware (e.g., GPUs, multi-core CPUs, and FPGAs).  
@@ -43,6 +43,9 @@ This post shows a way of how to interact with some of the core components of Tor
 <p align="center">
 <img width="700" height="" src="https://raw.githubusercontent.com/jjfumero/jjfumero.github.io/master/files/blog/tornadovmInternals/TornadoVM-Internal-APIs2.png">
 </p>
+
+_Figure 2: Highlights of the path taken to represent an application that directly uses the TornadoVM internal APIs._
+
 
 To compile and execute Java code suitable for the target accelerator, we need two things: a) to compile the Java method to a GPU-friendly code (i.e., SPIR-V); and b) a way to reserve memory, allocate resources and launch kernels on the accelerator. In other words, we need a way to orchestrate the execution. Now, let’s explain each of those steps in more detail.  
 
