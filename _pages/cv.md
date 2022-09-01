@@ -86,8 +86,9 @@ Academic Service
   * VMIL'20
   * DLS'19, 
 * PC: 
-  * VEE 2022
-  * MPLR 2021 
+  * [CC](https://conf.researchr.org/track/CC-2023/CC-2023-research-papers) 2023
+  * [VEE](https://conf.researchr.org/committee/vee-2022/vee-2022-papers-program-committee) 2022
+  * [MPLR](https://wwuindico.uni-muenster.de/event/449/) 2021 
   * CLOUD COMPUTING 2021
   * CLOUD COMPUTING 2020
   * DLS'19
