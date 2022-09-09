@@ -71,7 +71,7 @@ Fri Sep  9 09:44:18 2022
 
 To install CUDA, we need to access the NVIDIA website and download the CUDA Toolkit installer: 
 
-https://developer.nvidia.com/cuda-downloads 
+[https://developer.nvidia.com/cuda-downloads](https://developer.nvidia.com/cuda-downloads)
 
 
 I usually install the NVIDIA GPU driver first, check that everything works and then install the CUDA Toolkit. Since the driver is already installed at this point, I download the CUDA local installation file by selecting the following tabs: 
@@ -195,7 +195,7 @@ $ sudo ln -s libOpenCL.so.1 libOpenCL.so
 If we have an Intel i5, i7, or i9 Intel CPU, we probably have access to the Intel Integrated GPU through the OpenCL and Level Zero APIs. To do so, we need to install the driver and the OpenCL toolkit. For OpenSUSE I recommend following the instructions from the vendor's website: 
 
  
-https://dgpu-docs.intel.com/installation-guides/suse/suse-15sp3.html 
+[https://dgpu-docs.intel.com/installation-guides/suse/suse-15sp3.html](https://dgpu-docs.intel.com/installation-guides/suse/suse-15sp3.html)
 
 
 ```bash
@@ -225,3 +225,4 @@ $ cd build
 $ cmake ..
 $ cmake --build . --config Release
 ```
+
