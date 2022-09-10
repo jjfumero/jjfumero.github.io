@@ -15,7 +15,7 @@ excerpt: "In this post, we show how to install the NVIDIA drivers to get access 
 
 ## Intro
 
-Dealing with GPU drivers for Linux systems can sometimes be overwhelming and a tedious process. In this post, we show how to install the NVIDIA drivers to get access to CUDA and OpenCL parallel programming frameworks and utilities for NVIDIA GPUs. We also show how to install the Intel compute-runtime drivers for accessing, via OpenCL and Level Zero, Intel Integrated Graphics. We showcase the installation process for OpenSUSE LEAP. However, other Linux distributions have similar packages and installers available (e.g., for Ubuntu, CentOS, Fedora, RHEL, etc). 
+Dealing with GPU drivers for Linux systems can sometimes be overwhelming and a tedious process. In this post, we show how to install the NVIDIA drivers to get access to CUDA and OpenCL parallel programming frameworks and utilities for NVIDIA GPUs. We also show how to install the Intel compute-runtime drivers for accessing Intel Integrated Graphics via OpenCL and Intel Level Zero. We showcase the installation process for OpenSUSE LEAP. However, other Linux distributions have similar packages and installers available (e.g., for Ubuntu, CentOS, Fedora, RHEL, etc). 
 
 
 ## NVIDIA Drivers and CUDA 
