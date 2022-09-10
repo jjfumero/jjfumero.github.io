@@ -103,17 +103,6 @@ By running the local installer, you can select the packages you want. Since we j
 │   Options                                                                    │
 │   Install                                                                    │
 │                                                                              │
-│                                                                              │
-│                                                                              │
-│                                                                              │
-│                                                                              │
-│                                                                              │
-│                                                                              │
-│                                                                              │
-│                                                                              │
-│                                                                              │
-│                                                                              │
-│                                                                              │
 │ Up/Down: Move | Left/Right: Expand | 'Enter': Select | 'A': Advanced options │
 └──────────────────────────────────────────────────────────────────────────────┘
 ```
