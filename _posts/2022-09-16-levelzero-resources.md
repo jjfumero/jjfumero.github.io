@@ -11,8 +11,6 @@ tags:
 excerpt: "Sometimes, it is not clear which Level Zero repository is the right one for our needs. In this post, we will explain each Level Zero public resource and what they are intended to be."
 ---
 
-## Intro
-
 [Level Zero](https://dgpu-docs.intel.com/technologies/level-zero.html) is a new bare-metal parallel programming framework proposed by Intel for heterogeneous hardware and accelerators. But where can we find all the information? If we look online, there are a few places in which Level Zero discussions and implementation happen. But sometimes, it is not clear which repository or source is the right one for our needs. In this post, we will explain each Level Zero resource and what they are intended to be. So, if you want to learn, contribute, or participate, this should give you a clearer idea about the organisation of different repositories related to Level Zero and their content. 
 
 
@@ -67,3 +65,9 @@ There is a technical advisory board to give and get feedback regarding the next 
 
 This repository contains the material and discussions used during the sessions. In my opinion, this repository is not meant to submit any PR, but rather to follow and get notified of all topics and undergoing work regarding Level Zero.
 
+
+________________________________
+
+If you like the content and it has been useful to you, consider buying me a coffee ;-) 
+
+<a href="https://www.buymeacoffee.com/snatverk" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
