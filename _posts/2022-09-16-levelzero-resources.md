@@ -8,10 +8,10 @@ tags:
   - oneAPI 
   - SPEC
   - Resources
-excerpt: "Sometimes, it is not clear which Level Zero repository is the right one for our needs. In this post, we will explain each Level Zero public resource and what they are intended to be."
+excerpt: "Sometimes, it is not clear which Level Zero repository is the right one for our needs. In this post, we will explain each of the Level Zero public resources and what they are intended to be."
 ---
 
-[Level Zero](https://dgpu-docs.intel.com/technologies/level-zero.html) is a new bare-metal parallel programming framework proposed by Intel for heterogeneous hardware and accelerators. But where can we find all the information? If we look online, there are a few places in which Level Zero discussions and implementation happen. But sometimes, it is not clear which repository or source is the right one for our needs. In this post, we will explain each Level Zero resource and what they are intended to be. So, if you want to learn, contribute, or participate, this should give you a clearer idea about the organisation of different repositories related to Level Zero and their content. 
+[Level Zero](https://dgpu-docs.intel.com/technologies/level-zero.html) is a new bare-metal parallel programming framework proposed by Intel for heterogeneous hardware and accelerators. But where can we find all the information? If we look online, there are a few places in which Level Zero discussions and implementation happen. But sometimes, it is not clear which repository or source is the right one for our needs. In this post, we will explain each of the Level Zero public resources. So, if you want to learn, contribute, or participate, this should give you a clearer idea about the organisation of different repositories related to Level Zero and their content. 
 
 
 ## Where is the Level Zero Specification (SPEC)? 
