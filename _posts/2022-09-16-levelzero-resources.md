@@ -37,7 +37,7 @@ Note that, as with any other SPEC document, the Level Zero SPEC is usually ahead
 
 [https://github.com/oneapi-src/level-zero](https://github.com/oneapi-src/level-zero)
 
-This is basically the repo that contains the Level Zero headers that are generated from the SPEC, the loader and the validation layer. This repository, in fact, should have been called something like level-zero-loader.
+This is basically the source repository that contains the Level Zero headers that are generated from the SPEC, the loader and the validation layer. This repository, in fact, should have been called something like level-zero-loader.
 
 In my opinion, this is a great place to start working with examples and studying Level Zero. This project can be easily built from source and, as soon as there is a driver implementation (e.g. Intel compute-runtime), all examples can be executed. 
 
