@@ -17,6 +17,7 @@ I am also an [Intel Innovator](https://www.intel.com/content/www/us/en/developer
 
 Furthermore, I do [public speaking](https://jjfumero.github.io/talks/) about my research at the University of Manchester and software engineering topics. I have presented in several academic and Industry conferences, including JVMLS, QCon, Devoxx, JavaZone, JAX, and Java User Groups, such as NYJavaSIG.
 
+As an outcome of all this work at the University of Manchester, I received the Best Outstanding Output by Research Staff Award in 2022 ([link](https://www.researcherdevelopment.manchester.ac.uk/researcher-development-for-research-staff/research-staff-awards-202122/)).
 
 ## Education 
 
