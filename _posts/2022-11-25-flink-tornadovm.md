@@ -235,7 +235,7 @@ __Figure 7: Performance evaluation of Flink-TornadoVM on GPUs for Linear Regress
 
 To answer that question, we profiled the execution workflow that enables GPU execution within Flink using our approach. See Figure 8. We saw that most of the time is spent is marshalling the data. This is preparing the data for TornadoVM by reversing the bits (from big endian to little endian, applying the padding for each field within the Flink byte buffer, and applying memory alignment). The Marshalling is represented in colour blue in the next Figure. The computation is represented as green and red for the map and reduce operators, respectively.  
 
-The breakdown analysis on the left-hand side corresponds to the execution on the NVIDIA 1060. We also executed the same application on another GPU, V100 to check if our approach is really limited by the kernel time. We saw that, as expected, the execution time for the map/reduce operators decreased, while keeping the marshalling time. This is a memory bound problem.   
+The breakdown analysis on the left-hand side corresponds to the execution on the NVIDIA 1060. We also executed the same application on another GPU, V100 to check if our approach is really limited by the kernel time. We saw that, as expected, the execution time for the map/reduce operators decrease, while keeping the marshalling time. This is a memory bound problem.   
 
 
 ![Alt text](https://raw.githubusercontent.com/jjfumero/jjfumero.github.io/master/images/blogs/flink-tornadovm/figure8.png)
@@ -246,7 +246,7 @@ __Figure 8: Breakdown analysis of GPU workflow in Flink-TornadoVM__
 ## So, what do we conclude? 
 
 - It is possible to automatically run existing Java big data applications on heterogeneous hardware. But it needs a system that is co-designed with the lower-level programming models to run efficiently. Co-design involves techniques for code and data morphing, as well as having a JIT compiler for accessing GPU/FPGA memory efficiently.  
-- Data representation and memory layout is the key to achieve performance. Things like having the right endianness, padding and alignment can decrease execution time drastically.  
+- Data representation and memory layout is the key to achieving performance. Things like having the right endianness, padding and alignment can decrease execution time drastically.  
 
 
 We hope this work can be used as a starting point for designing future big data platforms that want to use accelerators as transparently as possible. As mentioned, this blog has shown a summary of the key findings of our VLDB’23 work. For all the details, experiments, and benchmarks, you can follow the paper [1].
