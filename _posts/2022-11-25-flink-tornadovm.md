@@ -21,9 +21,9 @@ excerpt: "Exploiting heterogeneous hardware for Big Data workloads is usually do
 
 ## Introduction  
 
-We recently got a paper accepted for the upcoming [VLDB 2023](https://www.research.manchester.ac.uk/portal/files/233043755/MXekalaki_vldb2023.pdf), led by Maria Xekalaki during her PhD, about a study of how current Java big data frameworks can enable seamlessly heterogeneous execution to run on GPUs and FPGAs (or any other type of accelerator). This paper presents the main challenges that limits transparent acceleration, and proposes a co-design technique across various levels of the software stack to run efficient big data workloads from Java without any code modifications.  
+We recently got a paper accepted for the upcoming [VLDB 2023](https://www.research.manchester.ac.uk/portal/files/233043755/MXekalaki_vldb2023.pdf), led by Maria Xekalaki during her PhD, about a study of how current Java big data frameworks can enable seamlessly heterogeneous execution to run on GPUs and FPGAs (or any other type of accelerator). This paper presents the main challenges that limit transparent acceleration, and proposes a co-design technique across various levels of the software stack to run efficient big data workloads from Java without any code modifications.  
 
-In this post, I will summarize the main key findings of this paper, and briefly explain the techniques that were implemented. For all the details, you can follow the public pre-print of the paper. Without further ado, let’s get into this.  
+In this post, I will summarize the main key findings of this paper, and briefly explain the techniques that were implemented. For all the details, you can follow the public pre-print of the paper. 
 
 As a proof of concept, we accelerated **Apache Flink** applications written in Java for the map and reduce parallel operators. To enable seamless GPU/FPGA execution, we integrated Flink with [TornadoVM](https://github.com/beehive-lab/TornadoVM) (a parallel programming framework for accelerating Java programs on heterogeneous hardware) into Flink. But, as we will explain in this post, this is not as easy as plugging in the two systems. What we want to achieve is code portability and hardware flexibility. But, as we will explain in this post, this has a cost.  
 
