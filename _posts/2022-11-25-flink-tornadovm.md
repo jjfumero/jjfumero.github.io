@@ -1,6 +1,6 @@
 ---
 title: 'Enabling Transparent Acceleration of Big Data Frameworks Using Heterogeneous Hardware'
-date: 2022-11-24
+date: 2022-11-25
 permalink: /posts/2022/11/enabling-transparent-acceleration-bigdata-heterogeneous-hardware/
 author_profile: false
 tags:
