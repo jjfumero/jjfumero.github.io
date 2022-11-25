@@ -254,7 +254,7 @@ We hope this work can be used as a starting point for designing future big data 
 
 ## Follow-up and discussions
 
-For discussions, feel free to [me](mailto:juanfumero@acm.org), and/or add your comments and feedback on [GitHub](https://github.com/jjfumero/jjfumero.github.io/discussions/8).
+For further discussions, feel free to contact us, and/or add your comments and feedback on [GitHub](https://github.com/jjfumero/jjfumero.github.io/discussions/8).
 
 
 ## Acknowledgements 
