@@ -146,7 +146,7 @@ For the details about this transformation, I will refer to the paper. But in a n
 Just a last point before moving on. The code-morphing transformations happen on the client side, in the runtime logic before sending the UDFs to the Job-Managers.  
  
 
- ## B) Data Morphing 
+## B) Data Morphing 
 
  Code-morphing is not enough. As we mentioned earlier, we also need the data in the right format. In my opinion, this is an especially important topic, and it is usually underestimated when running on heterogeneous computing systems from high-level programming languages, such as Java. 
 
