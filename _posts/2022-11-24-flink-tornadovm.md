@@ -55,7 +55,7 @@ Thus, in theory, there should be a way to reuse these skeletons and be able to o
 
 Before showing the details for enabling transparent execution of big data frameworks using hardware accelerators, let’s explain how Flink works. Figure 1 (taken from the paper [1]), shows the typical architecture of big data frameworks. It has three main distinguishable components: a) a client; b) a data engine (which Flink names Job Manager); and set of compute-nodes (which Flink names Task-Managers).  
 
-![](https://raw.githubusercontent.com/jjfumero/jjfumero.github.io/master/images/blogs/flink-tornadovm/figure1.png)
+![Alt text](https://raw.githubusercontent.com/jjfumero/jjfumero.github.io/master/images/blogs/flink-tornadovm/figure1.png)
 
 __Figure 1: Overview of Big Data Frameworks__
 
@@ -77,7 +77,7 @@ We need: a) a way to be able to express the computation in such as way we can ta
 To do so, we extended Apache Flink and TornadoVM with the following software components, highlighted as green in Figure 2.  
 
 
-![](https://raw.githubusercontent.com/jjfumero/jjfumero.github.io/master/images/blogs/flink-tornadovm/figure2.png)
+![Alt text](https://raw.githubusercontent.com/jjfumero/jjfumero.github.io/master/images/blogs/flink-tornadovm/figure2.png)
 
 __Figure 2: Architecture of the proposed system__
 
@@ -135,7 +135,7 @@ Thus, the idea is to wrap-up the function `f`, and create a new function that in
 But, what do we get? It turns out, frameworks such as TornadoVM knows how to parallelize the entire function when the code is written in this form.  Figure 3 shows a representation of this code transformation.  
 
 
-![](https://raw.githubusercontent.com/jjfumero/jjfumero.github.io/master/images/blogs/flink-tornadovm/figure3.png)
+![Alt text](https://raw.githubusercontent.com/jjfumero/jjfumero.github.io/master/images/blogs/flink-tornadovm/figure3.png)
 
 __Figure 3: Workflow of runtime transformation for code morphing__
 
@@ -187,7 +187,7 @@ The paper contains a very detailed performance evaluation. Thus, in this post, I
 Figure 5 shows the performance of two benchmarks (PI-computation on the left hand side and vector addition on the right-hand side) compared to a single threaded Flink task. We opted for this setup to compare, as fair as possible, Flink-TornadoVM with Flink GPU using JCUDA [6]. Our approach generally outperforms Flink-JCUDA. In a closer analysis, we saw that this is due to the marshalling and unmarshalling of the data from the Tuple form to plain primitive arrays in the case of Flink-GPU, while in our case, we tried to reuse the byte-buffers that Flink provides (although it needs manipulation, as we explained in the data morphing section).   
 
 
-![](https://raw.githubusercontent.com/jjfumero/jjfumero.github.io/master/images/blogs/flink-tornadovm/figure4.png)
+![Alt text](https://raw.githubusercontent.com/jjfumero/jjfumero.github.io/master/images/blogs/flink-tornadovm/figure4.png)
 
 __Figure 4: Performance of Flink-GPU vs Flink-TornadoVM__
 
@@ -198,7 +198,7 @@ __Figure 4: Performance of Flink-GPU vs Flink-TornadoVM__
 
 Figure 5 shows a performance evaluation with different Flink configurations - ranging from 1 node (N1 ) to 2 nodes (N2), and 1 to 4 physical threads (CPU-1-4) - in comparison with a single node with a NVIDIA GPU (the higher, the better). The application launched is the classical matrix multiplication. The application is expressed in Flink and it is the same code for every configuration. We see that, when running with a matrix size larger than 512x512, our approach achieves better performance, including the cost of marshalling, padding and byte buffer preparation for TornadoVM.  
 
-![](https://raw.githubusercontent.com/jjfumero/jjfumero.github.io/master/images/blogs/flink-tornadovm/figure5.png)
+![Alt text](https://raw.githubusercontent.com/jjfumero/jjfumero.github.io/master/images/blogs/flink-tornadovm/figure5.png)
 
 __Figure 5: Performance evaluation of Flink-TornadoVM on GPUS__
 
@@ -214,7 +214,7 @@ Figure 6 shows the speedup over the Flink non-accelerated implementation using d
 
 As a side note, the FPGA execution of TornadoVM used a pre-built compiled binary using the code that TornadoVM compiler emits. This is because the compilation from OpenCL to the bitstream (FPGA binary), can take up to three hours. However, all experiments include the data preparation time, code morphing and padding buffer preparation.  
 
-![](https://raw.githubusercontent.com/jjfumero/jjfumero.github.io/master/images/blogs/flink-tornadovm/figure6.png)
+![Alt text](https://raw.githubusercontent.com/jjfumero/jjfumero.github.io/master/images/blogs/flink-tornadovm/figure6.png)
 
 __Figure 6: Performance evaluation of Flink-TornadoVM on FPGAs__
 
@@ -228,7 +228,7 @@ Figure 7 shows the result (Figure 11 from the paper [1]). The vertical axis show
 
 
 
-![](https://raw.githubusercontent.com/jjfumero/jjfumero.github.io/master/images/blogs/flink-tornadovm/figure7.png)
+![Alt text](https://raw.githubusercontent.com/jjfumero/jjfumero.github.io/master/images/blogs/flink-tornadovm/figure7.png)
 
 __Figure 7: Performance evaluation of Flink-TornadoVM on GPUs for Linear Regression__
 
@@ -238,7 +238,7 @@ To answer that question, we profiled the execution workflow that enables GPU exe
 The breakdown analysis on the left-hand side corresponds to the execution on the NVIDIA 1060. We also executed the same application on another GPU, V100 to check if our approach is really limited by the kernel time. We saw that, as expected, the execution time for the map/reduce operators decreased, while keeping the marshalling time. This is a memory bound problem.   
 
 
-![](https://raw.githubusercontent.com/jjfumero/jjfumero.github.io/master/images/blogs/flink-tornadovm/figure8.png)
+![Alt text](https://raw.githubusercontent.com/jjfumero/jjfumero.github.io/master/images/blogs/flink-tornadovm/figure8.png)
 
 __Figure 8: Breakdown analysis of GPU workflow in Flink-TornadoVM__
 
