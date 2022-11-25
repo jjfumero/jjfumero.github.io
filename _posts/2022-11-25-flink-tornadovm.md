@@ -169,7 +169,7 @@ In addition to code morphing and data morphing, we also extended the OpenCL JIT 
 
 The TornadoVM’s JIT compiler has been extended to understand Flink’s data structures and directly compile and access the right memory positions for each data structure on the GPU/FPGA’s global memory. These compilation optimizations include new compilation phases for: 
 
-- Performing object replacements: the TornadoVM JIT compiler will substitute field loads/stores with access to memory in an array form. Note that TornadoVM will get an array of byte array for representing the whole collection (the part of the collection to be compute for each specific Task-Manager). Therefore, the TornadoVM compiler will update field loads/stores accesses to array accesses for the input byte array.  
+- Performing object replacements: the TornadoVM JIT compiler will substitute field loads/stores with access to memory in an array form. Note that TornadoVM will get an array of byte array for representing the whole collection (the part of the collection to be computed for each specific Task-Manager). Therefore, the TornadoVM compiler will update field loads/stores accesses to array accesses for the input byte array.  
 - Performing correct offset and padding calculations from/to the accelerator’s global memory.  These are the cases in which data types differ and some compute platforms need to perform padding (e.g., on NVIDIA GPUs). 
 
 
