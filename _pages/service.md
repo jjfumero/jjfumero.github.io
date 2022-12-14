@@ -13,9 +13,11 @@ author_profile: true
 ### Publicity Chair: 
   * SPLASH 2021
   * MPLR 2020
+
 ### PC co-chair:
   * VMIL'20
-  * DLS'19, 
+  * DLS'19
+  
 ### PC: 
   * [EuroPar'23](https://2023.euro-par.org/) - Track 1: [Programming, compilers and Performance](https://2023.euro-par.org/submission-of-papers/submission-of-papers/track-1-programming-compilers-and-performance/)
   * [CC'23](https://conf.researchr.org/track/CC-2023/CC-2023-research-papers) 2023
@@ -25,11 +27,14 @@ author_profile: true
   * CLOUD COMPUTING 2020
   * DLS'19
   * XtremeCloud’19
+  
 ### Journal Reviewer:
   * Cogent Engineering 2022
   * Journal of Supercomputing 2021 
+
 ### Artifact Evaluation Committee (AEC): 
-  * ECOOP 2019.
+  * ECOOP 2019
+
 ### Subreviewer:
   * MULTIPROG 2018
   * PDP 2017
