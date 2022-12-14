@@ -10,15 +10,15 @@ author_profile: true
 
 ## Academic Service 
 
-### Publicity Chair: 
+#### Publicity Chair: 
   * SPLASH 2021
   * MPLR 2020
 
-### PC co-chair:
+#### PC co-chair:
   * VMIL'20
   * DLS'19
   
-### PC: 
+#### PC: 
   * [EuroPar'23](https://2023.euro-par.org/) - Track 1: [Programming, compilers and Performance](https://2023.euro-par.org/submission-of-papers/submission-of-papers/track-1-programming-compilers-and-performance/)
   * [CC'23](https://conf.researchr.org/track/CC-2023/CC-2023-research-papers) 2023
   * [VEE'22](https://conf.researchr.org/committee/vee-2022/vee-2022-papers-program-committee) 2022
@@ -28,14 +28,14 @@ author_profile: true
   * DLS'19
   * XtremeCloud’19
   
-### Journal Reviewer:
+#### Journal Reviewer:
   * Cogent Engineering 2022
   * Journal of Supercomputing 2021 
 
-### Artifact Evaluation Committee (AEC): 
+#### Artifact Evaluation Committee (AEC): 
   * ECOOP 2019
 
-### Subreviewer:
+#### Subreviewer:
   * MULTIPROG 2018
   * PDP 2017
   * PDP 2016
