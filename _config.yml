@@ -55,7 +55,7 @@ yandex_site_verification :
 
 # Social Sharing
 twitter:
-  username               : &twitter
+  username               : &snatverk
 facebook:
   username               :
   app_id                 :
@@ -95,7 +95,7 @@ author:
   github           : "jjfumero"
   google_plus      :
   keybase          :
-  instagram        : "juanfumero.photography"
+  instagram        : 
   lastfm           :
   linkedin         : "juanjosefumeroalfonso"
   orcid            : 
