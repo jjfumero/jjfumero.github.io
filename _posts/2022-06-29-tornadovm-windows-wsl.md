@@ -69,10 +69,13 @@ Now, let’s install TornadoVM.
 Installing TornadoVM under Ubuntu/Fedora and CentOS is straightforward. We clone the repository and execute the auto-installer with the following options:
 
 
+Note: using the TornadoVM `v0.15`: https://github.com/beehive-lab/TornadoVM/commit/7a5e14814fe9d78af92c02c996d219be1f558d36
+Please, keep in mind that commands and scripts in TornadoVM might change in new versions. 
+
 ```bash
 $ git clone https://github.com/beehive-lab/TornadoVM
 $ cd TornadoVM
-$ ./scripts/tornadovmInstaller.sh --jdk17 --opencl --spirv
+$ ./scripts/tornadovm-installer --jdk jdk17 --backend=opencl,spirv
 $ . source.sh
 ```
  
@@ -88,7 +91,7 @@ Now we can run applications and check performance:
 If we run on device “0:0:” we will execute our application on the Intel HD Graphics using the SPIR-V + Level Zero backend of TornadoVM:
 
 ```bash
-$ tornado -Ds0.t0.device=0:0 -m tornado.examples/uk.ac.manchester.tornado.examples.compute.MatrixMultiplication2D
+$ tornado --jvm="-Ds0.t0.device=0:0" -m tornado.examples/uk.ac.manchester.tornado.examples.compute.MatrixMultiplication2D
 
 Computing MxM of 512x512
     	Single Threaded CPU Execution: 3.27 GFlops, Total time = 82 ms
@@ -101,7 +104,7 @@ We can also run on the same device using the OpenCL backend of TornadoVM (device
 
 
 ```bash
-$ tornado -Ds0.t0.device=1:0 -m tornado.examples/uk.ac.manchester.tornado.examples.compute.MatrixMultiplication2D
+$ tornado --jvm="-Ds0.t0.device=0:1" -m tornado.examples/uk.ac.manchester.tornado.examples.compute.MatrixMultiplication2D
 
 Computing MxM of 512x512
     	Single Threaded CPU Execution: 3.89 GFlops, Total time = 69 ms
