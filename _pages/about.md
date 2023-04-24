@@ -8,14 +8,14 @@ redirect_from:
   - /about.html
 ---
 
-I am a Research Fellow working as part of the Advanced Processor Technologies ([APT](http://apt.cs.manchester.ac.uk)) Research Group at [The University of Manchester](http://www.manchester.ac.uk) on Heterogeneous Virtual Machines and language runtime systems for the acceleration of applications using Graphics Processing Units (GPUs) and Field Programmable Gate Arrays (FPGAs). I am also software architect of the [TornadoVM](https://github.com/beehive-lab/TornadoVM) project (a Java framework for automatically running JVM applications on heterogeneous hardware).
+I am a Research Fellow working as part of the Advanced Processor Technologies ([APT](http://apt.cs.manchester.ac.uk)) Research Group at [The University of Manchester](http://www.manchester.ac.uk) on Heterogeneous Virtual Machines and language runtime systems for the acceleration of applications using Graphics Processing Units (GPUs) and Field Programmable Gate Arrays (FPGAs). I am also the software architect of the [TornadoVM](https://github.com/beehive-lab/TornadoVM) project (a Java framework for automatically running JVM applications on heterogeneous hardware).
 
 ## What do I do? 
 
 Currently, I am collaborating with Intel to bring oneAPI into the TornadoVM framework to perform optimisations for Intel compute architectures (xPUs). 
 I am also an [Intel Innovator](https://www.intel.com/content/www/us/en/developer/community/innovators.html), and I participate in the [Level Zero Technical Advisory Board](https://github.com/oneapi-src/oneAPI-tab) for helping to shape the next versions of the Level Zero APIs for managed runtime programming languages. 
 
-Furthermore, I do [public speaking](https://jjfumero.github.io/talks/) about my research at the University of Manchester and software engineering topics. I have presented in several academic and Industry conferences, including JVMLS, QCon, Devoxx, JavaZone, JAX, and Java User Groups, such as NYJavaSIG.
+Furthermore, I do [public speaking](https://jjfumero.github.io/talks/) about my research at the University of Manchester and software engineering topics. I have presented at several academic and Industry conferences, including JVMLS, QCon, Devoxx, JavaZone, JAX, and Java User Groups, such as NYJavaSIG.
 
 As an outcome of all this work at the University of Manchester, I received the Best Outstanding Output by Research Staff Award in 2022 ([link](https://www.researcherdevelopment.manchester.ac.uk/researcher-development-for-research-staff/research-staff-awards-202122/)).
 
