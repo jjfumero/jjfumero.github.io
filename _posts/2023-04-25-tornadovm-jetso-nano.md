@@ -98,7 +98,7 @@ Computing MxM of 512x512
         Verification true 
 ``` 
 
-23x performance and over 7.5 GFLOPS, including the data transfers (from the host to the device and vice-versa) 
+As we can see, TornadoVM achieves 23x compared to the Java sequential implementation, and over 7.5 GFLOPS. This includes the data transfers (from the host to the device and vice-versa). Let's now run the KMeans application. 
 
 ### 2.2 Running KMeans 
 
