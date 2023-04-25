@@ -64,7 +64,6 @@ Finally, we check that TornadoVM can run by displaying the default device:
 
 ```bash 
 $ tornado --devices 
-
 Number of Tornado drivers: 1 
 Driver: PTX 
   Total number of PTX devices  : 1 
@@ -88,9 +87,7 @@ We are going to run two applications: matrix multiplication (which is widely use
 The algorithm for matrix multiplication is a fundamental concept in linear algebra and is used in many areas of mathematics, science, engineering, and Machine Learning too! TornadoVM SDK contains plenty of examples, and it includes the matrix multiplication as well. Thus, let’s run it and see the performance we get on the Jetson Nano: 
 
 ```bash 
-
 $ tornado -m tornado.examples/uk.ac.manchester.tornado.examples.compute.MatrixMultiplication2D 
-
 Computing MxM of 512x512 
         Single Threaded CPU Execution: 0.33 GFlops, Total time = 813 ms 
         TornadoVM Execution on GPU (Accelerated): 7.67 GFlops, Total Time = 35 ms 
