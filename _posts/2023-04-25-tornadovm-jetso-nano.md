@@ -8,7 +8,7 @@ tags:
   - NVIDIA Jetson Nano
   - Machine Learning 
   - Deep Learning
-excerpt: "In this post, we will show how TornadoVM can be used on an NVIDIA Jetson Nano."
+excerpt: "Did you know that TornadoVM can also run on ARM-based systems with NVIDIA GPUs? In this post, we will show how TornadoVM can be used on an NVIDIA Jetson Nano, a small, powerful computer designed for embedded artificial intelligence (AI) and machine learning (ML) applications."
 ---
 
 ## Introduction
