@@ -65,16 +65,15 @@ Finally, we check that TornadoVM can run by displaying the default device:
 ```bash 
 $ tornado --devices 
 Number of Tornado drivers: 1 
-Driver: PTX 
-  Total number of PTX devices  : 1 
+Driver: PTX - Total number of PTX devices  : 1 
   Tornado device=0:0  (DEFAULT) 
-PTX -- PTX -- NVIDIA Tegra X1 
-Global Memory Size: 3.9 GB 
-Local Memory Size: 48.0 KB 
-Workgroup Dimensions: 3 
-Total Number of Block Threads: [2147483647, 65535, 65535] 
-Max WorkGroup Configuration: [1024, 1024, 64] 
-Device OpenCL C version: N/A 
+    PTX -- PTX -- NVIDIA Tegra X1 
+    Global Memory Size: 3.9 GB 
+    Local Memory Size: 48.0 KB 
+    Workgroup Dimensions: 3 
+    Total Number of Block Threads: [2147483647, 65535, 65535] 
+    Max WorkGroup Configuration: [1024, 1024, 64] 
+    Device OpenCL C version: N/A 
 ``` 
  
 ## 2. Let’s run Java on the Jetson Nano GPU with TornadoVM!  
@@ -115,14 +114,14 @@ Let’s run the KMeans for 1048576 data points (2^20) and three clusters (or thr
 
 ```bash 
 tornado -cp target/tornadovm-examples-1.0-SNAPSHOT.jar io.github.jjfumero.KMeans seq 1048576 3 
-Total time: 10903223898 (ms) 
+Total time: 10903223898 (nanoseconds) 
 ``` 
 
 As we can see, it took a bit over 10 seconds to compute the clusters. Let’s run now the parallel implementation. Note that the implementation that the example provides, accelerates the assign phase of the KMeans algorithm, in which the distance to the new centroids array is computed. The rest of the phases of the KMeans are still processed on the CPU (without acceleration).  
 
 ```bash 
 tornado -cp target/tornadovm-examples-1.0-SNAPSHOT.jar io.github.jjfumero.KMeans tornado 1048576 3 
-Total time: 2741374225 (ms) 
+Total time: 2741374225 (nanoseconds) 
 ``` 
 
 The TornadoVM version took 2.7 seconds to compute. This means an acceleration of almost 4x (3.98x) compared to the sequential implementation. Bear in mind that the algorithm randomly chooses centroids for the first iteration, so depending on the centroids that are first selected, we might need to iterate more times. However, if we run the application multiple times, we see that the execution time does not differ that much. Thus, we can get a sense of the performance that we can get on the Jetson Nano for this application and datasets.  
