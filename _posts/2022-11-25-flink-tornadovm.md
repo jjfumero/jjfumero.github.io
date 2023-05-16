@@ -278,9 +278,3 @@ I want to thank [Athanasios Stratikopulos](https://stratika.github.io/) and [Mar
 
 [7] https://arxiv.org/abs/2010.16304  
 
-
-________________________________
-
-If you like the content and it has been useful to you, consider buying me a coffee ;-) 
-
-<a href="https://www.buymeacoffee.com/snatverk" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>

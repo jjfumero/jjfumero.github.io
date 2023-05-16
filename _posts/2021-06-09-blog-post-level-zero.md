@@ -428,7 +428,6 @@ From a more technical side, I think developers and newcomers to this technology 
 
 Besides, I miss better error control. For example, if developers [accidentally miss resetting an already Level-Zero closed command list](https://github.com/oneapi-src/level-zero/issues/52), Level-Zero does not complain when invoking consecutive calls with the closed-list. However, we get the wrong results because no commands will be executed (and with no warnings about it). In my opinion, this is very error-prone, and, indeed, it has happened to me several times. Therefore, currently, developers need to be ~~**very**~~ **extra** careful not to forget to reset command lists.
 
-
 ## 5 - Conclusions 
 
 Level-Zero is a low-level, close to bare-metal API developed by Intel and shipped as part of the oneAPI toolkits. This new API allows developers to fine-control the application for heterogeneous hardware, especially for GPUs, allowing the use of virtual functions, function pointers, efficient and fine-tune memory management, or even control the power and firmware.
@@ -437,11 +436,5 @@ This post has shown a high-level introduction to the Intel Level-Zero API. It fi
 
 I do believe the Level-Zero API is a great way to access heterogeneous hardware, controlled by runtimes, OS and system software, giving developers the possibility of fine-tuning applications to maximise resource utilization and portability of high-level applications when running on heterogeneous hardware. 
 
-
 ### Acks
 I would like to thank [Athanasios Stratikopoulos](https://personalpages.manchester.ac.uk/staff/athanasios.stratikopoulos/) for the constructive feedback on this article. 
-
-_________________________________
-
-<a href="https://www.buymeacoffee.com/snatverk" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
-

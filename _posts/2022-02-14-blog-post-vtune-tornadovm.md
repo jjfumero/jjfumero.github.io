@@ -166,7 +166,3 @@ For discussions, feel free to add your comments and feedback on [GitHub](https:/
 
 I want to thank **Steve Dohrmann** from Intel for his support and guidelines to run TornadoVM with VTune. I also want to thank [Christos Kotselidis](https://www.kotselidis.net/) and [Athanasios Stratikopulos](https://stratika.github.io/) from The University of Manchester for the constructive feedback on this post. 
 
-_________________________________
-
-<a href="https://www.buymeacoffee.com/snatverk" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
-

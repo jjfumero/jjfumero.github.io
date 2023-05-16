@@ -244,7 +244,4 @@ As a side note, although the core APIs can be used from the user level, it is no
 
 I want to thank Athanasios Stratikopulos from The University of Manchester for the constructive feedback and fruitful debates on this post.
 
-_________________________________
-
-<a href="https://www.buymeacoffee.com/snatverk" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
 

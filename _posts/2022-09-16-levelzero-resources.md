@@ -46,7 +46,6 @@ In my opinion, this is a great place to start working with examples and studying
 [https://github.com/oneapi-src/level-zero-tests](https://github.com/oneapi-src/level-zero-tests)
 
 
-
 ## Level Zero Driver Implementation for oneAPI.  
 
 [https://github.com/intel/compute-runtime](https://github.com/intel/compute-runtime/)
@@ -54,10 +53,7 @@ In my opinion, this is a great place to start working with examples and studying
 This repository contains the driver for Intel GPUs with the Intel OpenCL implementation, SPIR-V and Level Zero. Therefore, any issues and questions regarding the Intel implementation of Level Zero for Intel GPUs can be filed in this repository. 
 
 
-
-
 ## Level Zero Technical Advisory Board - Meeting Notes
-
 
 There is a technical advisory board to give and get feedback regarding the next versions of Level Zero. This will help to accommodate different needs for more types of applications and programming languages in future releases. All information discussed in the advisory board is public and available on GitHub: 
 
@@ -65,9 +61,3 @@ There is a technical advisory board to give and get feedback regarding the next 
 
 This repository contains the material and discussions used during the sessions. In my opinion, this repository is not meant to submit any PR, but rather to follow and get notified of all topics and undergoing work regarding Level Zero.
 
-
-________________________________
-
-If you like the content and it has been useful to you, consider buying me a coffee ;-) 
-
-<a href="https://www.buymeacoffee.com/snatverk" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>

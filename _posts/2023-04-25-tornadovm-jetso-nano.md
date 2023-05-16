@@ -138,9 +138,3 @@ In my case, I have the Jetson nano as a server, so it stays plugged in the whole
 ## 4. Follow-up and discussions
 
 For further discussions, feel free to contact us, and/or add your comments and feedback on [GitHub](https://github.com/jjfumero/jjfumero.github.io/discussions/9).
-
-_________________________________
-
-If you like the content and it has been useful to you, consider buying me a coffee ;-) 
-
-<a href="https://www.buymeacoffee.com/snatverk" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>

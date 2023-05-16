@@ -169,7 +169,3 @@ Additionally, if you have any comments or suggestions feel free to contact me or
 ## Acks
 I want to thank [Christos Kotselidis](https://www.kotselidis.net/) from The University of Manchester for the constructive feedback on this post. 
 
-_________________________________
-
-<a href="https://www.buymeacoffee.com/snatverk" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
-

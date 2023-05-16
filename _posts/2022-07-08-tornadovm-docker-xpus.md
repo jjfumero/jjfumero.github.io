@@ -200,8 +200,3 @@ In this post, we showed how to execute Java programs on a wide diversity of hete
 ## Acks
 Thanks to [Christos Kotselidis](https://www.kotselidis.net/) and [Thanos Stratikopoulos](https://stratika.github.io/) from the University of Manchester for their constructive feedback and comments. 
 I want to thank **Steve Dohrmann** from Intel for his support and guidelines to configure TornadoVM to run on Intel Docker oneAPI images. 
-
-________________________________
-
-<a href="https://www.buymeacoffee.com/snatverk" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
-

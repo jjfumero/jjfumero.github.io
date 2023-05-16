@@ -127,8 +127,3 @@ Additionally, if you have any comments or suggestions feel free to contact me or
 ### Acknowledgements 
 
 I want to thank Steve Dohrmann and Peng Tu from Intel and Christos Kotselidis and Athanasios Stratikopulos from The University of Manchester for the constructive feedback and fruitful debates on this post.
-
-_________________________________
-
-<a href="https://www.buymeacoffee.com/snatverk" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
-

@@ -313,13 +313,6 @@ You can find the whole source code used as well as all scripts for measuring per
 For discussions, feel free to add your comments and feedback on [GitHub](https://github.com/jjfumero/jjfumero.github.io/discussions/2).
 
 
-
 ## Acks
 
 Thanks to [Christos Kotselidis](https://www.kotselidis.net/), [Thanos Stratikopoulos](https://personalpages.manchester.ac.uk/staff/athanasios.stratikopoulos/) from the University of Manchester for their constructive feedback, and [Jaime Arteaga](https://github.com/jandres742) from Intel for the support and answering all my questions. 
-
-
-_________________________________
-
-<a href="https://www.buymeacoffee.com/snatverk" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
-
