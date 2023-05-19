@@ -1,5 +1,5 @@
 ---
-title: 'Configuration of NVIDIA and Intel GPU drivers for RHEL9'
+title: 'Configuration of the NVIDIA and Intel GPU drivers for RHEL9'
 date: 2023-05-19
 permalink: /posts/2023/05/rhel-gpu-drivers
 author_profile: false
@@ -144,11 +144,11 @@ clinfo  | grep "Device Name"
 
 ## Links
 
-[1] https://developers.redhat.com/products/rhel/download 
+[1] [https://developers.redhat.com/products/rhel/download](https://developers.redhat.com/products/rhel/download)
 
-[2] https://docs.nvidia.com/cuda/cuda-installation-guide-linux/index.html#rhel-9-rocky-9 
+[2] [https://docs.nvidia.com/cuda/cuda-installation-guide-linux/index.html#rhel-9-rocky-9](https://docs.nvidia.com/cuda/cuda-installation-guide-linux/index.html#rhel-9-rocky-9)
 
-[3] https://github.com/intel/compute-runtime 
+[3] [https://github.com/intel/compute-runtime](https://github.com/intel/compute-runtime)
 
-[4] https://dgpu-docs.intel.com/installation-guides/redhat/redhat-8.6.html 
+[4] [https://dgpu-docs.intel.com/installation-guides/redhat/redhat-8.6.html](https://dgpu-docs.intel.com/installation-guides/redhat/redhat-8.6.html)
 
