@@ -8,6 +8,9 @@ date: 2023-03-14
 location: "Online"
 ---
 
+[Summary](https://jjfumero.github.io/talks/2023-03-14-oneAPI-Lang-SIG-talk)
+
+
 ## Abstract
 
 In this talk, we will explain why we need TornadoVM, what it is and how developers can use it. 
