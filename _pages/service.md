@@ -6,7 +6,8 @@ author_profile: true
 
 ## Technical Boards/SPECS
 
-* [2022-Current] Participation in the [Level Zero Technical Advisory Board](https://github.com/oneapi-src/oneAPI-tab/tree/main/tab-level-zero)
+* [2023-Current] Participation in the [oneAPI Language SIG Group](https://github.com/oneapi-src/oneAPI-tab/tree/main/language)
+* [2022-Current] Participation in the [oneAPI Hardware SIG Group](https://github.com/oneapi-src/oneAPI-tab/tree/main/hardware)
 
 ## Academic Service 
 
@@ -26,7 +27,7 @@ author_profile: true
   * CLOUD COMPUTING 2021
   * CLOUD COMPUTING 2020
   * DLS'19
-  * XtremeCloud’19
+  * XtremeCloud'19
   
 #### Journal Reviewer:
   * Cogent Engineering 2022
