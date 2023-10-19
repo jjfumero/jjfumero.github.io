@@ -193,6 +193,9 @@ But, on the other side, still, the GC needs to perform a synchronization point b
 
 I believe this is an interesting work and has shown the potential, the benefits and the drawbacks of this approach. However, despite the fact that I like this work, it adds extra complexity to current and production VMs. An alternative approach is to allow buffer objects to be off-heap. Projects such as the [Panama API](https://github.com/openjdk/panama-foreign) will allow heterogeneous managed runtime systems to do this easily. 
 
-
-If you get this far, and you're still interested in this work, you can check the paper, and/or drop me an email for more discussions. 
  
+
+## Follow-up and discussions
+
+If you get this far, and you're still interested in this work, you can check the paper, and/or drop me an email for more discussions. You can also leave your comments on [GitHub](https://github.com/jjfumero/jjfumero.github.io/discussions/10), or contact my via [Twitter](https://twitter.com/snatverk). 
+
