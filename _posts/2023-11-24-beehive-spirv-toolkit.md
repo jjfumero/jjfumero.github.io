@@ -13,7 +13,7 @@ tags:
 excerpt: "Dynamic SPIR-V Code Generation from Java. Why do we need this and how can be used?"
 ---
 
-<img align="right" width="150" height="200" src="https://github.com/jjfumero/jjfumero.github.io/raw/master/files/blog/spirvToolkit/intro.png">
+<img align="center" width="700" src="https://github.com/jjfumero/jjfumero.github.io/raw/master/files/blog/spirvToolkit/intro.png">
 
 
 At The University of Manchester, we have developed a Java library, called [Beehive SPIR-V Toolkit](https://github.com/beehive-lab/beehive-spirv-toolkit), for generating SPIR-V binary modules that can be dispatched on supported devices, for example, on GPUs. 
