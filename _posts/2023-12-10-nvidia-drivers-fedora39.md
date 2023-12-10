@@ -15,7 +15,7 @@ excerpt: "Installing the NVIDIA Drivers and CUDA 12.3 on Fedora 39 with Secure B
 Some time ago, [I wrote some guidelines](https://snatverk.blogspot.com/2022/04/installing-nvidia-driver-and-cuda-on.html) about how to install and configure the NVIDIA and CUDA drivers on Fedora 36 when the secure boot is enabled. This post revisits this installation process with a fresh-installed Fedora 39 workstation. It also explains how to get dual monitor setup using NVIDIA Prime to display from both an NVIDIA Discrete GPU and an Intel integrated graphics, and how to get CUDA programs running.
 
 
-## 1. Installing a signed driver with Secure Boot
+## 1. Preparing the Public/Private Keys
 
 The easiest way to install the NVIDIA drivers in Fedora Linux is via the [RPM-Fusion packages](https://phoenixnap.com/kb/fedora-nvidia-drivers). 
 However, as far as I know, and based on my experience, there is no way to install it from the repositories when the secure boot is enabled. 
@@ -27,7 +27,7 @@ However, when we perform the manual installation, we find the following error:
 
 ```bash
 ERROR: Unable to load the `nvidia-drm` kernel module
-```a
+```
 
 This is due to the secure boot being enabled in the BIOS. 
 However, if we must preserve the secure boot enabled from the BIOS, we need to sign the driver. Note that, if other OSs are installed, e.g., Windows, we may lose those installations when the secure boot is disabled. In order to install the NVIDIA driver and preserve the secure boot, we can follow the guidelines explained [in this link](https://askubuntu.com/questions/1023036/how-to-install-nvidia-driver-with-secure-boot-enabled). 
@@ -42,9 +42,11 @@ $ sudo mokutil --import /home/$USER/bin/drivers/Nvidia.der
 
 As mentioned in [link1](https://askubuntu.com/questions/1023036/how-to-install-nvidia-driver-with-secure-boot-enabled) by [itpropmn07](https://askubuntu.com/users/843562/itpropmn07):
 
- > “This command requires you create password for enrolling. Afterwards, reboot your computer, in the next boot, the system will ask you enroll, you enter your password (which you created in this step) to enroll it. Read more: https://sourceware.org/systemtap/wiki/SecureBoot”
+ > "This command requires you create password for enrolling. Afterwards, reboot your computer, in the next boot, the system will ask you enroll, you enter your password (which you created in this step) to enroll it."
+ 
+ Read more: https://sourceware.org/systemtap/wiki/SecureBoot”
 
-## 2. Installing the NVIDIA Driver
+## 2. Installing the NVIDIA Driver with the Signed Modules
 
 The website [if-not-true-then-false](https://www.if-not-true-then-false.com/2015/fedora-nvidia-guide) is an excellent resource to install the NVIDIA drivers for different Operating Systems. 
 In a nutshell, we perform the following commands:
@@ -115,10 +117,10 @@ Sun Dec 10 15:49:57 2023
 ```
 
 
-## 3. Installing CUDA
+## 3. Installing CUDA SDK
 
 
-The NVIDIA website contains all the instructions for all supported operating systems. 
+The [NVIDIA website contains](https://developer.nvidia.com/cuda-downloads?target_os=Linux&target_arch=x86_64&Distribution=Fedora&target_version=37&target_type=rpm_local) all the instructions for all supported operating systems. 
 In the case of Fedora 39, we can apply the following commands:
 
 
@@ -182,6 +184,7 @@ As suggested [here](https://jchuynh.medium.com/how-to-solve-cuda-incompatibility
 
 
 ```bash
+## Install dependencies
 $ sudo dnf install patch 
 ```
 
