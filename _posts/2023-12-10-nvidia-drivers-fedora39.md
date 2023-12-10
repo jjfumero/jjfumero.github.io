@@ -12,7 +12,7 @@ tags:
 excerpt: "Installing the NVIDIA Drivers and CUDA 12.3 on Fedora 39 with Secure Boot Enabled."
 ---
 
-Some time ago, [I wrote some guidelines](https://snatverk.blogspot.com/2022/04/installing-nvidia-driver-and-cuda-on.html) about how to install and configure the NVIDIA and CUDA drivers on Fedora 36 when the secure boot is enabled. This post revisits this installation process with a fresh-installed Fedora 39 workstation. It also explains how to get dual monitor setup using NVIDIA Prime to display from both an NVIDIA Discrete GPU and an Intel integrated graphics, and how to get CUDA programs running.
+Some time ago, [I wrote some guidelines](https://snatverk.blogspot.com/2022/04/installing-nvidia-driver-and-cuda-on.html) about how to install and configure the NVIDIA and CUDA drivers on Fedora 36 when the secure boot is enabled. This post revisits this installation process with a fresh-installed Fedora 39 workstation. It also explains how to get a dual monitor setup using NVIDIA Prime to display from both an NVIDIA Discrete GPU and an Intel integrated graphics, and how to get CUDA programs running.
 
 
 ## 1. Preparing the Public/Private Keys
@@ -48,7 +48,7 @@ As mentioned in [link1](https://askubuntu.com/questions/1023036/how-to-install-n
 
 ## 2. Installing the NVIDIA Driver with the Signed Modules
 
-The website [if-not-true-then-false](https://www.if-not-true-then-false.com/2015/fedora-nvidia-guide) is an excellent resource to install the NVIDIA drivers for different Operating Systems. 
+The website [if-not-true-then-false](https://www.if-not-true-then-false.com/2015/fedora-nvidia-guide) is an excellent resource installing the NVIDIA drivers for different Operating Systems. 
 In a nutshell, we perform the following commands:
 
 ```bash
@@ -136,17 +136,17 @@ Note that we skipped the driver installation because it was manually installed i
 
 ## 4. Configuring Displays to render from iGPU and dGPU. 
 
-The installation and configuration process that we have just made allow us to display and run commands using the NVIDIA GPU. But what if have dual monitor system, each displaying from a different GPU? 
-One might ask, why do you need this? Well, for unknown reasons, Dell updated the BIOS and I can't see the integrated GPU, unless there is a cable and a screen connected to it. 
+The installation and configuration process, that we have just followed, allows us to display and run commands using the NVIDIA GPU. But what if we have a dual monitor system, each displaying from a different GPU? 
+One might ask, why do you need this? Well, for unknown reasons, Dell updated the BIOS and I can't see the integrated GPU unless there is a cable and a screen connected to it. 
 So, if I want both GPUs to run, let’s say, OpenCL, or oneAPI, I need at least one screen connected to the HDMI/DisplayPort of the Integrated GPU. 
 
 So, how can we achieve this? We need to enable [NVIDIA Prime Synchronization](https://forums.developer.nvidia.com/t/prime-and-prime-synchronization/44423). 
-As state in the NVIDIA Forums: 
+As stated in the NVIDIA Forums: 
 
  > The goal of PRIME is to allow the NVIDIA GPU to share its output with the integrated GPU so that it can be presented to the display.
 
 
-Following [the official documentation](http://us.download.nvidia.com/XFree86/Linux-x86_64/370.23/README/randr14.html), we apply the following change to the `/etc/X11/xorg.org`:
+Following [the official documentation](http://us.download.nvidia.com/XFree86/Linux-x86_64/370.23/README/randr14.html), we apply the following changes to the `/etc/X11/xorg.org`:
 
 ```bash
 Section "Module"
@@ -162,7 +162,7 @@ Section "Device"
 EndSection
 ```
 
-Then you can reboot. In my case, this enabled the two screens, and I can see both GPUs visible on my systems (the RTX 3070 and the Intel HD Graphics).
+Then you can reboot. In my case, this enabled the two screens, and I could see both GPUs on my system (the RTX 3070 and the Intel HD Graphics).
 
 
 ## 5. Configuring GCC 12 for CUDA 
