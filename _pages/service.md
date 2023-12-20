@@ -31,6 +31,7 @@ author_profile: true
   * XtremeCloud'19
   
 #### Journal Reviewer:
+  * [Parallel Computing'23](https://www.sciencedirect.com/journal/parallel-computing)
   * Cogent Engineering 2022
   * Journal of Supercomputing 2021 
 
