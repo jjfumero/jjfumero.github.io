@@ -3,12 +3,12 @@ main:
   - title: "\\publications{}"
     url: /publications/
 
+  - title: "/blog"
+    url: /year-archive/
+
   - title: "@Talks"
     url: /talks/    
 
-  - title: "/teaching"
-    url: /teaching/    
-    
 #  - title: "Portfolio"
 #    url: /portfolio/
 
@@ -18,13 +18,12 @@ main:
   - title: "#supervision# "
     url: /supervision/
 
-
   - title: "|Service|"
     url: /service/
 
-  - title: "/blog"
-    url: /year-archive/
-
+  - title: "/teaching"
+    url: /teaching/    
+ 
   - title: "CV"
     url: /cv/
 
