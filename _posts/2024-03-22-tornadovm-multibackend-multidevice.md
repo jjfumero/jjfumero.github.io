@@ -10,7 +10,7 @@ tags:
   - Hardware Accelerators
   - Concurrency
   - Multi-Backend
-excerpt: "This post shows, via examples, how developers can benefit from these features, and reason about performance using the TornadoVM profiler to help us to tune our applications."
+excerpt: "This post shows, via examples, how developers can benefit from these features, and reason about performance using the TornadoVM profiler to help us tune our applications."
 ---
 
 ## Key Takeaways
@@ -20,7 +20,7 @@ excerpt: "This post shows, via examples, how developers can benefit from these f
 
 - TornadoVM can dynamically switch execution from one accelerator to another, even using different backend technologies, such as the migration of the execution from CUDA PTX device to an Intel device using SPIR-V. 
 - TornadoVM can run multiple tasks concurrently on different hardware accelerators, even with different backends with the end goal of increasing performance.
-- This post shows, via examples, how developers can benefit from these features, and reason about performance using the TornadoVM profiler to help us to tune our applications. 
+- This post shows, via examples, how developers can benefit from these features, and reason about performance using the TornadoVM profiler to help us tune our applications. 
 
 ## Introduction
 
