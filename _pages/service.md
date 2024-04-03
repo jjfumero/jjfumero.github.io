@@ -20,6 +20,7 @@ author_profile: true
   * DLS'19
   
 #### PC: 
+  * [ALGOCLOUD 2024](https://researchr.org/conference/algocloud-2024)
   * [VMIL'23](https://2023.splashcon.org/home/vmil-2023)
   * [EuroPar'23](https://2023.euro-par.org/) - Track 1: [Programming, compilers and Performance](https://2023.euro-par.org/submission-of-papers/submission-of-papers/track-1-programming-compilers-and-performance/)
   * [CC'23](https://conf.researchr.org/track/CC-2023/CC-2023-research-papers) 2023
