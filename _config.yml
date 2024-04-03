@@ -184,6 +184,9 @@ collections:
   projects: 
     output: true
     permalink: /:collection/:path/
+  youtube: 
+    output: true
+    permalink: /:collection/:path/
   supervision: 
     output: true
     permalink: /:collection/:path/
