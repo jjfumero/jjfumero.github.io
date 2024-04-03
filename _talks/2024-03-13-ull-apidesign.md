@@ -11,6 +11,10 @@ location: "ULL, Tenerife, Spain"
 [Summary](https://jjfumero.github.io/talks/2024-03-13-ull-apidesign)
 
 
+Talk given at the University of La Laguna, Tenerife, Spain as a seminar for the master course in Parallel Computing. 
+
+Date: `2024-03-13`
+
 ## Abstract
 
 Parallel programming APIs, especially those for GPU and FPGA computing, are designed for specific domain architectures and particular programming languages. Some examples include (i) CUDA, which enables programmers to utilize the GPU for computing, and (ii) OpenCL, which allows developers to utilize any type of hardware accelerator, including GPUs and FPGAs. These APIs are tailored for the C/C++ programming language and have been closely tied to GPU computer architecture.
