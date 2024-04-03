@@ -13,7 +13,7 @@ location: "Santa Clara, CA, US"
 
 ## Abstract
 
-TornadoVM is a state-of-the-art framework that enables hardware acceleration of Java applications, leveraging CPUs, GPUs, and FPGAs to achieve high-performance gains. In this talk, we will discuss the latest developments in TornadoVM focusing mainly on the newly revamped APIs for parallel programming; the TaskGraph API and the Execution Plan API. 
+TornadoVM is a state-of-the-art framework that enables hardware acceleration of Java applications, leveraging CPUs, GPUs, and FPGAs to achieve high-performance gains. In this talk, we will discuss the latest developments in TornadoVM focusing mainly on the newly revamped APIs for parallel programming; the `TaskGraph` API and the `ExecutionPlan` API. 
 
 The TaskGraph API allows developers to identify the Java methods and the data to be offloaded. The Execution Plan API allows developers to define optimization parameters for parallel execution. This includes specifying target hardware accelerators, optimizing thread deployment, and enabling dynamic task migration and code profiling. 
 
