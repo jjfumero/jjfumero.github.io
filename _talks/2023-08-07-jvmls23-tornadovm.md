@@ -8,7 +8,7 @@ date: 2023-08-07
 location: "Santa Clara, CA, US"
 ---
 
-[Summary](https://jjfumero.github.io/talks/2023-03-14-oneAPI-Lang-SIG-talk)
+[Summary](https://jjfumero.github.io/talks/2023-08-07-jvmls23-tornadovm)
 
 
 ## Abstract
