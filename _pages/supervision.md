@@ -8,7 +8,7 @@ I have the privilege to work with and co-supervise many bright students.
 
 Co-supervised PhD Students:
 
-- Michail Papadimitriou - Project Compiler optimizations for FPGA execution. Graduated 2021. Currently @ The University of Manchester, UK.
+- Michail Papadimitriou - Project Compiler optimizations for FPGA execution. Graduated 2021. Currently Postdoc @ The University of Manchester, UK.
 - Maria Xekalaki - Heterogeneous acceleration of Big Data stacks. Graduated in 2022. Currently Postdoc @ The University of Manchester, UK.
 
 Co-supervised MSc Students:
