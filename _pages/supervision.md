@@ -8,11 +8,11 @@ I have the privilege to work with and co-supervise many bright students.
 
 Co-supervised PhD Students:
 
-- Michail Papadimitriou - Project Compiler optimizations for FPGA execution. Graduated 2021. Currently @ OctoML, US.
+- Michail Papadimitriou - Project Compiler optimizations for FPGA execution. Graduated 2021. Currently @ The University of Manchester, UK.
 - Maria Xekalaki - Heterogeneous acceleration of Big Data stacks. Graduated in 2022. Currently Postdoc @ The University of Manchester, UK.
 
 Co-supervised MSc Students:
-- Florin Blanaru (The University of Manchester). Graduated June-2021. Currently, Software Engineer @ OctoML, US. 
+- Florin Blanaru (The University of Manchester). Graduated June-2021. Currently, Software Engineer @ Axelera.ai 
 
 Co-supervised BSc Students:
 
