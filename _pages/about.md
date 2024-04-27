@@ -12,8 +12,8 @@ I am a Research Fellow working as part of the Advanced Processor Technologies ([
 
 ## What do I do? 
 
-Currently, I am working on the [AERO European Project](https://aero-project.eu/) to port TornadoVM to ARM and RISC-V based computing systems with hardware accelerators. 
-Besides, I collaborate with the [GAIA project](https://sci.esa.int/web/gaia) (under the Eurpean Space Agency [ESA](https://www.esa.int/)) to help accelerating Java HPC workloads on GPUs using the TornadoVM software stack.
+Currently, I am working on the [AERO European Project](https://aero-project.eu/) porting TornadoVM to ARM and RISC-V based computing systems with hardware accelerators. 
+Besides, I collaborate with the [GAIA project](https://sci.esa.int/web/gaia) (under the European Space Agency [ESA](https://www.esa.int/)) to help accelerating Java HPC workloads on GPUs using the TornadoVM software stack.
 In the past, I have worked and collaborated with Intel to bring oneAPI into the TornadoVM framework to perform optimisations for Intel compute architectures (xPUs). 
 
 Furthermore, I do [public speaking](https://jjfumero.github.io/talks/) about my research at the University of Manchester and software engineering topics. I have presented at several academic and Industry conferences, including JVMLS, QCon, Devoxx, JavaZone, JAX, and Java User Groups, such as NYJavaSIG.
@@ -30,7 +30,7 @@ Before doing the PhD, I obtained my Bachelor’s and Master’s degrees in Compu
 
 ## Industry
 
-Additionally, I have also worked as an intern at [Oracle Labs](https://labs.oracle.com/pls/apex/f?p=LABS:10::::::) and [CERN](https://home.cern/science/computing/cern-openlab), implementing compilers and evaluating parallel programming techniques for multi-core systems. 
+Additionally, I have also worked as an intern at [Oracle Labs](https://labs.oracle.com/) and [CERN](https://home.cern/science/computing/cern-openlab), implementing compilers and evaluating parallel programming techniques for multi-core systems. 
 
 _______
 If you are also interested in any of these topics, get in touch! 
