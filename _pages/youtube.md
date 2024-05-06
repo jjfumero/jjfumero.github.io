@@ -11,6 +11,10 @@ I usually upload videos about technology, TornadoVM and parallel computing on my
 
 Videos:
 
+## 5. TornadoVM on multicore CPUs and FPGAs using Intel oneAPI
+
+[![Watch the video](https://img.youtube.com/vi/lJHSpw97yDE/hqdefault.jpg)](https://www.youtube.com/embed/lJHSpw97yDE)
+
 
 ## 4. TornadoVM Multi-Device and Multi-Backend
 
