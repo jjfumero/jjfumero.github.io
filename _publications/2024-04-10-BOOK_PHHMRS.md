@@ -18,8 +18,8 @@ This book is written for scientists and advanced developers who want to understa
 
 #### Resources: 
 
-- [Link](https://link.springer.com/book/10.1007/978-3-031-49559-5])
-- DOI: https://doi.org/10.1007/978-3-031-49559-5 
+- [Springer Link](https://link.springer.com/book/10.1007/978-3-031-49559-5])
+- DOI: `https://doi.org/10.1007/978-3-031-49559-5`
 
 
 #### Source Code Samples:
