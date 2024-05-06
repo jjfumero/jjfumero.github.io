@@ -3,6 +3,7 @@ title: "Programming Heterogeneous Hardware via Managed Runtime Systems"
 collection: publications
 permalink: /publication/2024-04-10-book-programmingHMREs
 excerpt: 'SpringerBriefs in Computer Science'
+venue: 'SpringerBriefs in Computer Science'
 date: 10/04/2024
 paperurl: 'https://link.springer.com/book/10.1007/978-3-031-49559-5'
 citation: 'Juan Fumero, Athanasios Stratikopoulos, Christos Kotselidis. Programming Heterogeneous Hardware via Managed Runtime Systems. SpringerBriefs in Computer Science 2024.'
