@@ -102,8 +102,7 @@ $ source /opt/intel/oneapi/setvars.sh
 If we inspect the TornadoVM devices again, we see the following:
 
 ```bash
-tornado --devices
-WARNING: Using incubator modules: jdk.incubator.vector
+$ tornado --devices
 
 Number of Tornado drivers: 1
 Driver: OpenCL
@@ -150,19 +149,18 @@ So, based on my configuration, If I want to run a TornadoVM program on the CPU, 
 I will demonstrate the CPU access with TornadoVM by running the Blur Filter example from [this GitHub repo](https://github.com/jjfumero/tornadovm-examples).
 
 ```bash
-git clone https://github.com/jjfumero/tornadovm-examples
-cd tornadovm-examples
-source /path-to-your-Tornado-DIR/source.sh
-export TORNADO_SDK=/path-to-your-Tornado-DIR/bin/sdk
-mvn clean package
+$ git clone https://github.com/jjfumero/tornadovm-examples
+$ cd tornadovm-examples
+$ source /path-to-your-Tornado-DIR/source.sh
+$ export TORNADO_SDK=/path-to-your-Tornado-DIR/bin/sdk
+$ mvn clean package
 ```
 
 And we are ready to run. Notice that, based on the devices I have installed on my system, the CPU OpenCL appears in index 0:2 from the TornadoVM device list. This is the index we need to use to run on the multi-core:
 
 ```
-tornado --threadInfo -cp target/tornadovm-examples-1.0-SNAPSHOT.jar io.github.jjfumero.BlurFilter tornado device=0:2
+$ tornado --threadInfo -cp target/tornadovm-examples-1.0-SNAPSHOT.jar io.github.jjfumero.BlurFilter tornado device=0:2
 
-WARNING: Using incubator modules: jdk.incubator.vector
 Task info: blur.red
 	Backend           : OPENCL
 	Device            : 12th Gen Intel(R) Core(TM) i7-12700K CL_DEVICE_TYPE_CPU (available)
@@ -215,7 +213,7 @@ index ff4cd42..ffc1cb1 100644
 Then we recompile and run:
 
 ```bash
-mvn clean package
+$ mvn clean package
 $ tornado --threadInfo  -cp target/tornadovm-examples-1.0-SNAPSHOT.jar io.github.jjfumero.BlurFilter jmh 
 
 Benchmark                               Mode  Cnt            Score             Error  Units
@@ -288,7 +286,7 @@ Command: [/home/juan/tornadovm/TornadoVM/bin/sdk/bin/cleanFpga.sh, intel, /home/
 This means that TornadoVM, after the JIT compiler transformed the Java bytecode to OpenCL C code, compiled the final binary with the `aocl-ioc64` compiler tool. This can be tuned. What happens is that TornadoVM knows how to compile for Intel and Xilinx FPGAs, and it uses a configuration file. By default, the configuration file is in `$TORNADO_SDK/bin/sdk/etc/intel-oneapi-fpga.conf`
 
 ```bash
-cat $TORNADO_SDK/bin/sdk/etc/intel-oneapi-fpga.conf
+$ cat $TORNADO_SDK/bin/sdk/etc/intel-oneapi-fpga.conf
 
 # Configure the fields for FPGA compilation & execution
 # [device]
