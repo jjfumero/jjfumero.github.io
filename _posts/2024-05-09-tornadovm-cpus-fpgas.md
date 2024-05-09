@@ -308,5 +308,5 @@ This process is a bit cumbersome, but keep in mind that TornadoVM is still an ac
 TornadoVM can run on any compatible hardware accelerator with the backend implementations (OpenCL, PTX and SPIR-V if we take the latest version at the time of writing this post, 1.0.4). The hardware acceleration selection includes, not just GPUs, but also CPUs and FPGAs. This post has shown how to run and benchmark Java programs accelerated with TornadoVM to run on multi-cores CPUs through its OpenCL backend and the Intel oneAPI implementation. In addition, since the Intel oneAPI also provides an FPGA emulation mode, this post has shown how to access and configure TornadoVM to run in such devices. 
 
 
-- [Link for Discussions](https://github.com/jjfumero/jjfumero.github.io/discussions/12)
+- [Link for Discussions](https://github.com/jjfumero/jjfumero.github.io/discussions/13)
 
