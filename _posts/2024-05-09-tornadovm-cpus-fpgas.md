@@ -13,12 +13,11 @@ tags:
 excerpt: "This post shows the main steps to install and run TornadoVM on CPUs and FPGAs using the Intel oneAPI runtime for OpenCL."
 ---
 
-## Key Takeaways
+
+## Introduction
 
 <img align="right" style="width:200px;" src="https://raw.githubusercontent.com/jjfumero/jjfumero.github.io/master/files/blog/24-05-cpus/multiCoreCPU-firefly.jpg">
 
-
-## Introduction
 
 In previous posts, we have discussed how to run data-parallel applications on GPUs using TornadoVM. But what if you do not have a GPU? Can we run TornadoVM applications on CPUs and take advantage of all cores? 
 
