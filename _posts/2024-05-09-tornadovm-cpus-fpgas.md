@@ -15,7 +15,7 @@ excerpt: "This post shows the main steps to install and run TornadoVM on CPUs an
 
 ## Key Takeaways
 
-<img align="right" style="width:200px;" src="https://raw.githubusercontent.com/jjfumero/jjfumero.github.io/master/files/blog/tornadovm-multibackend/yt-04-frontThumbnailPost.jpg">
+<img align="right" style="width:200px;" src="https://raw.githubusercontent.com/jjfumero/jjfumero.github.io/master/files/blog/24-05-cpus/multiCoreCPU-firefly.jpg">
 
 
 ## Introduction
