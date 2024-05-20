@@ -6,7 +6,7 @@ author_profile: true
 
 I usually upload videos about technology, TornadoVM and parallel computing on my YouTube channel.
 
-[Link to the Channel](https://youtube.com/@juanfumero?feature=shared)
+[Link to the Channel](https://youtube.com/@juanfumero)
 
 
 Videos:
