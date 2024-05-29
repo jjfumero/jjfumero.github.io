@@ -11,7 +11,7 @@ I usually upload videos about technology, TornadoVM and parallel computing on my
 
 Videos:
 
-## 6. TornadoVM on multicore CPUs and FPGAs using Intel oneAPI
+## 6. Installer TornadoVM on Windows 11 using Microsoft Studio Command Line Tools
 
 [![Watch the video](https://img.youtube.com/vi/JwJKnyPWxrk/hqdefault.jpg)](https://www.youtube.com/watch?v=JwJKnyPWxrk)
 
