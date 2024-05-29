@@ -187,6 +187,9 @@ collections:
   youtube: 
     output: true
     permalink: /:collection/:path/
+   podcasts:
+    output: true
+    permalink: /:collection/:path/
   supervision: 
     output: true
     permalink: /:collection/:path/
