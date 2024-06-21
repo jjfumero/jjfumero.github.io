@@ -40,6 +40,7 @@ There is also a good balance between theory and practice. I think many of us wil
 On a personal note, despite my 10+ years of experience working with Java and the JVM, I found myself learning a lot from this book, especially for the topics that I do not deal with that much in the day-to-day job. Besides, it makes me pay more attention when I write code.
 
 > “[Performance Engineering] enables us gather understanding of the enhancements that can yield runtime efficiency gains”
+
 Monica Beckwith.
 
 <img align="right" style="width:300px;" src="https://github.com/jjfumero/jjfumero.github.io/blob/master/files/blog/24-06-book-review/image.JPG?raw=true">
