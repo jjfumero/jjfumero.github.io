@@ -27,7 +27,6 @@ With the intention to understand how to perform performance analysis with emphas
 ## Balanced Approach Theory and Practice 
 
 > “Performance Engineering is about making informed decisions”. 
-
 *Monica Beckwith.*
 
 This quote could represent very well the flow of the book. It is all about making informed decisions, and to make informed decisions, we need a deep understanding of our applications’ logic and behaviour using tools, as well as understanding the environment the applications run on. As performance engineers, and more specifically, JVM performance engineers, we should understand all components of the software stack at a deep level. This is not just about software, but the intersection between application code, system software (e.g., the actual JVM), and hardware. The book reviews key components in all the software and hardware stack as well as gives practical examples on how to assess performance of our applications, which tools could be used and how to interpret the data for different case scenarios. 
@@ -40,8 +39,7 @@ There is also a good balance between theory and practice. I think many of us wil
 On a personal note, despite my 10+ years of experience working with Java and the JVM, I found myself learning a lot from this book, especially for the topics that I do not deal with that much in the day-to-day job. Besides, it makes me pay more attention when I write code.
 
 > “[Performance Engineering] enables us gather understanding of the enhancements that can yield runtime efficiency gains”
-
-Monica Beckwith.
+*Monica Beckwith.*
 
 <img align="right" style="width:300px;" src="https://github.com/jjfumero/jjfumero.github.io/blob/master/files/blog/24-06-book-review/image.JPG?raw=true">
 
