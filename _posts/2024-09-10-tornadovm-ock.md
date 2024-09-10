@@ -563,7 +563,7 @@ As we can see, the Java Parallel Stream version using OpenJDK 21 performs faster
  
 We need to install Device-Tree-Compiler: 
 
-```bash  
+```bash
 sudo dnf install dtc  
 ``` 
 
