@@ -15,14 +15,14 @@ excerpt: "Running TornadoVM via the oneAPI Construction Kit for Intel, ARM and R
 
 ## Key Takeaways
 
--	oneAPI Construction Kit (OCK) is a new framework that allows software developers and system designers to bridge the gap between hardware accelerators and open standards, by enabling a programming system to implement domain specific instructions for modern hardware such as RISC-V accelerators and custom processors.  
+-	oneAPI Construction Kit (OCK) is a new framework that allows software developers and system designers to bridge the gap between hardware accelerators and open standards, by enabling a programming system to implement domain specific instructions for modern hardware such as RISC-V accelerators and custom processors.
 - OCK runs standard OpenCL 3.0 and SPIR-V 1.0. Thus, it can be also used as a standalone acceleration platform that can run on different devices, including ARM and x86-64 CPUs. 
-- TornadoVM can use OCK as an OpenCL and SPIR-V driver to deploy the generated OpenCL and SPIR-V code on modern hardware accelerators, including CPUs, allowing Java developers to access a wide range of hardware with minimal programming effort.  
+- TornadoVM can use OCK as an OpenCL and SPIR-V driver to deploy the generated OpenCL and SPIR-V code on modern hardware accelerators, including CPUs, allowing Java developers to access a wide range of hardware with minimal programming effort.
 - This post shows how to setup OCK to be used with TornadoVM for Intel, ARM and RISC-V CPUs. Besides, it shows a performance evaluation of TornadoVM/OCK compared to Java Parallel Streams running on the same CPU. 
 
 ## Introduction 
 
-<img align="right" style="width:300px;" src="https://raw.githubusercontent.com/jjfumero/jjfumero.github.io/master/files/blog/24-02-prog-model/back.jpg">
+<img align="right" style="width:350px;" src="https://raw.githubusercontent.com/jjfumero/jjfumero.github.io/master/files/blog/24-09-10-tornadovm-ock/Picture1.jpg">
 
 
 [The oneAPI Construction Kit](https://github.com/codeplaysoftware/oneapi-construction-kit) (OCK) is an open-source programming framework that allows developers to implement operations for new hardware (e.g., RISC-V accelerators, or any other type of accelerators, such as hardware for AI). 
