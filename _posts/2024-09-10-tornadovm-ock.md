@@ -102,7 +102,6 @@ cd $baseDIR
 git clone https://github.com/codeplaysoftware/oneapi-construction-kit 
 cd oneapi-construction-kit 
 
- 
 cmake . -GNinja  \
    -Bbuild-x86_64 \
   -DCMAKE_BUILD_TYPE=Release \
@@ -148,7 +147,6 @@ Let’s explore all devices available:
 
 ```bash 
 tornado --devices 
-
 
 Number of Tornado drivers: 2 
 Driver: SPIR-V 
@@ -215,7 +213,6 @@ The `taskGraphName and the `taskName` are application specific. For instance, us
 tornado --printKernel --jvm="-Ds0.t0.device=1:2" --threadInfo \ 
 -m tornado.examples/uk.ac.manchester.tornado.examples.arrays.ArrayAddInt  
 
-
 #pragma OPENCL EXTENSION cl_khr_fp64 : enable   
 #pragma OPENCL EXTENSION cl_khr_fp16 : enable   
 #pragma OPENCL EXTENSION cl_khr_int64_base_atomics : enable   
@@ -268,16 +265,13 @@ But we also configured the SPIR-V backend with TornadoVM. So why don’t we see 
 
 We can override this setting and force it to use SPIR-V 1.0 (or any other version). Note that TornadoVM does not guarantee that it runs all supported features with previous SPIR-V versions. If we want to enable a previous version of SPIR-V, we simply add the following flag: 
 
- 
 
 ```bash 
 --jvm="-Dtornado.spirv.version=1.0" 
 ``` 
 
 For instance:
-
  
-
 ```bash 
 tornado --jvm="-Dtornado.spirv.version=1.0"  --devices 
  
@@ -292,7 +286,6 @@ Workgroup Dimensions: 3
 Total Number of Block Threads: [256] 
 Max WorkGroup Configuration: [256, 256, 256] 
 Device OpenCL C version: OpenCL C 1.2 
-
 
   Tornado device=0:1 
 SPIRV -- SPIRV OCL - ComputeAorta x86_64     <<<< ComputeAorta 
@@ -309,21 +302,16 @@ Now we can run on this device with SPIR-V too:
 
 
 ```bash 
-
 tornado --printKernel --jvm="-Dtornado.spirv.version=1.0 -Ds0.t0.device=0:1" --threadInfo -m tornado.examples/uk.ac.manchester.tornado.examples.arrays.ArrayAddInt 
-
- 
 
 ; MagicNumber: 0x7230203 
 ; Version: 1.2 
 ; Generator ID: 32 
 ; Bound: 81 
 ; Schema: 0 
-
 # ...
 ##  SPIRV CODE
 # ...
-
 Task info: s0.t0 
 Backend           : SPIRV 
 Device            : SPIRV OCL - ComputeAorta x86_64 CPU 
@@ -393,31 +381,29 @@ Each experiment was executed 101 times per version with the goal of comparing th
 
 #### Speedups vs Java Single Threaded  
 
-The following performance plot shows the speedups of each version (Java Parallel Streams, TornadoVM using OCK and TornadoVM using oneAPI for CPUs) versus Java Single Threaded. The reported value is the average of the median of the 101 iterations.  
+The following performance plot shows the speedups of each version (Java Parallel Streams, TornadoVM using OCK and TornadoVM using oneAPI for CPUs) versus Java Single Threaded. The reported value is the average of the median of the 101 iterations.
 
 ![Alt text](https://raw.githubusercontent.com/jjfumero/jjfumero.github.io/master/files/blog/24-09-10-tornadovm-ock/performanceIntel.png)
 
+The x-axis shows the input data size for the Matrix Multiplication, respectively for 256, 512, 1024 and 2048 square matrices. The y-axis shows speedup of each version compared to Java Single Threaded. Thus, the higher, the better.
 
-The x-axis shows the input data size for the Matrix Multiplication, respectively for 256, 512, 1024 and 2048 square matrices. The y-axis shows speedup of each version compared to Java Single Threaded. Thus, the higher, the better.  
+As we can see, when we run with small data sizes, the Java Parallel Stream version performs faster than the parallel OpenCL drivers for TornadoVM (both Intel oneAPI and OCK). However, for larger data sizes, TornadoVM outperforms Java Parallel Streams, achieving speedups of up to 52x compared to Java Single-Threaded, and up to 4x faster than Java Parallel Streams for the same CPU. Worth mentioning that OCK is able to autovectorize the code from scalar OpenCL C code.  
 
-
-As we can see, when we run with small data sizes, the Java Parallel Stream version performs faster than the parallel OpenCL drivers for TornadoVM (both Intel oneAPI and OCK). However, for larger data sizes, TornadoVM outperforms Java Parallel Streams, achieving speedups of up to 52x compared to Java Single-Threaded, and up to 4x faster than Java Parallel Streams for the same CPU.  Worth mentioning that OCK is able to autovectorize the code from scalar OpenCL C code.  
-
-Regarding OCK, we see that it is generally slower than running the generated OpenCL program with Intel oneAPI. This is due to different optimizations being applied. As the Intel oneAPI is closed source, we do not know exactly which optimizations are being performed, but OCK is in active development and, hopefully, it will become faster overtime with clever compiler optimizations. 
+Regarding OCK, we see that it is generally slower than running the generated OpenCL program with Intel oneAPI. This is due to different optimizations being applied. As the Intel oneAPI is closed source, we do not know exactly which optimizations are being performed, but OCK is in active development and, hopefully, it will become faster overtime with clever compiler optimizations.
 
 
 #### Data Distribution 
 
-But how are all the runs distributed? The following Figure shows the data distribution of the runtime for each configuration and data size, including the first iteration, in which TornadoVM compiles and optimises the code for CPUs. From left to right, each plot shows the runtime for Java Single-Threaded, Java Parallel Streams, TornadoVM with OCK and TornadoVM with Intel oneAPI.  
+But how are all the runs distributed? The following Figure shows the data distribution of the runtime for each configuration and data size, including the first iteration, in which TornadoVM compiles and optimises the code for CPUs. From left to right, each plot shows the runtime for Java Single-Threaded, Java Parallel Streams, TornadoVM with OCK and TornadoVM with Intel oneAPI.
 
 ![Alt text](https://raw.githubusercontent.com/jjfumero/jjfumero.github.io/master/files/blog/24-09-10-tornadovm-ock/boxplotIntel.png)
 
 
-As we see, TornadoVM runs the first iteration faster than the Java sequential code for all the reported data sizes except for the smallest one. In addition, TornadoVM runs faster than Java Streams from size 1024, even from the first iteration.  
+As we see, TornadoVM runs the first iteration faster than the Java sequential code for all the reported data sizes except for the smallest one. In addition, TornadoVM runs faster than Java Streams from size 1024, even from the first iteration.
 
-#### What can we get from this data?  
+#### What can we get from this data?
 
-From this experiment, we see that TornadoVM can outperform the execution of the Java multi-core Parallel Streams of up to 4x using the same Intel CPU for the large data sizes. Note that, in the case of the OCK, the OpenCL JIT compiler is able to auto-vectorize the code, and we can’t confirm this for the Intel oneAPI compiler, since the project is closed source, but quite likely, the code is also auto-vectorized.  
+From this experiment, we see that TornadoVM can outperform the execution of the Java multi-core Parallel Streams of up to 4x using the same Intel CPU for the large data sizes. Note that, in the case of the OCK, the OpenCL JIT compiler is able to auto-vectorize the code, and we can't confirm this for the Intel oneAPI compiler, since the project is closed source, but quite likely, the code is also auto-vectorized.
 
 If the input data is not big enough, the execution with Java and Java parallel streams should be fast enough compared to TornadoVM using OCK and Intel oneAPI underneath.  
 
@@ -464,7 +450,7 @@ cmake . -GNinja  \
 -DCA_ENABLE_DOCUMENTATION=OFF \
 -DCA_LLVM_INSTALL_DIR=/home/jfumero/ock/llvm-project/build-aarch64/install \
 
-ninja -C build-aarch64 install 
+ninja -C build-aarch64 install
 ``` 
 
 Finally, we need to update the OpenCL ICD env variable to load the libCL.so from OCK. We can do it via either: 
@@ -477,7 +463,7 @@ a. Adding a new file on Linux under the `/etc/OpenCL/vendors/` called `ock.icd` 
 
 b. Updating the `OCL_ICD_VENDORS` env variable with a new directory that includes the new ICD files. For example:
 
-For example:  
+For example:
 
 ```bash 
 export OCL_ICD_VENDORS=/home/jfumero/TornadoVM/icd-ock/ 
@@ -528,7 +514,7 @@ Similarly to the performance evaluation on the Intel CPUs, we also evaluate the 
 
 The Linux system used is Ubuntu 22.04.4 LTS with the kernel 6.2.0-1015-nvidia-64k. We used OpenJDK 21 build 21.0.3+7-LTS-152. The TornadoVM version used is 1.0.8-dev, commit [ea85f22](https://github.com/beehive-lab/TornadoVM/commit/ea85f229d4474662beb42414d63a7e48697f1a7b). 
 
-For this experiment, we installed the OCK to run on ARM CPUs and compared with Java Single-Threaded and Java Parallel Streams running on the same CPU. Note that Intel oneAPI is not available for ARM systems.  
+For this experiment, we installed the OCK to run on ARM CPUs and compared with Java Single-Threaded and Java Parallel Streams running on the same CPU. Note that Intel oneAPI is not available for ARM systems.  
  
 #### Evaluation
 
@@ -553,7 +539,7 @@ As we can see, the Java Parallel Stream version using OpenJDK 21 performs faster
  Finally, let's configure OCK to run on RISC-V accelerators and use them as devices for TornadoVM. In the case of RISC-V, since we do not have any hardware available, it can run on emulation mode from an X86/64 machine. 
 
 
- To do so, OCK comes with a simulator, called [Codeplay Reference Silicon (RefSi)](https://developer.codeplay.com/products/oneapi/construction-kit/3.0.0/guides/overview/reference-silicon/overview.html), which is based on [SPIKE](https://github.com/riscv-software-src/riscv-isa-sim), and it can be used in combination with our Java/TornadoVM programs to run on RISC-V with Vector Instruction extensions! How cool is this?  
+ To do so, OCK comes with a simulator, called [Codeplay Reference Silicon (RefSi)](https://developer.codeplay.com/products/oneapi/construction-kit/3.0.0/guides/overview/reference-silicon/overview.html), which is based on [SPIKE](https://github.com/riscv-software-src/riscv-isa-sim), and it can be used in combination with our Java/TornadoVM programs to run on RISC-V with Vector Instruction extensions! How cool is this?
  
 
 ### Configuring LLVM for RISC-V 
@@ -562,7 +548,7 @@ As we can see, the Java Parallel Stream version using OpenJDK 21 performs faster
 We need to install Device-Tree-Compiler: 
 
 ```bash
-sudo dnf install dtc  
+sudo dnf install dtc
 ``` 
 
 Then, we need to reconfigure LLVM for RISC-V: 
@@ -698,7 +684,7 @@ refsi_hal_device::mem_read(src=0x9800fc00, size=56)
 ``` 
 
 
-TornadoVM and OCK spit debug information, such as the generated kernel, the generated assembly, and device in which the application is executed and all the calls to the HAL (Heterogeneous Abstraction Layer) API.  
+TornadoVM and OCK spit debug information, such as the generated kernel, the generated assembly, and device in which the application is executed and all the calls to the HAL (Heterogeneous Abstraction Layer) API.
 
 
 However, if we pay attention, there are no RVV instructions being generated. This is because we need to export the following variable with the vector width: 
