@@ -550,7 +550,7 @@ The following Figure shows the runtime distribution for all tests executed (the 
 As we can see, the Java Parallel Stream version using OpenJDK 21 performs faster than TornadoVM with OCK, and only when running the largest data size for the matrix multiplication, TornadoVM OCK outperforms the execution with Java Parallel Streams. Note that even the first iteration of TornadoVM is also a bit slower than the Java Parallel Stream version.  
 
  
- ## TornadoVM for RISC-V & Debug Modes  
+## TornadoVM for RISC-V & Debug Modes  
 
  Finally, let’s configure OCK to run on RISC-V accelerators and use them as devices for TornadoVM. In the case of RISC-V, since we do not have any hardware available, it can run on emulation mode from an X86/64 machine. 
 
