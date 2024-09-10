@@ -558,7 +558,7 @@ As we can see, the Java Parallel Stream version using OpenJDK 21 performs faster
  To do so, OCK comes with a simulator, called [Codeplay Reference Silicon (RefSi)](https://developer.codeplay.com/products/oneapi/construction-kit/3.0.0/guides/overview/reference-silicon/overview.html), which is based on [SPIKE](https://github.com/riscv-software-src/riscv-isa-sim), and it can be used in combination with our Java/TornadoVM programs to run on RISC-V with Vector Instruction extensions! How cool is this?  
  
 
- ### Configuring LLVM for RISC-V 
+### Configuring LLVM for RISC-V 
 
  
 We need to install Device-Tree-Compiler: 
