@@ -46,7 +46,6 @@ If you use Fedora or Red Hat-based distributions, you will need to install the f
 ```bash 
 $ sudo dnf install ninja doxygen python3-pip git cmake spirv-tools 
 $ sudo pip3 install lit cmakelint 
-
 ``` 
 
 ## Installation Guidelines for x86/64 & Performance Evaluation
@@ -207,7 +206,7 @@ We see a new device using the IDs 1:2 (backend 1, device 2). Note that, dependin
 If we want to run in this device, we simply add the following options to our `tornado` launcher: 
 
 ```bash
---jvm=”-DtaskGraphName.taskName.device=1:2” 
+--jvm="-DtaskGraphName.taskName.device=1:2"
 ``` 
 
 The `taskGraphName and the `taskName` are application specific. For instance, using one of example within the TornadoVM suite: 
@@ -275,7 +274,7 @@ We can override this setting and force it to use SPIR-V 1.0 (or any other versio
 --jvm="-Dtornado.spirv.version=1.0" 
 ``` 
 
-For instance:  
+For instance:
 
  
 
@@ -354,7 +353,6 @@ And run TornadoVM commands as usual:
 ```bash
 tornado --jvm="-Ds0.t0.device=1:3" -m tornado.examples/uk.ac.manchester.tornado.examples.compute.MatrixMultiplication2D 256 
 
-
         ... //  
         vpaddq  %ymm0, %ymm10, %ymm10 
         vpaddq  %ymm0, %ymm9, %ymm9 
@@ -375,7 +373,7 @@ We see that Intel vector AVX instructions are being generated!
 ### Performance on Intel x86/64 CPUs  
 
 
-Let’s run some experiments to evaluate the performance of OCK with TornadoVM on a modern Intel CPU. For this experiment, we are going to run the `MatrixMultiplication2D` example from [the TornadoVM example suite](https://github.com/beehive-lab/TornadoVM/blob/master/tornado-examples/src/main/java/uk/ac/manchester/tornado/examples/compute/MatrixMultiplication2D.java) as follows: 
+Let's run some experiments to evaluate the performance of OCK with TornadoVM on a modern Intel CPU. For this experiment, we are going to run the `MatrixMultiplication2D` example from [the TornadoVM example suite](https://github.com/beehive-lab/TornadoVM/blob/master/tornado-examples/src/main/java/uk/ac/manchester/tornado/examples/compute/MatrixMultiplication2D.java) as follows: 
 
 
 ```bash 
@@ -425,7 +423,7 @@ If the input data is not big enough, the execution with Java and Java parallel s
 
 ## TornadoVM for ARM CPUs & Performance Evaluation  
 
-Let’s discuss now how to get TornadoVM running on ARM CPUs. We will show you the setup using an [ARM Neoverse V2 CPU](https://www.arm.com/products/silicon-ip-cpu/neoverse/neoverse-v2) processor, which is included into the [NVIDIA GH200 Grace Hopper Superchip system](https://www.nvidia.com/en-us/data-center/grace-hopper-superchip/).  
+Let's discuss now how to get TornadoVM running on ARM CPUs. We will show you the setup using an [ARM Neoverse V2 CPU](https://www.arm.com/products/silicon-ip-cpu/neoverse/neoverse-v2) processor, which is included into the [NVIDIA GH200 Grace Hopper Superchip system](https://www.nvidia.com/en-us/data-center/grace-hopper-superchip/).  
 
 ### Configuring LLVM for ARM
 
@@ -534,11 +532,11 @@ For this experiment, we installed the OCK to run on ARM CPUs and compared with J
  
 #### Evaluation
 
-The following Figure shows the speeds of each version compared to Java Single-Threaded (the higher, the better). The speedups are obtained by computing the median value of the 101 iterations. In contrast with Intel CPU systems, the execution on the CPU using Java multithreaded performs faster than TornadoVM dispatching OpenCL via OCK. Only for the largest data size, TornadoVM can benefit in the overall execution compared to Java Parallel Streams, offering up to 16% faster executions.  
+The following Figure shows the speeds of each version compared to Java Single-Threaded (the higher, the better). The speedups are obtained by computing the median value of the 101 iterations. In contrast with Intel CPU systems, the execution on the CPU using Java multithreaded performs faster than TornadoVM dispatching OpenCL via OCK. Only for the largest data size, TornadoVM can benefit in the overall execution compared to Java Parallel Streams, offering up to 16% faster executions.
 
 ![Alt text](https://raw.githubusercontent.com/jjfumero/jjfumero.github.io/master/files/blog/24-09-10-tornadovm-ock/performanceARM.png)
 
-We haven’t looked at the details, and there is plenty of room for analysis at this point, but the Java JIT compiler and the Parallel Stream implementation do a very good job for the ARM ecosystem, at least for this processor.  
+We haven't looked at the details, and there is plenty of room for analysis at this point, but the Java JIT compiler and the Parallel Stream implementation do a very good job for the ARM ecosystem, at least for this processor.  
 
 #### Runtime Data Distribution
 
@@ -550,9 +548,9 @@ The following Figure shows the runtime distribution for all tests executed (the 
 As we can see, the Java Parallel Stream version using OpenJDK 21 performs faster than TornadoVM with OCK, and only when running the largest data size for the matrix multiplication, TornadoVM OCK outperforms the execution with Java Parallel Streams. Note that even the first iteration of TornadoVM is also a bit slower than the Java Parallel Stream version.  
 
  
-## TornadoVM for RISC-V & Debug Modes  
+## TornadoVM for RISC-V & Debug Modes
 
- Finally, let’s configure OCK to run on RISC-V accelerators and use them as devices for TornadoVM. In the case of RISC-V, since we do not have any hardware available, it can run on emulation mode from an X86/64 machine. 
+ Finally, let's configure OCK to run on RISC-V accelerators and use them as devices for TornadoVM. In the case of RISC-V, since we do not have any hardware available, it can run on emulation mode from an X86/64 machine. 
 
 
  To do so, OCK comes with a simulator, called [Codeplay Reference Silicon (RefSi)](https://developer.codeplay.com/products/oneapi/construction-kit/3.0.0/guides/overview/reference-silicon/overview.html), which is based on [SPIKE](https://github.com/riscv-software-src/riscv-isa-sim), and it can be used in combination with our Java/TornadoVM programs to run on RISC-V with Vector Instruction extensions! How cool is this?  
@@ -631,7 +629,7 @@ export CA_RISCV_DUMP_ASM=1    ## Print Assembly code
 export CA_HAL_DEBUG=1         ## Print calls to HAL 
 ``` 
 
-Let’s run some examples: 
+Let's run some examples: 
 
 
 ```bash 
@@ -797,5 +795,3 @@ The ability to select and combine different parallel runtimes is the key to achi
 ## Acknowledgments
 
 I would like to thank [Colin Davidson](https://www.linkedin.com/in/colin-davidson-6a4b042/) from [Codeplay](https://codeplay.com/) for the support regarding the oneAPI Construction Kit for TornadoVM. I also thank the University of Pisa for the access to the NVIDIA GH200 GraceHopper Superchip system through the [AERO EU Project](https://cordis.europa.eu/project/id/101092850). Futhermore, thanks to [Christos Kotselidis](https://www.kotselidis.net/) and [Thanos Stratikopoulos](https://personalpages.manchester.ac.uk/staff/athanasios.stratikopoulos/) from the University of Manchester for their constructive feedback.
-
-
