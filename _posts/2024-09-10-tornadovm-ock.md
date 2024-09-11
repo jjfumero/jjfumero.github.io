@@ -62,9 +62,9 @@ cd ock
 baseDIR=$PWD 
 
 ## Clone LLVM 
-git clone https://github.com/llvm/llvm-project.git 
-llvmDIR=$PWD 
+git clone https://github.com/llvm/llvm-project.git llvm
 cd llvm 
+llvmDIR=$PWD 
 ``` 
 
 At the time of writing this post, the supported LLVM version for OCK is 18. Thus, we need to configure LLVM using the 18.x branch: 
@@ -780,4 +780,4 @@ The ability to select and combine different parallel runtimes is the key to achi
 
 ## Acknowledgments
 
-I would like to thank [Colin Davidson](https://www.linkedin.com/in/colin-davidson-6a4b042/) from [Codeplay](https://codeplay.com/) for the support regarding the oneAPI Construction Kit for TornadoVM. I also thank the University of Pisa for the access to the NVIDIA GH200 GraceHopper Superchip system through the [AERO EU Project](https://cordis.europa.eu/project/id/101092850). Futhermore, thanks to [Christos Kotselidis](https://www.kotselidis.net/) and [Thanos Stratikopoulos](https://personalpages.manchester.ac.uk/staff/athanasios.stratikopoulos/) from the University of Manchester for their constructive feedback.
+I would like to thank [Colin Davidson](https://www.linkedin.com/in/colin-davidson-6a4b042/) from [Codeplay](https://codeplay.com/) for the support regarding the oneAPI Construction Kit for TornadoVM. I also thank the University of Pisa for the access to the NVIDIA GH200 GraceHopper Superchip system through the [AERO EU Project](https://cordis.europa.eu/project/id/101092850). Furthermore, thanks to [Christos Kotselidis](https://www.kotselidis.net/) and [Thanos Stratikopoulos](https://personalpages.manchester.ac.uk/staff/athanasios.stratikopoulos/) from the University of Manchester for their constructive feedback.
