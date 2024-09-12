@@ -194,7 +194,7 @@ And then:
 $ git clone https://github.com/spack/spack.git
 $ source spack/share/spack/setup-env.sh
 $ spack install gcc@12.3.0 
-$ slack load gcc@12.3.0
+$ spack load gcc@12.3.0
 ```
 
 Happy coding! 
