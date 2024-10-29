@@ -1,5 +1,5 @@
 ---
-title: "Programming Heterogeneous Hardware via Managed Runtime Systems"
+title: "[BOOK] Programming Heterogeneous Hardware via Managed Runtime Systems"
 collection: publications
 permalink: /publication/2024-04-10-book-programmingHMREs
 excerpt: 'SpringerBriefs in Computer Science'
