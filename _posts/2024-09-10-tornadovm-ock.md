@@ -556,12 +556,12 @@ Then, we need to reconfigure LLVM for RISC-V:
 
 ```bash 
 cd $llvmDIR 
-cmake llvm -GNinja  \
+cmake llvm -GNinja \
 -Bbuild-riscv \
--DCMAKE_BUILD_TYPE=Release  \
+-DCMAKE_BUILD_TYPE=Release \
 -DCMAKE_INSTALL_PREFIX=$PWD/build-riscv/install \
 -DLLVM_ENABLE_PROJECTS="clang;lld" \
--DLLVM_TARGETS_TO_BUILD='X86;RISCV' 
+-DLLVM_TARGETS_TO_BUILD='X86;RISCV'
 
 ninja -C build-riscv install 
 ``` 
@@ -573,12 +573,13 @@ Then build/install OCK. The following configuration does not enable DEBUG inform
 ```bash 
 cd $baseDIR/oneapi-construction-kit 
 
-cmake -GNinja   \
--Bbuild-riscv  \
+cmake -GNinja \
+-Bbuild-riscv \
 -DCA_RISCV_ENABLED=ON \
 -DCA_MUX_TARGETS_TO_ENABLE="riscv" \
 -DCA_LLVM_INSTALL_DIR=$llvmDIR/build-riscv/install \
--DCA_ENABLE_HOST_IMAGE_SUPPORT=OFF -DCA_ENABLE_API=cl \
+-DCA_ENABLE_HOST_IMAGE_SUPPORT=OFF \
+-DCA_ENABLE_API=cl \
 -DCA_CL_ENABLE_ICD_LOADER=ON \
 -DCMAKE_INSTALL_PREFIX=$PWD/build-riscv/install 
 
@@ -589,7 +590,7 @@ If we want to enable DEBUG information to dump the Assembly code and all the HAL
 
 
 ```bash 
-cmake -GNinja   \
+cmake -GNinja \
 -Bbuild-riscv-debug \
 -DCA_ENABLE_DEBUG_SUPPORT=ON \
 -DCA_DEBUG_SUPPORT=ON \
@@ -601,7 +602,6 @@ cmake -GNinja   \
 -DCA_CL_ENABLE_ICD_LOADER=ON \
 -DCMAKE_INSTALL_PREFIX=$PWD/build-riscv-debug/install 
 
- 
 ninja -C build-riscv-debug install 
 ``` 
 
