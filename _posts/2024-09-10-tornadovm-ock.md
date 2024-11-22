@@ -80,11 +80,11 @@ Configure LLVM:
 export LLVMINSTALL=$llvmDIR/build-x86_64/install 
 
 cmake llvm -GNinja \
-   -Bbuild-x86_64 \
-   -DCMAKE_BUILD_TYPE=Release \
-   -DCMAKE_INSTALL_PREFIX=$LLVMINSTALL \
-   -DLLVM_ENABLE_PROJECTS=”clang;lld” \
-   -DLLVM_TARGETS_TO_BUILD=X86
+ -Bbuild-x86_64 \
+ -DCMAKE_BUILD_TYPE=Release \
+ -DCMAKE_INSTALL_PREFIX=$LLVMINSTALL \
+ -DLLVM_ENABLE_PROJECTS="clang;lld" \
+ -DLLVM_TARGETS_TO_BUILD=X86
 ``` 
 
 Then, built and install: 
@@ -102,13 +102,13 @@ cd $baseDIR
 git clone https://github.com/codeplaysoftware/oneapi-construction-kit 
 cd oneapi-construction-kit 
 
-cmake . -GNinja  \
-   -Bbuild-x86_64 \
-  -DCMAKE_BUILD_TYPE=Release \
-  -DCMAKE_INSTALL_PREFIX=$PWD/build-x86_64/install \
-  -DCA_ENABLE_API=cl \
-  -DCA_ENABLE_DOCUMENTATION=OFF \
-  -DCA_LLVM_INSTALL_DIR=$LLVMINSTALL
+cmake . -GNinja \
+ -Bbuild-x86_64 \
+ -DCMAKE_BUILD_TYPE=Release \
+ -DCMAKE_INSTALL_PREFIX=$PWD/build-x86_64/install \
+ -DCA_ENABLE_API=cl \
+ -DCA_ENABLE_DOCUMENTATION=OFF \
+ -DCA_LLVM_INSTALL_DIR=$LLVMINSTALL
 ``` 
 
 Build OCK: 
@@ -127,7 +127,7 @@ sudo vim /etc/OpenCL/vendors/ock.icd
 And we add the following line:
 
 ```bash 
-## content of the file  <your-path-to-libCL.so> 
+## content of the file <your-path-to-libCL.so> 
 /home/juan/repos/ock/oneapi-construction-kit/build-x86_64/install/lib/libCL.so 
 ``` 
 
@@ -143,7 +143,7 @@ cd TORNADOVM_ROOT
 source setvars.sh 
 ``` 
 
-Let’s explore all devices available:  
+Let's explore all devices available:  
 
 ```bash 
 tornado --devices 
@@ -358,7 +358,7 @@ tornado --jvm="-Ds0.t0.device=1:3" -m tornado.examples/uk.ac.manchester.tornado.
  
 We see that Intel vector AVX instructions are being generated!  
 
-### Performance on Intel x86/64 CPUs  
+### Performance on Intel x86/64 CPUs 
 
 
 Let's run some experiments to evaluate the performance of OCK with TornadoVM on a modern Intel CPU. For this experiment, we are going to run the `MatrixMultiplication2D` example from [the TornadoVM example suite](https://github.com/beehive-lab/TornadoVM/blob/master/tornado-examples/src/main/java/uk/ac/manchester/tornado/examples/compute/MatrixMultiplication2D.java) as follows: 
@@ -428,8 +428,9 @@ cmake llvm -GNinja \
 -DCMAKE_BUILD_TYPE=Release \
 -DCMAKE_INSTALL_PREFIX=$PWD/build-aarch64/install \
 -DLLVM_ENABLE_PROJECTS="clang;lld" \
--DLLVM_TARGETS_TO_BUILD=AArch64 \
-ninja -C build-aarch64 install  
+-DLLVM_TARGETS_TO_BUILD='AArch64' 
+
+ninja -C build-aarch64 install 
 ``` 
 
 
@@ -442,13 +443,13 @@ In a new directory we clone the repo and install OCK as follows:
 git clone https://github.com/codeplaysoftware/oneapi-construction-kit 
 cd oneapi-construction-kit 
 
-cmake . -GNinja  \
+cmake . -GNinja \
 -Bbuild-aarch64 \
 -DCMAKE_BUILD_TYPE=Release \
--DCMAKE_INSTALL_PREFIX=$PWD/build-aarch64/install \
+-DCMAKE_INSTALL_PREFIX=$PWD/build-aarch64/install \
 -DCA_ENABLE_API=cl \
 -DCA_ENABLE_DOCUMENTATION=OFF \
--DCA_LLVM_INSTALL_DIR=/home/jfumero/ock/llvm-project/build-aarch64/install \
+-DCA_LLVM_INSTALL_DIR=/home/jfumero/ock/llvm-project/build-aarch64/install 
 
 ninja -C build-aarch64 install
 ``` 
@@ -545,17 +546,24 @@ As we can see, the Java Parallel Stream version using OpenJDK 21 performs faster
 ### Configuring LLVM for RISC-V 
 
  
-We need to install Device-Tree-Compiler: 
+We need to install the following dependencies: 
 
 ```bash
-sudo dnf install dtc
+sudo dnf install dtc ninja doxygen python3-pip git cmake spirv-tools dtc
+sudo pip3 install lit cmakelint
 ``` 
 
 Then, we need to reconfigure LLVM for RISC-V: 
 
 
 ```bash 
-cd $llvmDIR 
+mkdir ock 
+cd ock 
+baseDIR=$PWD 
+git clone --depth 1 --branch=release/18.x https://github.com/llvm/llvm-project.git llvm
+cd llvm-project
+llvmDIR=$PWD
+
 cmake llvm -GNinja \
 -Bbuild-riscv \
 -DCMAKE_BUILD_TYPE=Release \
@@ -568,17 +576,23 @@ ninja -C build-riscv install
 
 ### Configuring OCK for RISC-V  
 
+```bash 
+## Obtain OCK
+cd $baseDIR
+git clone --depth 1 https://github.com/uxlfoundation/oneapi-construction-kit
+cd oneapi-construction-kit
+```
+
 Then build/install OCK. The following configuration does not enable DEBUG information: 
 
-```bash 
-cd $baseDIR/oneapi-construction-kit 
 
-cmake -GNinja \
--Bbuild-riscv \
--DCA_RISCV_ENABLED=ON \
--DCA_MUX_TARGETS_TO_ENABLE="riscv" \
--DCA_LLVM_INSTALL_DIR=$llvmDIR/build-riscv/install \
--DCA_ENABLE_HOST_IMAGE_SUPPORT=OFF \
+```bash
+cmake -GNinja \
+-Bbuild-riscv \
+-DCA_RISCV_ENABLED=ON \
+-DCA_MUX_TARGETS_TO_ENABLE="riscv" \
+-DCA_LLVM_INSTALL_DIR=$llvmDIR/build-riscv/install \
+-DCA_ENABLE_HOST_IMAGE_SUPPORT=OFF \
 -DCA_ENABLE_API=cl \
 -DCA_CL_ENABLE_ICD_LOADER=ON \
 -DCMAKE_INSTALL_PREFIX=$PWD/build-riscv/install 
@@ -591,19 +605,34 @@ If we want to enable DEBUG information to dump the Assembly code and all the HAL
 
 ```bash 
 cmake -GNinja \
--Bbuild-riscv-debug \
+-Bbuild-riscv-debug \
 -DCA_ENABLE_DEBUG_SUPPORT=ON \
--DCA_DEBUG_SUPPORT=ON \
--DCA_RISCV_ENABLED=ON \
+-DCA_DEBUG_SUPPORT=ON \
+-DCA_RISCV_ENABLED=ON \
 -DCA_MUX_TARGETS_TO_ENABLE="riscv" \
--DCA_LLVM_INSTALL_DIR=$llvmDIR/build-riscv/install \
+-DCA_LLVM_INSTALL_DIR=$llvmDIR/build-riscv/install \
 -DCA_ENABLE_HOST_IMAGE_SUPPORT=OFF \
--DCA_ENABLE_API=cl \
+-DCA_ENABLE_API=cl \
 -DCA_CL_ENABLE_ICD_LOADER=ON \
 -DCMAKE_INSTALL_PREFIX=$PWD/build-riscv-debug/install 
 
 ninja -C build-riscv-debug install 
 ``` 
+
+Next, we need to configure the Linux system to use the new OpenCL installation. 
+There are various ways to get this. 
+One of them is updating the folder `/etc/OpenCL/vendors/` with a new file that contains the path to the `libCL.so` installation.
+
+
+```bash
+sudo vim /etc/OpenCL/vendors/ock.icd
+```
+
+And we add the following line to the file: use your absolute path to the `libCL.so` file:
+
+```bash
+<your-path-to-oneapi-construction-kit>/oneapi-construction-kit/build-x86_64/install/lib/libCL.so
+```
 
 ### Running TornadoVM on RISC-V 
 
@@ -611,16 +640,16 @@ To enable the debug information when running our TornadoVM applications, we need
 
 
 ```bash 
-export CA_RISCV_DUMP_ASM=1    ## Print Assembly code 
-export CA_HAL_DEBUG=1         ## Print calls to HAL 
+export CA_RISCV_DUMP_ASM=1 ## Print Assembly code 
+export CA_HAL_DEBUG=1      ## Print calls to HAL 
 ``` 
 
 Let's run some examples: 
 
 
 ```bash 
-export CA_RISCV_DUMP_ASM=1    ## Print Assembly code 
-export CA_HAL_DEBUG=1         ## Print calls to HAL 
+export CA_RISCV_DUMP_ASM=1  ## Print Assembly code 
+export CA_HAL_DEBUG=1       ## Print calls to HAL 
  
 $ tornado --printKernel --jvm="-Ds0.t0.device=0:3" --threadInfo -m tornado.examples/uk.ac.manchester.tornado.examples.arrays.ArrayAddInt 
  
@@ -631,7 +660,7 @@ refsi_hal_device::mem_alloc(size=56, align=128) -> 0x9800fc80
 refsi_hal_device::mem_alloc(size=56, align=128) -> 0x9800fc00 
 refsi_hal_device::mem_alloc(size=24, align=128) -> 0x9800fb80 
  
-… 
+...
  
 .LBB0_9: 
 addi	sp, s0, -80 
@@ -753,7 +782,6 @@ Global work size  : [8]
 Local  work size  : [8, 1, 1] 
 Number of workgroups  : [1] 
 ``` 
-
 
 And, if we export the following variable: 
 
