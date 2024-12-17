@@ -719,6 +719,10 @@ To know more about TornadoVM: [https://www.tornadovm.org/](https://www.tornadovm
 - [Excellent blog article to optimize Matrix Multiplication on GPUs](https://siboehm.com/articles/22/CUDA-MMM).
 
 
+## Acknowledgments
+
+I would like to thank my colleague [Thanos Stratikopoulos](https://personalpages.manchester.ac.uk/staff/athanasios.stratikopoulos/) from the University of Manchester for the constructive feedback.
+
 ## Anexo
 
 Performance with JMH on the 4090 Server:
