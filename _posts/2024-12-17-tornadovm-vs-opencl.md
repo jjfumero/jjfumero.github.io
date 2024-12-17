@@ -442,7 +442,7 @@ When we look closely at the TornadoVM generated code for the Matrix Multiplicati
 
 Let’s apply this optimization in our OpenCL kernel:
 
-```opencl
+```c
 __kernel void mxmLIfma(__global float *a,  __global float *b, __global float *c, int n) {
 	uint idx = get_global_id(1);
 	uint jdx = get_global_id(0);
@@ -479,7 +479,7 @@ This looks a bit faster. Let's plot this new number and compare it with the rest
 Let's continue our exploration of optimizations. When looking again at the general control flow structure of the generated kernel, we see that TornadoVM was able to replace the loop bounds (`size` parameter from Java) with the actual matrix size: 
 
 
-```bash
+```c
   // first loop
   for(;i_10 < 1024;)     // get_global_id(1)
   {
@@ -494,7 +494,7 @@ Let's continue our exploration of optimizations. When looking again at the gener
 This can create a new opportunity for optimizations for the underlying OpenCL JIT compiler. This is because the final compilation step is performed by the OpenCL driver, which in our case, is the NVIDIA driver. This compiler could potentially apply loop unrolling and group instructions to use vector types. 
 
 
-```bash
+```c
 __kernel void mxmLIfmaUnroll(__global float *a,  __global float *b, __global float *c, int n) {
 
 	uint idx = get_global_id(1);
