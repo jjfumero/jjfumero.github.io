@@ -18,7 +18,7 @@ excerpt: "This article explores how TornadoVM, a Java parallel programming frame
 <img align="left" style="width:200px;" src="https://raw.githubusercontent.com/jjfumero/jjfumero.github.io/refs/heads/master/files/blog/24-12-tornadovm-vs-opencl/art-blog.jpg">
 
 
-TornadoVM, a Java parallel programming framework to run on hardware accelerators, can sometimes outperform OpenCL code on GPUs, despite the latter being closer to the hardware. This is possible due to the TornadoVM’s ability to automatically apply compiler and runtime optimizations. 
+TornadoVM, a Java parallel programming framework to run on hardware accelerators, can sometimes outperform OpenCL code on GPUs, despite the latter being closer to the hardware. This is possible due to the TornadoVM's ability to automatically apply compiler and runtime optimizations. 
 
 In this article, we are going to explore and analyse the different optimizations that are applied in TornadoVM using the Matrix Multiplication application as an example. Furthermore, we are going to build an OpenCL C++ application from scratch to replicate, step by step, all compiler and runtime optimizations that TornadoVM automatically applies. 
 
@@ -468,14 +468,14 @@ When we run this application:
 
 ```bash
 ./mxm -p 2 -k mxmLIfma
-…
+...
 Median KernelTime: 730976 (ns)
 Median CopyInTime: 669280 (ns)
 Median CopyOutTime: 267440 (ns)
 Median TotalTime: 1.07918e+06 (ns)
 ```
 
-This looks a bit faster. Let’s plot this new number and compare it with the rest of the implementations. 
+This looks a bit faster. Let's plot this new number and compare it with the rest of the implementations. 
 
 
 ![Alt text](https://raw.githubusercontent.com/jjfumero/jjfumero.github.io/refs/heads/master/files/blog/24-12-tornadovm-vs-opencl/c.png)
