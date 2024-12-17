@@ -47,7 +47,7 @@ public static void mxmSequential(FloatMatrix a, FloatMatrix b, FloatMatrix c) {
 }
 ```
 
-The code shows the canonical O(n^3) matrix multiplication. `FloatMatrix` is a custom data type, and it uses a Java memory segment to store the data in 1D format. **For simplicity, we are going to run squared-matrices, and for our experiments, we choose matrices of 1024x1024 elements.**
+The code shows the canonical O(n<sup>3</sup>) matrix multiplication. `FloatMatrix` is a custom data type, and it uses a Java memory segment to store the data in 1D format. **For simplicity, we are going to run squared-matrices, and for our experiments, we choose matrices of 1024x1024 elements.**
 
 
 The `FloatMatrix` type is defined as follows:
