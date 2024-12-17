@@ -1,7 +1,7 @@
 ---
 title: 'Can TornadoVM run Matrix Multiply faster than OpenCL Native?'
 date: 2024-12-17
-permalink: /posts/2024/12/27/tornadovm-vs-opencl
+permalink: /posts/2024/12/24/tornadovm-vs-opencl
 author_profile: false
 tags:
  - TornadoVM
