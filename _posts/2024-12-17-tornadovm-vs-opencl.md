@@ -14,11 +14,11 @@ tags:
 excerpt: "This article explores how TornadoVM, a Java parallel programming framework, can outperform OpenCL code on GPUs using the Matrix Multiplication application as an example."
 ---
 
-
-<img align="left" style="width:150px;" src="https://raw.githubusercontent.com/jjfumero/jjfumero.github.io/refs/heads/master/files/blog/24-12-tornadovm-vs-opencl/art-blog.jpg">
+<img align="right" style="width:150px;" src="https://raw.githubusercontent.com/jjfumero/jjfumero.github.io/refs/heads/master/files/blog/24-12-tornadovm-vs-opencl/art-blog.jpg">
 
 
 TornadoVM, a Java parallel programming framework to run on hardware accelerators, can sometimes outperform OpenCL code on GPUs, despite the latter being closer to the hardware. This is possible due to the TornadoVM's ability to automatically apply compiler and runtime optimizations. 
+
 
 In this article, we are going to explore and analyse the different optimizations that are applied in TornadoVM using the Matrix Multiplication application as an example. Furthermore, we are going to build an OpenCL C++ application from scratch to replicate, step by step, all compiler and runtime optimizations that TornadoVM automatically applies. 
 
