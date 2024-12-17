@@ -627,9 +627,9 @@ Let's now compute the GLOPS achieved and the % of the theoretical maximum:
 
 | Version          | GLOP/s        | Max. Theoretical Perf.  | % Max   |
 | ---------------- | ------------- | ------------------------|-------- |
-| Java Sequential  | 1.04          | 1152 (CPU)              |  0.0009 | 
-| Java Parallel Vectorized | 152   | 1152 (CPU)              | 0.1319  | 
-| TornadoVM        | 2207          | 82580 (RTX 4090 GPU)    | 0.0267  | 
+| Java Sequential  | 1.04          | 1152 (CPU)              | 0.09%   | 
+| Java Parallel Vectorized | 152   | 1152 (CPU)              | 13.19%  | 
+| TornadoVM        | 2207          | 82580 (RTX 4090 GPU)    | 2.67%   |  
 
 In reality, it is very hard to pass, or even achieve 60% of the maximum theoretical performance, and it depends on many factors such as bandwidth limitations, thermals. etc. 
 
@@ -650,7 +650,7 @@ Performance= 6510.26 GFlop/s, Time= 0.330 msec, Size= 2147483648 Ops, WorkgroupS
 Checking computed result for correctness: Result = PASS
 ```
 
-**CUDA is able to achieve 6.1 TFlops**, this is 3x faster than TornadoVM, and it archives 0.07% of the maximum theoretical peak performance.  However, in a closer look to the CUDA sample source code, we see that the time reported is the kernel time, not the end-to-end time. 
+**CUDA is able to achieve 6.1 TFlops**, this is 3x faster than TornadoVM, and it achieves ~7% of the maximum theoretical peak performance.  However, in a closer look to the CUDA sample source code, we see that the time reported is the kernel time, not the end-to-end time. 
 
 ```c
   // Record the start event
