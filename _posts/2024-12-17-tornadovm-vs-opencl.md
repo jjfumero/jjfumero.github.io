@@ -55,14 +55,11 @@ The `FloatMatrix` type is defined as follows:
 ```java
 private static class FloatMatrix {
 
-
    private static final int FLOAT_SIZE = 4;
-
 
    private final int m;
    private final int n;
    private final MemorySegment segment;
-
 
    public FloatMatrix(int m, int n) {
        this.m = m;
@@ -71,18 +68,15 @@ private static class FloatMatrix {
        segment = Arena.ofAuto().allocate(segmentByteSize, 64);
    }
 
-
    public void set(int i, int j, float value) {
        final int index = i * m + j;
        segment.set(JAVA_FLOAT, index * FLOAT_SIZE, value);
    }
 
-
    public float get(int i, int j) {
        final int index = i * m + j;
        return segment.get(JAVA_FLOAT, index * FLOAT_SIZE);
    }
-
 
    public void initRamdom() {
        Random r = new Random(71);
@@ -93,11 +87,9 @@ private static class FloatMatrix {
        }
    }
 
-
    public int M() {
        return m;
    }
-
 
    public int N() {
        return n;
