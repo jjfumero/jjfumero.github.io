@@ -27,7 +27,7 @@ In this article, we are going to explore and analyse the different optimizations
 
 Since applications written for TornadoVM are minimally extended from the Java version, let's start with the Java sequential code. You can find all Java examples used in this post in the following GitHub repository:
 
-https://github.com/jjfumero/tornadovm-examples 
+[https://github.com/jjfumero/tornadovm-examples](https://github.com/jjfumero/tornadovm-examples)
 
 
 The Java sequential code is described as follows:
@@ -131,7 +131,7 @@ So, how fast is this implementation? To talk about performance, we need to discu
 
 - Matrix Multiplication in FP32
 - Matrix Size: 1024x1024 elements.
-- Link: https://github.com/jjfumero/tornadovm-examples 
+- [Link](https://github.com/jjfumero/tornadovm-examples)
 
 
 
@@ -222,8 +222,8 @@ We are not going to explain the TornadoVM parallel programming model in this pos
 Furthermore, note that we have not specified any low-level optimization, apart from indicating that the two outermost loops can run in parallel on the target accelerator, in our case, the NVIDIA RTX 4090. 
 
 For more details about the parallel programming model, you can follow the following tutorials:
-- https://jjfumero.github.io/posts/2024/23/tornadovm-programming-model 
-- https://www.youtube.com/watch?v=R3gwI0qijGk 
+- [Article](https://jjfumero.github.io/posts/2024/23/tornadovm-programming-model)
+- [Video](https://www.youtube.com/watch?v=R3gwI0qijGk)
 
 When we run the TornadoVM version with JMH, we obtain the following report:
 
@@ -331,7 +331,7 @@ However, if you want to dive deep into the whole list of optimizations, you can 
 
 To enable IGV with TornadoVM, you need to install IGV from the GraalVM repository:
 
-https://github.com/oracle/graal/blob/master/docs/tools/ideal-graph-visualizer.md 
+[https://github.com/oracle/graal/blob/master/docs/tools/ideal-graph-visualizer.md](https://github.com/oracle/graal/blob/master/docs/tools/ideal-graph-visualizer.md)
 
 And then use the `--igv` option with TornadoVM:
 
@@ -621,7 +621,11 @@ What TornadoVM aims to achieve is a balance between programming effort and perfo
 
 We can measure the Floating Points Operations Per Second (FLOP/s) for each of the versions, and compare it against the maximum theoretical FLOP/s of the system. Since we are running the application on two different processing units, we need to compare each version to its own theoretical target. This is the maximum theoretical performance for the CPU for the Java versions, and the maximum theoretical performance for TornadoVM and OpenCL when using the GPU. 
 
-For the NVIDIA GPU, the manufacturer publishes this number along with the all the GPU specifications: https://www.techpowerup.com/gpu-specs/geforce-rtx-4090.c3889 
+For the NVIDIA GPU, the manufacturer publishes this number along with the all the GPU specifications: 
+
+[https://www.techpowerup.com/gpu-specs/geforce-rtx-4090.c3889 ](https://www.techpowerup.com/gpu-specs/geforce-rtx-4090.c3889).
+
+
 We can see that for the 4090 GPU, the theoretical maximum performance in FP32 is 82.58 TFlops (82580 GFLOPS). 
 
 For the Intel CPUs I could find this [public document from Intel](https://cdrdv2-public.intel.com/841556/APP-for-Intel-Core-Processors.pdf) specifying the GFLOPS for the most recent Intel processors. The Intel i9 13900K sets 1152 GFLOPS (although my initial theoretical calculations were a bit higher, taking into account that we can execute up to 16 FMA instructions per cycle, but let's go with what it seems to be the official number).
@@ -707,12 +711,12 @@ In conclusion, this exploration has shown the impressive performance capabilitie
 
 While the current version may not encompass all possible GPU optimizations, the framework's potential for future enhancements, coupled with its open-source nature, holds promise for continued advancements in performance portability and streamlined parallel programming experiences. 
 
-To know more about TornadoVM: https://www.tornadovm.org/ 
+To know more about TornadoVM: [https://www.tornadovm.org/](https://www.tornadovm.org/)
 
 
 ## References
 
-- Excellent blog article to optimize Matrix Multiplication on GPUs: https://siboehm.com/articles/22/CUDA-MMM 
+- [Excellent blog article to optimize Matrix Multiplication on GPUs](https://siboehm.com/articles/22/CUDA-MMM).
 
 
 ## Anexo
