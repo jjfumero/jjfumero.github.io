@@ -15,7 +15,7 @@ excerpt: "This article explores how TornadoVM, a Java parallel programming frame
 ---
 
 
-<img align="left" style="width:200px;" src="https://raw.githubusercontent.com/jjfumero/jjfumero.github.io/refs/heads/master/files/blog/24-12-tornadovm-vs-opencl/art-blog.jpg">
+<img align="left" style="width:150px;" src="https://raw.githubusercontent.com/jjfumero/jjfumero.github.io/refs/heads/master/files/blog/24-12-tornadovm-vs-opencl/art-blog.jpg">
 
 
 TornadoVM, a Java parallel programming framework to run on hardware accelerators, can sometimes outperform OpenCL code on GPUs, despite the latter being closer to the hardware. This is possible due to the TornadoVM's ability to automatically apply compiler and runtime optimizations. 
