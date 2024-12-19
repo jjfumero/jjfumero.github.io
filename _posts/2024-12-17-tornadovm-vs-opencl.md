@@ -650,7 +650,7 @@ Performance= 6510.26 GFlop/s, Time= 0.330 msec, Size= 2147483648 Ops, WorkgroupS
 Checking computed result for correctness: Result = PASS
 ```
 
-**CUDA is able to achieve 6.1 TFlops**, this is 3x faster than TornadoVM, and it achieves ~7% of the maximum theoretical peak performance.  However, in a closer look to the CUDA sample source code, we see that the time reported is the kernel time, not the end-to-end time. 
+**CUDA is able to achieve 6.5 TFlops**, this is 3x faster than TornadoVM, and it achieves ~7% of the maximum theoretical peak performance.  However, in a closer look to the CUDA sample source code, we see that the time reported is the kernel time, not the end-to-end time. 
 
 ```c
   // Record the start event
