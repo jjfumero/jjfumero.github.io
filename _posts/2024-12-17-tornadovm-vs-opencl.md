@@ -133,7 +133,7 @@ The example provided on GitHub contains the instructions to run all benchmarks:
 
 ```bash
 $ export CLASSPATH=target/tornadovm-examples-1.0-SNAPSHOT.jar:$CLASSPATH
-$ tornado io.github.jjfumero.MatrixMultiplication --params="--jmh"
+$ tornado io.github.jjfumero.MatrixMultiplication jmh
 ```
 
 If using JMH for micro-benchmarking, we get the following results (showing only the Java sequential implementation):
