@@ -17,6 +17,10 @@ This book provides an introduction to both heterogeneous execution and managed r
 
 This book is written for scientists and advanced developers who want to understand how choices at the programming API level can affect performance and/or programmability of heterogeneous hardware accelerators, how toimprove the underlying runtime systems in order to seamlessly integrate diverse hardware resources, or how to exploit acceleration techniques from their preferred programming languages.
 
+### Amazon link
+
+- [Amazon UK](https://www.amazon.co.uk/Programming-Heterogeneous-Hardware-SpringerBriefs-Computer/dp/3031495586?crid=1IYB9UE1IAD1F&dib=eyJ2IjoiMSJ9.jV2j7EIUth0v7EH-nvAG9Q.Cv99ygiBFf0pLvInr3wyZlY8T_xSwuI20_RXVUttPIo&dib_tag=se&keywords=Programming+Heterogeneous+Hardware+via+Managed+Runtime+Systems+%28SpringerBriefs+in+Computer+Science%29&nsdOptOutParam=true&qid=1736850163&sprefix=programming+heterogeneous+hardware+via+managed+runtime+systems+springerbriefs+in+computer+science+%2Caps%2C127&sr=8-1)
+
 #### Resources: 
 
 - [Springer Link](https://link.springer.com/book/10.1007/978-3-031-49559-5])
