@@ -13,7 +13,7 @@ excerpt: "How to Fix CUDA GCC Unsuported Versions on Linux"
 
 
 When compiling CUDA programs on Linux, you might encounter compatibility issues between the NVIDIA CUDA Compiler (nvcc) and newer versions GCC.
-This conflict arises because `nvcc` has specific GCC version requirements, and using an unsupported GCC version can lead to compilation errors, as the one described as follows:
+This conflict arises because `nvcc` has specific GCC version requirements, and using an unsupported GCC version can lead to compilation errors, as the one described below:
 
 
 ```bash
