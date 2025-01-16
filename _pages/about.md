@@ -8,7 +8,8 @@ redirect_from:
   - /about.html
 ---
 
-I am a Research Fellow working as part of the Advanced Processor Technologies ([APT](http://apt.cs.manchester.ac.uk)) Research Group at [The University of Manchester](http://www.manchester.ac.uk) on Heterogeneous Virtual Machines and language runtime systems for the acceleration of applications using Graphics Processing Units (GPUs) and Field Programmable Gate Arrays (FPGAs). I am also the software architect of the [TornadoVM](https://github.com/beehive-lab/TornadoVM) project (a Java framework for automatically running JVM applications on heterogeneous hardware).
+
+I'm a Researcher Fellow at [The University of Manchester](http://www.manchester.ac.uk) where I work on how to make computer programs blazingly fast by harnessing the power of specialized hardware like GPUs and FPGAs. I also lead the development of [TornadoVM](https://github.com/beehive-lab/TornadoVM), a Java framework that automatically allows Java programs to utilize this hardware for a massive speed boost. My background is compilers, Just In Time compilation, managed runtime systems and GPUs. 
 
 ## What do I do? 
 
