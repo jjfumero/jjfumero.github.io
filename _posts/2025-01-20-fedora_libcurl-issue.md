@@ -11,7 +11,7 @@ excerpt: "Fixing libcurl conflicts in Fedora 41"
 ---
 
 
-Recently I came across this error in Fedora 41, and I am not sure why the OS installed this library using different versions. 
+Recently, I came across this error in Fedora 41, and I am not sure why the OS installed this library using different versions. 
 
 ```bash
 $ sudo dnf update
