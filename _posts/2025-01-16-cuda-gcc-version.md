@@ -1,5 +1,5 @@
 ---
-title: 'How to Fix CUDA GCC Unsuported Versions on Linux'
+title: 'How to Fix CUDA GCC Unsupported Versions on Linux'
 date: 2025-01-16
 permalink: /posts/2025/01/16/cuda-gcc-versions
 author_profile: false
@@ -8,7 +8,7 @@ tags:
  - GCC
  - Versions
  - Linux
-excerpt: "How to Fix CUDA GCC Unsuported Versions on Linux"
+excerpt: "How to Fix CUDA GCC Unsupported Versions on Linux"
 ---
 
 
