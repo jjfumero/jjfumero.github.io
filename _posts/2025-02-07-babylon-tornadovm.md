@@ -19,7 +19,7 @@ excerpt: "Babylon and Programming for GPUs: introductions and comparisons with T
 Babylon [1] is a new OpenJDK project which aims to enhance code reflection for the Java platform allowing not only to inspect classes and fields, 
 but also to inspect methods and lambdas with the end goal of performing code transformation without using any 3rd party libraries [2]. 
 
-<img align="right" style="width:200px;" src="https://raw.githubusercontent.com/jjfumero/jjfumero.github.io/refs/heads/master/files/blog/25-02-07-babylon/babylonBlogArt.jpeg">
+<img align="right" style="width:150px;" src="https://raw.githubusercontent.com/jjfumero/jjfumero.github.io/refs/heads/master/files/blog/25-02-07-babylon/babylonBlogArt.jpeg">
 
 
 *What does this mean in practice?* The enhanced code reflection can be used to represent different types of computation, 
