@@ -1,5 +1,5 @@
 ---
-title: 'Babylon OpenJDK: A Beginner's Guide and Comparison with TornadoVM'
+title: 'Babylon OpenJDK: A Guide for Beginners and Comparison with TornadoVM'
 date: 2025-02-07
 permalink: /posts/2025/02/07/babylon-and-tornadovm
 author_profile: false
