@@ -630,63 +630,47 @@ not just on GPUs. With that, TornadoVM comes a more complex engineering framewor
 optimizations per architecture, a specialized code optimizer and an optimising runtime systems for different 
 architectures and vendors. Let's break this down:
 
-**Runtime Limitations:** Babylon HAT's runtime features are currently limited. 
-Compared to TornadoVM, HAT lacks dynamic multiple device selection (e.g., multiple GPUs) and dynamic task-migration.
- Instead, devices are always statically assigned, reducing adaptability to changing system conditions. 
- Furthermore, it doesn't support copy operations for data ranges, restricting automatic data management capabilities, 
- for example for automatic batch processing. 
+#### Runtime Limitations:
+Babylon HAT's runtime features are currently limited.  Compared to TornadoVM, HAT lacks dynamic multiple device selection (e.g., multiple GPUs) and dynamic task-migration.
+ Instead, devices are always statically assigned, reducing adaptability to changing system conditions. Furthermore, it doesn't support copy operations for data ranges, restricting automatic data management capabilities, for example for automatic batch processing. 
 
-**Hardware Support and Code Generation:** Babylon HAT currently lacks code generation and a runtime orchestrator for 
-other devices but  GPUs. Compared to TornadoVM, which supports GPUs from multiple vendors (Intel, NVIDIA, and AMD),
- CPUs, FPGAs, and even RISC-V accelerators, 
- Babylon's hardware support is considerably narrower. 
- While future expansion is likely, the current limitations restrict its applicability. 
- The absence of a code optimizer could impact performance potential on specialized hardware accelerators [4]. 
+#### Hardware Support and Code Generation: 
+Babylon HAT currently lacks code generation and a runtime orchestrator for 
+other devices but  GPUs. Compared to TornadoVM, which supports GPUs from multiple vendors (Intel, NVIDIA, and AMD), CPUs, FPGAs, and even RISC-V accelerators, Babylon's hardware support is considerably narrower. While future expansion is likely, the current limitations restrict its applicability. The absence of a code optimizer could impact performance potential on specialized hardware accelerators [4]. 
 
-**Compiler Optimizations:** Babylon does not include an optimizer compiler, at least for now. 
+#### Compiler Optimizations: 
+Babylon does not include an optimizer compiler, at least for now. 
 In contrast, TornadoVM extends the state-of-the-art open source [Graal JIT compiler](https://github.com/oracle/graal/tree/master/compiler) with new compiler 
-optimization pipelines targeted for GPUs, FPGAs and multi-core CPUS, tuning loops ordering, automatic
- usage of fast intrinsics, automatic use of local/shared memory, etc. 
+optimization pipelines targeted for GPUs, FPGAs and multi-core CPUS, tuning loops ordering, automatic usage of fast intrinsics, automatic use of local/shared memory, etc. 
 
-**Parallelism and API Complexity:** Babylon HAT lacks native support for 2D and 3D parallelism (or 2D and 3D ranges). 
-While this seems a relatively straightforward feature to implement in the future, its current absence restricts the 
-efficient parallelization of multi-dimensional problems. 
-The HAT API, with its Range programming model, requires developers to possess expertise in GPU programming models 
-like CUDA, OpenCL, or oneAPI. While developers with this background can quickly become productive, 
-those without it may face a steep learning curve. 
+#### Parallelism and API Complexity:
+Babylon HAT lacks native support for 2D and 3D parallelism (or 2D and 3D ranges). 
+While this seems a relatively straightforward feature to implement in the future, its current absence restricts the efficient parallelization of multi-dimensional problems. 
+The HAT API, with its Range programming model, requires developers to possess expertise in GPU programming models like CUDA, OpenCL, or oneAPI. While developers with this background can quickly become productive, those without it may face a steep learning curve. 
 
-This contrasts with TornadoVM's dual API approach: 
-a high-level annotation-based system for newcomers and a low-level Kernel API (similar to Babylon's Range API) 
-for expert developers. I think this dual approach can gather a broader range of developer expertise.
+This contrasts with TornadoVM's dual API approach: a high-level annotation-based system for newcomers and a low-level Kernel API (similar to Babylon's Range API) for expert developers. I think this dual approach can gather a broader range of developer expertise.
 
 ### Current Limitations in TornadoVM vs Babylon/HAT
 
 TornadoVM is not perfect, by any means. It is also in continuous development and improving with every new version. 
 
-**Support for Custom Data Types:** The main limitation of TornadoVM is the lack of customization for user-data types 
+#### Support for Custom Data Types: 
+The main limitation of TornadoVM is the lack of customization for user-data types 
 compatible between Java and hardware accelerators. 
 The `iFaceMapper` is a promising approach to program and handle efficient data structures compatible between hardware 
 accelerators and the Java runtime.
 
-**New APIs and Data Types:** this is also valid for Babylon/HAT, but since I am more involved in the TornadoVM project, 
-I can refer to it here. 
-Offering APIs and new types, although crucial to achieve performance, comes with the cost of developers having to 
-learn new APIs. 
-From my view, if these new interfaces are part of the JDK, then it will be easier to adopt these types of technologies. 
+#### New APIs and Data Types:
+This is also valid for Babylon/HAT, but since I am more involved in the TornadoVM project, 
+I can refer to it here. Offering APIs and new types, although crucial to achieve performance, comes with the cost of developers having to 
+learn new APIs. From my view, if these new interfaces are part of the JDK, then it will be easier to adopt these types of technologies. 
 
-**Code Generation of Structure Programming Languages:** code generation in TornadoVM is tricky, 
-and for the OpenCL C backend, especially tricky. Going to low-level details, TornadoVM generates code from 
-the Low-Tier in Graal IR, an unstructured flow IR [5]. 
-The challenge here is to generate a structured OpenCL C kernel from an unstructured flow graph. 
-Thus, it is sometimes difficult to generate correct code. A better target, and an easy target, 
-for TornadoVM is CUDA PTX, and SPIR-V, instead of OpenCL C. 
-However, not all vendors (NVIDIA GPUs for example), allow to run SPIR-V for OpenCL. 
-Since Babylon generates OpenCL C code from a close-to-an-AST form, it will be easier to generate correct OpenCL C code.
+#### Code Generation of Structure Programming Languages:
+Code generation in TornadoVM is tricky, and for the OpenCL C backend, especially tricky. Going to low-level details, TornadoVM generates code from  the Low-Tier in Graal IR, an unstructured flow IR [5].  The challenge here is to generate a structured OpenCL C kernel from an unstructured flow graph.  Thus, it is sometimes difficult to generate correct code. A better target, and an easy target,  for TornadoVM is CUDA PTX, and SPIR-V, instead of OpenCL C. However, not all vendors (NVIDIA GPUs for example), allow to run SPIR-V for OpenCL. Since Babylon generates OpenCL C code from a close-to-an-AST form, it will be easier to generate correct OpenCL C code.
 
-**Maintenance Support:** The fact that TornadoVM offers more backends and support for more devices also comes 
-with the cost of maintenance. For a small team like TornadoVM, there is always the tradeoff between offering 
-new features and keeping TornadoVM working for all possible devices, architectures and operating systems. 
-This limitation, although not in the design, cannot be overlooked. 
+#### Maintenance Support: 
+The fact that TornadoVM offers more backends and support for more devices also comes 
+with the cost of maintenance. For a small team like TornadoVM, there is always the tradeoff between offering new features and keeping TornadoVM working for all possible devices, architectures and operating systems. This limitation, although not in the design, cannot be overlooked. 
 
 I would like this to be an active discussion. Do you know/do you see other limitations? Let me know in the comments.
 
