@@ -427,8 +427,7 @@ Cool, isn't it? Let's now run a benchmark and compare it with Java and TornadoVM
 
 In this section, we are going to evaluate the performance of the Matrix Multiplication on GPUs using Babylon, and compare it against TornadoVM. The following table shows the system CPU, GPU and the software used.
 
-
-<!-- | System        | Version | 
+| System        | Version | 
 | ------------- | ------- | 
 | CPU           |  13th Gen Intel(R) Core(TM) i9-13900K |   
 | GPU           | RTX 4090 |  
@@ -441,7 +440,7 @@ In this section, we are going to evaluate the performance of the Matrix Multipli
 | TornadoVM     |    1.0.10-dev ([5da9549d1](https://github.com/beehive-lab/TornadoVM/commit/5da9549d162271b0b0b751607eced5e3a97409e5))  |  
 | JDK for TornadoVM |            OpenJDK "21.0.4" 2024-07-16 LTS |  
 | Babylon     |  [cd3c7ce9c8a](https://github.com/jjfumero/babylon/commit/cd3c7ce9c8ac2b79fd8342ce2e3603f0762dd3f6)  |  
-| JDK for Babylon | openjdk 23.0.1  |  -->
+| JDK for Babylon | openjdk 23.0.1  | 
 
 ### Examples:
 
