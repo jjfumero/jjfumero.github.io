@@ -717,15 +717,16 @@ If you are interested, let's keep the discussions active:
 
 ## Links
 
-[1] https://mail.openjdk.org/pipermail/discuss/2023-September/006226.html 
+[1] [https://mail.openjdk.org/pipermail/discuss/2023-September/006226.html](https://mail.openjdk.org/pipermail/discuss/2023-September/006226.html)
 
-[2] https://openjdk.org/projects/babylon/articles/code-models 
+[2] [https://openjdk.org/projects/babylon/articles/code-models](https://openjdk.org/projects/babylon/articles/code-models)
 
-[3] https://openjdk.org/projects/babylon/articles/linq 
+[3] [https://openjdk.org/projects/babylon/articles/linq](https://openjdk.org/projects/babylon/articles/linq)
 
-[4] https://jjfumero.github.io/posts/2024/12/17/tornadovm-vs-opencl 
+[4] [https://jjfumero.github.io/posts/2024/12/17/tornadovm-vs-opencl](https://jjfumero.github.io/posts/2024/12/17/tornadovm-vs-opencl)
 
-[5] https://dl.acm.org/doi/pdf/10.1145/2816707.2816715 
+[5] [https://dl.acm.org/doi/pdf/10.1145/2816707.2816715](https://dl.acm.org/doi/pdf/10.1145/2816707.2816715)
+
 
 
 
