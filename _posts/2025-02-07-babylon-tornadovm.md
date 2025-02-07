@@ -614,6 +614,11 @@ By looking at the speeds for the PTX backend compared to Java:
 
 As we see, TornadoVM achieves speedups of up to 1700x compared to Java, 11x faster than CPU execution, and 346x faster than Babylon/HAT for the same GPU. 
 
+
+
+*Does this mean TornadoVM is always faster than Babylon/HAT?* No, it does not have to be. For some applications might be faster, other might be slower.
+As I describe in the next Section more detail, TornadoVM has a JIT compiler and an optimizer, and that can give an advantage for some applications. 
+
 ## HAT vs TornadoVM: Differences and Limitations
 
 Let's talk about current limitations for both Babylon and TornadoVM. 
