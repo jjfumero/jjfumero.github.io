@@ -460,16 +460,11 @@ is used to accelerate different workloads:
 
 ### Backends:
 
-Let's evaluate the OpenCL C and the PTX backends. 
-For the OpenCL C, I use the Intel Integrated Graphics. 
-Although on my system I could have used the RTX 4090 for OpenCL,  
-at the time of writing this post, Babylon does not support multiple devices or device switching. 
+Let's evaluate the OpenCL C and the PTX backends. For the OpenCL C, I use the Intel Integrated Graphics. Although on my system I could have used the RTX 4090 for OpenCL, at the time of writing this post, Babylon does not support multiple devices or device switching. 
 Thus, to make a fair comparison, I also chose the integrated GPU in TornadoVM. 
 
-Compared with TormadoVM, an interesting feature is when multiple GPUs are available, 
-the TornadoVM runtime system automatically reorders the devices and selects the best based on 
-compute capability and number of threads to be deployed. 
-Thus, in my system, the default choice for TornadoVM was the 4090, which in my opinion, is what we want by default.
+Compared with TormadoVM, an interesting feature is when multiple GPUs are available, the TornadoVM runtime system automatically reorders the devices and selects the best based on 
+compute capability and number of threads to be deployed. Thus, in my system, the default choice for TornadoVM was the 4090, which in my opinion, is what we want by default.
 
 
 ### How to reproduce? 
