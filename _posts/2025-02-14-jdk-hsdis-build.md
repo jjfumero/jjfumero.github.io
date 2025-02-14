@@ -180,7 +180,8 @@ java -XX:+UnlockDiagnosticVMOptions -XX:CompileCommand='print,SampleCompute.comp
 
 Sample output:
 
-```bashCompileCommand: print SampleCompute.compute bool print = true
+```bash
+CompileCommand: print SampleCompute.compute bool print = true
 
 ============================= C1-compiled nmethod ==============================
 ----------------------------------- Assembly -----------------------------------
