@@ -16,22 +16,14 @@ excerpt: "Babylon and Programming for GPUs: introductions and comparisons with T
 
 ## Introduction
 
-[Babylon](https://github.com/openjdk/babylon) is a new OpenJDK project which aims to enhance code reflection for the Java platform allowing not only to inspect classes and fields, 
-but also to inspect methods and lambdas with the end goal of performing code transformation without using any [3rd party libraries](https://openjdk.org/projects/babylon/articles/code-models). 
+[Babylon](https://github.com/openjdk/babylon) is a new OpenJDK project which aims to enhance code reflection for the Java platform allowing not only to inspect classes and fields, but also to inspect methods and lambdas with the end goal of performing code transformation without using any [3rd party libraries](https://openjdk.org/projects/babylon/articles/code-models). 
 
-<img align="right" style="width:150px;" src="https://raw.githubusercontent.com/jjfumero/jjfumero.github.io/refs/heads/master/files/blog/25-02-07-babylon/babylonBlogArt.jpeg">
-
-
-*What does this mean in practice?* The enhanced code reflection can be used to represent different types of computation, 
-such as for automatic differentiation [2], LINQ expressions [3] and even GPU offloading, which is the focus on this article. 
-We are going to walk through how Babylon helps developers to define a parallel framework for GPU programming within Java, 
-and how it differs from current solutions, such as TornadoVM. 
+*What does this mean in practice?* The enhanced code reflection can be used to represent different types of computation, such as for automatic differentiation [2], LINQ expressions [3] and even GPU offloading, which is the focus on this article. We are going to walk through how Babylon helps developers to define a parallel framework for GPU programming within Java, and how it differs from current solutions, such as TornadoVM. 
 
 
 But before we dive into the GPU workflow within Babylon, let's define a key term, the **code model**.
 In the context of Babylon, a code model is a representation of a program code (e.g., a Java method) 
-that is produced by the `javac` compiler, and stored in the class file. 
-The information stored in the class file includes, for example, the type information, and 
+that is produced by the `javac` compiler, and stored in the class file. The information stored in the class file includes, for example, the type information, and 
 the control flow. 
 
 
@@ -666,7 +658,7 @@ I can refer to it here. Offering APIs and new types, although crucial to achieve
 learn new APIs. From my view, if these new interfaces are part of the JDK, then it will be easier to adopt these types of technologies. 
 
 #### Code Generation of Structure Programming Languages:
-Code generation in TornadoVM is tricky, and for the OpenCL C backend, especially tricky. Going to low-level details, TornadoVM generates code from  the Low-Tier in Graal IR, an unstructured flow IR [5].  The challenge here is to generate a structured OpenCL C kernel from an unstructured flow graph.  Thus, it is sometimes difficult to generate correct code. A better target, and an easy target,  for TornadoVM is CUDA PTX, and SPIR-V, instead of OpenCL C. However, not all vendors (NVIDIA GPUs for example), allow to run SPIR-V for OpenCL. Since Babylon generates OpenCL C code from a close-to-an-AST form, it will be easier to generate correct OpenCL C code.
+Code generation in TornadoVM is tricky, and for the OpenCL C backend, especially tricky. Going to low-level details, TornadoVM generates code from  the Low-Tier in Graal IR, an unstructured flow IR [5].  The challenge here is to generate a structured OpenCL C kernel from an unstructured flow graph.  Thus, it is sometimes difficult to generate correct code. A better target, and an easier target,  for TornadoVM is CUDA PTX, and SPIR-V, instead of OpenCL C. However, not all vendors (NVIDIA GPUs for example), allow to run SPIR-V for OpenCL. Since Babylon generates OpenCL C code from a close-to-an-AST form, it will be easier to generate correct OpenCL C code.
 
 #### Maintenance Support: 
 The fact that TornadoVM offers more backends and support for more devices also comes 
