@@ -143,20 +143,20 @@ OpenJDK 64-Bit Server VM (build 21.0.6-internal-adhoc.juan.jdk21u-dev, mixed mod
 Let's write an example and see the disassembler in action:
 
 ```java
-     1	public class SampleCompute {
-     2	
-     3	  public static void main(String[] args) {
-     4	    SampleCompute compute = new SampleCompute();
-     5	    int[] array = new int[100_000];
-     6	    for(int i = 0; i < array.length; i++) {
-     7	    	array[i] = compute.compute(i);
-     8	    }
-     9	  }
-    10	
-    11	  private int compute(int i) {
-    12		return (i * i) + i;
-    13	  }
-    14	}
+public class SampleCompute {
+
+  public static void main(String[] args) {
+    SampleCompute compute = new SampleCompute();
+    int[] array = new int[100_000];
+    for(int i = 0; i < array.length; i++) {
+    	array[i] = compute.compute(i);
+    }
+  }
+
+  private int compute(int i) {
+	return (i * i) + i;
+  }
+}
 ```
 
 We compile the program with `javac` as usual:
