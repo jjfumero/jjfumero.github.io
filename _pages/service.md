@@ -6,12 +6,14 @@ author_profile: true
 
 ## Technical Boards/SPECS
 
+* [2025-Current] Participation in the [J-extension RISC-V Group](https://github.com/riscv/riscv-j-extension)
 * [2023-Current] Participation in the [oneAPI Language SIG Group](https://github.com/oneapi-src/oneAPI-tab/tree/main/language)
 * [2022-Current] Participation in the [oneAPI Hardware SIG Group](https://github.com/oneapi-src/oneAPI-tab/tree/main/hardware)
 
 ## Academic Service 
 
 #### Publicity Chair: 
+  
   * SPLASH 2021
   * MPLR 2020
 
