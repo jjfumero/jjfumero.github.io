@@ -20,7 +20,8 @@ In the past, I have worked and collaborated with Intel to bring oneAPI into the 
 Furthermore, I do [public speaking](https://jjfumero.github.io/talks/) about my research at the University of Manchester and software engineering topics. I have presented at several academic and Industry conferences, including JVMLS, QCon, Devoxx, JavaZone, JAX, and Java User Groups, such as NYJavaSIG.
 
 As an outcome of all this work at the University of Manchester, I received the Best Outstanding Output by Research Staff Award in 2022 ([link](https://www.researcherdevelopment.manchester.ac.uk/researcher-development-for-research-staff/research-staff-awards-202122/)).
-I am also an [Intel oneAPI Innovator](https://www.intel.com/content/www/us/en/developer/community/innovators/oneapi-all-innovators.html), and I participate in the [Level Zero Community Forum Hardware Group](https://github.com/oneapi-src/oneAPI-tab/tree/main/hardware), and [oneAPI Language Group](https://github.com/oneapi-src/oneAPI-tab/tree/main/language) to help shaping the evolution of oneAPI for managed runtime programming languages.
+I am also an [Intel oneAPI Innovator](https://www.intel.com/content/www/us/en/developer/community/innovators/oneapi-all-innovators.html), and I participate in the [Level Zero Community Forum Hardware Group](https://github.com/oneapi-src/oneAPI-tab/tree/main/hardware), and in the [oneAPI Language Group](https://github.com/oneapi-src/oneAPI-tab/tree/main/language) to help shaping the evolution of oneAPI for managed runtime programming languages. From January 2025, I also participate as an external member in the [RISC-V J Extension Group](https://github.com/riscv/riscv-j-extension).
+
 
 ## Education 
 
