@@ -448,7 +448,7 @@ Then, clone TornadoVM and build it with the patch for RISC-V.
 ```bash
 $ git clone git@github.com:beehive-lab/TornadoVM.git 
 
-$ wget https://gist.githubusercontent.com/jjfumero/c191f7e69a653c4f59f238d5856201aa/raw/f91c67f43e4da14eb80b79e88441604d9c6ba829/apply-riscv-patch.sh
+$ wget https://gist.githubusercontent.com/jjfumero/c191f7e69a653c4f59f238d5856201aa/raw/9840ce5e5108befa2728f4183743eaaed835220a/apply-riscv-patch.sh
 
 
 $ bash apply-riscv-patch.sh
