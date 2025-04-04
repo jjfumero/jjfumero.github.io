@@ -85,7 +85,7 @@ These profiles group common extensions together, providing a target platform for
 create compatible applications.For the Spacemit K1 processor, the profile implemented is RVA22:
 
 
-https://github.com/riscv/riscv-profiles/blob/main/src/profiles.adoc#rva22-profiles
+[https://github.com/riscv/riscv-profiles/blob/main/src/profiles.adoc#rva22-profiles](https://github.com/riscv/riscv-profiles/blob/main/src/profiles.adoc#rva22-profiles)
 
 
 In this way, it will be easier for software developers to build and support applications running on these architectures. 
@@ -492,7 +492,7 @@ tornado -m tornado.examples/uk.ac.manchester.tornado.examples.compute.MatrixMult
 
 The RISC-V generated code can be very large. But we can see that in some parts of the code vector instructions are used:
 
-```asm
+```bash
 .LBB3_33:
         add     t5, a4, a5
         add     t5, t5, s4
