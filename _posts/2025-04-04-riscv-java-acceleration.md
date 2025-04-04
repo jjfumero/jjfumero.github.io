@@ -443,12 +443,12 @@ $ source /mnt/data/python-env/bin/activate
 $ pip3 install lit
 ```
 
-Then, clone TornadoVM and build it with the patch for RISC-V. 
+Then, clone TornadoVM and build it with the patch for RISC-V (updated for TornadoVM `v1.1.1-dev`). 
 
 ```bash
 $ git clone git@github.com:beehive-lab/TornadoVM.git 
 
-$ wget https://gist.githubusercontent.com/jjfumero/c191f7e69a653c4f59f238d5856201aa/raw/9840ce5e5108befa2728f4183743eaaed835220a/apply-riscv-patch.sh
+$ wget https://gist.githubusercontent.com/jjfumero/c191f7e69a653c4f59f238d5856201aa/raw/ec4065b7e352ac4f5aeb990c7e44494a98af8daa/apply-riscv-patch.sh
 
 
 $ bash apply-riscv-patch.sh
