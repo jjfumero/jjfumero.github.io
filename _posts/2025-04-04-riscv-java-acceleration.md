@@ -446,12 +446,17 @@ $ pip3 install lit
 Then, clone TornadoVM and build it with the patch for RISC-V (updated for TornadoVM `v1.1.1-dev`). 
 
 ```bash
-$ git clone git@github.com:beehive-lab/TornadoVM.git 
+## Clone TornadoVM Repo
+$ git clone https://github.com/beehive-lab/TornadoVM.git
 
-$ wget https://gist.githubusercontent.com/jjfumero/c191f7e69a653c4f59f238d5856201aa/raw/ec4065b7e352ac4f5aeb990c7e44494a98af8daa/apply-riscv-patch.sh
+## Clone TornadoVM patch repo: 
+$ git clone https://github.com/beehive-lab/tornadovm-riscv-patch.git
 
+## Build for OpenCL only
+$ bash tornadovm-riscv-patch/apply-riscv-patch-opencl.sh 
 
-$ bash apply-riscv-patch.sh
+## Build for OpenCL and SPIR-V 
+$ bash tornadovm-riscv-patch/apply-riscv-patch-spirv.sh 
 
 $ source setvars.sh 
 ```
