@@ -14,14 +14,14 @@ excerpt: "This guide details the configuration of Unsloth to build fine-tuned LL
 
 [Unsloth](https://unsloth.ai/) is a Python framework focused on optimizing the fine-tuning of Large Language Models (LLMs) specifically for NVIDIA GPUs on both Linux and Windows. It leverages existing LLM frameworks for training and fine-tuning, such as the Hugging Face 🤗 Transformers library.
 
-It's important to understand that Unsloth is not a complete fine-tuning framework itself. Instead, it acts as an optimization layer, providing low-level utilities for quantization and performance enhancements to accelerate the fine-tuning process.
+It's important to understand that `unsloth` is not a complete fine-tuning framework itself. Instead, it acts as an optimization layer, providing low-level utilities for quantization and performance enhancements to accelerate the fine-tuning process.
 
 Despite the comprehensive documentation available on the [Unsloth website](https://docs.unsloth.ai/get-started/beginner-start-here), the installation steps weren't entirely straightforward for me. To help others facing the same, this guide details the configuration of Unsloth with an NVIDIA GPU on Fedora 41/42 and Ubuntu WSL systems.
 
 
 ## Installing Unsloth Locally
 
-At the time of writing this post, Unsloth requires `Python >= 3.9` and `<= 3.13`. Systems such as Fedora 41/42 and Ubuntu 24 come with a newer version of Python, so we need to set up an older version. 
+At the time of writing this post, `unsloth` requires `Python >= 3.9` and `<= 3.13`. Systems such as Fedora 41/42 and Ubuntu 24 come with a newer version of Python, so we need to set up an older version. 
 
 ### Installing `spack`
 
