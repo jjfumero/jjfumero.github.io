@@ -13,6 +13,11 @@ Link to the Channel: [@juanfumero](https://youtube.com/@juanfumero)
 
 Most recent first:
 
+### 8. Can TornadoVM run Matrix Multiply faster than OpenCL Native?
+
+[![Watch the video](https://img.youtube.com/vi/7q9AGvpZ4Hw/hqdefault.jpg)](https://www.youtube.com/watch?v=7q9AGvpZ4Hw)
+
+
 ### 7. Can TornadoVM run Matrix Multiply faster than OpenCL Native?
 
 [![Watch the video](https://img.youtube.com/vi/xj8Te517Wtc/hqdefault.jpg)](https://www.youtube.com/watch?v=xj8Te517Wtc)
@@ -32,7 +37,6 @@ Most recent first:
 [![Watch the video](https://img.youtube.com/vi/kOo07M7MXGA/hqdefault.jpg)](https://www.youtube.com/embed/kOo07M7MXGA)
 
 
-
 ### 3. The TornadoVM Programming Model Explained
 
 
@@ -46,10 +50,7 @@ Most recent first:
 [![Watch the video](https://img.youtube.com/vi/dKfN1GcIjgA/hqdefault.jpg)](https://www.youtube.com/embed/dKfN1GcIjgA)
 
 
-
 ### 1. Installing #TornadoVM on Linux, Mac and Windows
 
 
 [![Watch the video](https://img.youtube.com/vi/F_0E-zFe2CU/hqdefault.jpg)](https://www.youtube.com/embed/F_0E-zFe2CU)
-
-
