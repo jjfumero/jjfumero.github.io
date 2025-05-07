@@ -13,7 +13,7 @@ Link to the Channel: [@juanfumero](https://youtube.com/@juanfumero)
 
 Most recent first:
 
-### 8. Can TornadoVM run Matrix Multiply faster than OpenCL Native?
+### 8. Accelerating Ray Tracing in Java with TornadoVM
 
 [![Watch the video](https://img.youtube.com/vi/7q9AGvpZ4Hw/hqdefault.jpg)](https://www.youtube.com/watch?v=7q9AGvpZ4Hw)
 
