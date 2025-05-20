@@ -4,6 +4,8 @@ permalink: /podcasts/
 author_profile: true
 ---
 
+## 2025
+- [Adam Bien Podcast with Juan Fumero: Accelerating LLMs with TornadoVM: From GPU Kernels to Model Inference](https://airhacks.fm/#episode_346)
 
 ## 2024
 - [Adam Bien Podcast with Juan Fumero: TornadoVM, Paravox.ai: Java, AI, LLMs and Hardware Acceleration](https://airhacks.fm/#episode_282).
