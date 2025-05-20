@@ -9,11 +9,8 @@ redirect_from:
 ---
 
 
-I'm a Researcher Fellow at [The University of Manchester](http://www.manchester.ac.uk) where I work on how to make computer programs  
-fast by harnessing the power of specialized hardware like Graphics Processing Units (GPUs) and Field Programmable Gate Arrays (FPGAs). 
-I also lead the development of [TornadoVM](https://github.com/beehive-lab/TornadoVM), 
-a Java framework that automatically allows Java programs to utilize this hardware for a massive speed boost. 
-My background is compilers, Just In Time compilation, managed runtime systems and GPUs. 
+I'm a Researcher Fellow at [The University of Manchester](http://www.manchester.ac.uk) where I work on how to make computer programs fast by harnessing the power of specialized hardware like Graphics Processing Units (GPUs) and Field Programmable Gate Arrays (FPGAs). 
+I also lead the development of [TornadoVM](https://github.com/beehive-lab/TornadoVM), a Java framework that automatically allows Java programs to utilize this hardware for a massive speed boost. My background is compilers, Just In Time compilation, managed runtime systems and GPUs. 
 
 ## What do I do? 
 
