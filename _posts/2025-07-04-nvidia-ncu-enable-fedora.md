@@ -1,6 +1,6 @@
 ---
 title: 'How to enable NVIDIA Nsight Compute CLI in Fedora'
-date: 2025-07-24
+date: 2025-07-04
 permalink: /posts/2025/07/04/nvidia-ncu-enable-fedora
 author_profile: false
 tags:
