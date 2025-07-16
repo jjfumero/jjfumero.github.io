@@ -79,7 +79,7 @@ analytics:
 author:
   name             : "Juan Fumero, PhD"
   avatar           : "JuanFumero.jpg"
-  bio              : "Passionate about GPUs, compilers and parallelism. Senior Principal Software Developer at Oracle. I like running & playing synths & photography."
+  bio              : "Passionate about GPUs, compilers, JVM and parallelism. I like running & playing synths & photography."
   location         : "Italy"
   employer         : 
   googlescholar    : "https://scholar.google.de/citations?user=Ig3N8j0AAAAJ&hl=en"
@@ -96,7 +96,7 @@ author:
   instagram        : "juanfumero.photography"
   lastfm           :
   linkedin         : "juanjosefumeroalfonso"
-  orcid            : "https://orcid.org/0000-0002-1245-6836"
+  orcid            : ""
   pinterest        : 
   soundcloud       :
   stackoverflow    : "625218/snatverk"
