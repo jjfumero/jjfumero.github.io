@@ -8,21 +8,26 @@ redirect_from:
   - /about.html
 ---
 
+I am a Software Developer at Oracle, working in the Java Platform Group. 
 
-I'm a Researcher Fellow at [The University of Manchester](http://www.manchester.ac.uk) where I work on how to make computer programs fast by harnessing the power of specialized hardware like Graphics Processing Units (GPUs) and Field Programmable Gate Arrays (FPGAs). 
-I also lead the development of [TornadoVM](https://github.com/beehive-lab/TornadoVM), a Java framework that automatically allows Java programs to utilize this hardware for a massive speed boost. My background is compilers, Just In Time compilation, managed runtime systems and GPUs. 
+## Background 
 
-## What do I do? 
+Until very recently, I was a Researcher Fellow at [The University of Manchester](http://www.manchester.ac.uk) where I worked on how to make computer programs fast by harnessing the power of specialized hardware like Graphics Processing Units (GPUs) and Field Programmable Gate Arrays (FPGAs). 
+I also led the development of [TornadoVM](https://github.com/beehive-lab/TornadoVM), a Java framework that automatically allows Java programs to utilize this hardware for a massive speed boost. 
+My background is compilers, Just In Time compilation, managed runtime systems and GPUs. 
 
-Currently, I am working on the [AERO European Project](https://aero-project.eu/) porting TornadoVM to ARM and RISC-V based computing systems with hardware accelerators. 
-Besides, I collaborate with the [GAIA project](https://sci.esa.int/web/gaia) (under the European Space Agency [ESA](https://www.esa.int/)) to help accelerating Java 
+## Past Collaborations 
+
+I have worked a few EU projects, such as [AERO European Project](https://aero-project.eu/) for porting TornadoVM to ARM and RISC-V based computing systems with hardware accelerators. 
+Besides, I collaborated with the [GAIA project](https://sci.esa.int/web/gaia) (under the European Space Agency [ESA](https://www.esa.int/)) to help accelerating Java 
 HPC workloads on GPUs using the TornadoVM software stack.
-In the past, I have worked and collaborated with Intel to bring oneAPI into the TornadoVM framework to perform optimisations for Intel compute architectures (xPUs). 
+I have also worked and collaborated with Intel to bring oneAPI into the TornadoVM framework to perform optimisations for Intel compute architectures (xPUs). 
 
-Furthermore, I do [public speaking](https://jjfumero.github.io/talks/) about my research at the University of Manchester and software engineering topics. 
+## Public Speaking and Standarization
+
+I do [public speaking](https://jjfumero.github.io/talks/) about my previous research at the University of Manchester and software engineering topics. 
 I have presented at several academic and Industry conferences, including JVMLS, QCon, Devoxx, JavaZone, JAX, and Java User Groups, such as NYJavaSIG.
 
-As an outcome of all this work at the University of Manchester, I received the Best Outstanding Output by Research Staff Award in 2022 ([link](https://www.researcherdevelopment.manchester.ac.uk/researcher-development-for-research-staff/research-staff-awards-202122/)).
 I am also an [Intel oneAPI Innovator](https://www.intel.com/content/www/us/en/developer/community/innovators/oneapi-all-innovators.html), 
 and I participate in the [Level Zero Community Forum Hardware Group](https://github.com/oneapi-src/oneAPI-tab/tree/main/hardware), 
 and in the [oneAPI Language Group](https://github.com/oneapi-src/oneAPI-tab/tree/main/language) to help shaping the evolution of oneAPI for managed runtime programming languages. 
