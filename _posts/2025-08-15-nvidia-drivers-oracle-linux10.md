@@ -13,7 +13,7 @@ tags:
 excerpt: "How to install NVIDIA 580 Drivers and CUDA 13.0 Toolkit on Oracle Linux 10"
 ---
 
-For any developer or power user who's ever tried to install NVIDIA drivers on Linux, the process can feel less like a straightforward task. While most mainstream distributions have streamlined the process, trying to get NVIDIA drivers working on Oracle Linux for a desktop setup is a unique challenge. The available documentation is often sparse, focusing on server-side GPU acceleration rather than desktop graphics, leaving a trail of broken dependencies and black screens in its wake (*and that just happened to me while I was trying to install the drivers as well** 😢).
+For any developer or power user who's ever tried to install NVIDIA drivers on Linux, the process can feel less like a straightforward task. While most mainstream distributions have streamlined the process, trying to get NVIDIA drivers working on Oracle Linux for a desktop setup is a unique challenge. The available documentation is often sparse, focusing on server-side GPU acceleration rather than desktop graphics, leaving a trail of broken dependencies and black screens in its wake (*and that just happened to me while I was trying to install the drivers as well* 😢).
 
 This guide aims to fill that gap. We'll walk through the process step-by-step, demystifying the installation of NVIDIA drivers on the latest Oracle Linux 10 for desktop setups. Note, for data centers, [NVIDIA guidelines](https://docs.nvidia.com/datacenter/tesla/driver-installation-guide/) covers how to install and configure the NVIDIA driver for servers. 
 
