@@ -4,13 +4,18 @@ permalink: /projects/
 author_profile: true
 ---
 
-Almost everything I have done is open-source. My current work, and hobby, is to increase, improve and mature TornadoVM, an ongoing project at the University of Manchester. See below for more details. 
+If any of these projects interest you and you’d like to connect, please feel free to email me.
 
-If you find any of these projects interesting, feel free to drop me an email. 
+## OpenJDK/Babylon 
+
+Working on the new code-reflection API for GPU code generation.
+
+[https://github.com/openjdk/babylon/tree/code-reflection](https://github.com/openjdk/babylon/tree/code-reflection)
+
 
 ## TornadoVM: Heterogeneous Virtual Machine 
 
-October 2017 - present
+October 2017 - July 2025
 
 A brand new Virtual Machine for Heterogeneous Computing developed at The University of Manchester. It makes use of the new Graal compiler for running Java programs on multi-core CPUs, GPUs and FPGAs via OpenCL. Compilation and execution on heterogeneous devices are transparent to the users.
 
@@ -19,7 +24,7 @@ TornadoVM is open-source, and it is fully available at [https://github.com/beehi
 
 ## SPIR-V Beehive Toolkit 
 
-2021 - Present 
+2021 - July 2025
 
 This is a prototype written in Java to disassemble and assemble SPIR-V binary modules. It provides a Java programming framework to allow client Java applications to assemble binary modules and dissasemble binary modules into text. More information on the format of SPIR-V can be found here:  
 
@@ -28,7 +33,7 @@ This is a prototype written in Java to disassemble and assemble SPIR-V binary mo
 
 ## Level Zero JNI Programming Interface 
 
-2021 - Present 
+2021 - July 2025
 
 Baremetal GPU and FPGA programming for Java using the LevelZero API. This project is a Java Native Interface (JNI) binding for Intel's Level Zero. This library is as designed to be as closed as possible to the LevelZero API for C++.
 
@@ -37,7 +42,7 @@ Baremetal GPU and FPGA programming for Java using the LevelZero API. This projec
 
 ## ProtonVM 
 
-2020 - Present 
+2020 - July 2025
 
 ProtoVM is a tiny Parallel Java Bytecode Interpreter (BC) implemented in OpenCL capable of executing on heterogeneous architectures (multi-core CPUs, GPUs and FPGAs).
 
