@@ -1,6 +1,6 @@
 ---
 title: 'Building The Regression Test Harness for the OpenJDK (jtreg) from Source'
-date: 2026-02-06
+date: 2026-02-05
 permalink: /posts/2026/02/05/jdk-jtreg-build
 author_profile: false
 tags:
