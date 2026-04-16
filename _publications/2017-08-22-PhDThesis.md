@@ -10,7 +10,6 @@ citation: 'Juan Fumero. PhD Thesis: Accelerating Interpreted Programming Languag
 ---
 ### Abstract
 
-
 Nowadays, most computer systems are equipped with powerful parallel devices
 such as Graphics Processing Units (GPUs). They are present in almost every computer
 system including mobile devices, tablets, desktop computers and servers. These
@@ -57,7 +56,22 @@ compared to GNU-R and 1.8x slowdown compared to native OpenCL.
 
 ### Links
 
-- [PhD Thesis from the Edinburgh Research Archive](https://era.ed.ac.uk/items/23845f22-1af4-41e7-b374-2cb7865624bc)
-- [PDF](https://era.ed.ac.uk/server/api/core/bitstreams/e72d2814-5968-4109-adc8-638d059606f3/content)
-- [Direct link to PDF](https://github.com/jjfumero/jjfumero.github.io/blob/fc28642dd8cd452c451c656d27186792aae726c4/files/phd-thesis/JuanFumero-PhDThesis-2017.pdf)
+- [PhD Thesis Entry from the Edinburgh Research Archive](https://era.ed.ac.uk/items/23845f22-1af4-41e7-b374-2cb7865624bc)
+- [PDF from the Edinburgh Research Archive](https://era.ed.ac.uk/server/api/core/bitstreams/e72d2814-5968-4109-adc8-638d059606f3/content)
+- [Direct link to the PDF](https://github.com/jjfumero/jjfumero.github.io/blob/fc28642dd8cd452c451c656d27186792aae726c4/files/phd-thesis/JuanFumero-PhDThesis-2017.pdf)
 
+
+### Citation
+
+```bibtex
+@phdthesis{fumeroalfonso2017accelerating,
+  author = {Fumero Alfonso, Juan Jos{\'e}},
+  title = {Accelerating interpreted programming languages on {GPU}s
+with just-in-time compilation and runtime optimisations},
+  school = {The University of Edinburgh},
+  year = {2017},
+  month = nov,
+  type = {PhD thesis},
+  url = {http://hdl.handle.net/1842/28718}
+}
+```
