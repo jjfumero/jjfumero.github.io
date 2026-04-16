@@ -59,5 +59,5 @@ compared to GNU-R and 1.8x slowdown compared to native OpenCL.
 
 - [PhD Thesis from the Edinburgh Research Archive](https://era.ed.ac.uk/items/23845f22-1af4-41e7-b374-2cb7865624bc)
 - [PDF](https://era.ed.ac.uk/server/api/core/bitstreams/e72d2814-5968-4109-adc8-638d059606f3/content)
-- [Direct link to PDF]()
+- [Direct link to PDF](https://github.com/jjfumero/jjfumero.github.io/blob/fc28642dd8cd452c451c656d27186792aae726c4/files/phd-thesis/JuanFumero-PhDThesis-2017.pdf)
 
