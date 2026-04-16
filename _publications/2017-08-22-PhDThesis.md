@@ -5,7 +5,7 @@ permalink: /publication/2017-08-22-PhDThesis
 excerpt: ''
 date: 2017-08-22
 venue: 'The University of Edinburgh, UK'
-paperurl: 'https://www.era.lib.ed.ac.uk/handle/1842/28718'
+paperurl: 'https://era.ed.ac.uk/items/23845f22-1af4-41e7-b374-2cb7865624bc'
 citation: 'Juan Fumero. PhD Thesis: Accelerating Interpreted Programming Languages on GPUs with Just-In-Time and Runtime Optimisations. The University of Edinburgh, UK. August 2017.'
 ---
 ### Abstract
@@ -53,4 +53,11 @@ a set of existing compiler techniques, such as specialisation and partial evalua
 OpenCL compilation together with an optimising runtime that compile and execute R
 code on GPUs. This JIT compiler for the R language achieves speedups of up to 1300x
 compared to GNU-R and 1.8x slowdown compared to native OpenCL.
+
+
+### Links
+
+- [PhD Thesis from the Edinburgh Research Archive](https://era.ed.ac.uk/items/23845f22-1af4-41e7-b374-2cb7865624bc)
+- [PDF](https://era.ed.ac.uk/server/api/core/bitstreams/e72d2814-5968-4109-adc8-638d059606f3/content)
+- [Direct link to PDF]()
 
