@@ -12,7 +12,7 @@ I am a Software Developer at Oracle, working in the Java Platform Group.
 
 ## Background 
 
-Prior to Oracle, I was a Researcher Fellow at [The University of Manchester](http://www.manchester.ac.uk) working on how to make computer programs faster by harnessing the power of specialized hardware such as Graphics Processing Units (GPUs) and Field Programmable Gate Arrays (FPGAs). 
+Prior to Oracle, I was a Researcher Fellow at [The University of Manchester](http://www.manchester.ac.uk) working on how to make computer programs run faster by harnessing the power of specialized hardware such as Graphics Processing Units (GPUs) and Field Programmable Gate Arrays (FPGAs). 
 I also led the development of [TornadoVM](https://github.com/beehive-lab/TornadoVM), a Java framework that automatically allows Java programs to utilize this hardware for a massive speed boost. 
 My background is Just In Time compilation, managed runtime systems, GPUs and heterogeneous computing. 
 
