@@ -1,5 +1,5 @@
 ---
-title: 'Building the Latest JDK from Source with Docker'
+title: 'Building the Latest OpenJDK from Source with Docker'
 date: 2026-05-19
 permalink: /posts/2026/05/15/openjdk-build-docker
 author_profile: false
