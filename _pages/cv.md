@@ -10,7 +10,11 @@ redirect_from:
 
 Work experience
 ======
-* August 2021 - Present: Research Fellow @ The University of Manchester, UK
+* July 2025 - Present: Consulting Member of Technical Staff @Oracle, Italy
+  * Java Platform Group (JPG) 
+  * OpenJDK Project Babylon
+  * GPU hardware acceleration for Java
+* August 2021 - July 2025: Research Fellow @ The University of Manchester, UK
   * Research software engineer working on dynamic compilation for Heterogeneous Systems (GPUs, FPGAs and multi-cores).
   * Collaborating with Intel and EU Project Elegant H2020
   * Software Outcome: TornadoVM, SPIR-V Beehive Toolkit, Level-Zero JNI 
