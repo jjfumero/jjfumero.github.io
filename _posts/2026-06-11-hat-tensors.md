@@ -18,8 +18,8 @@ how to unlock GPU Tensor Cores directly from Java for supported hardware, while 
 mapping tensors to loop-tiles for parallel processing on devices without explicit tensor instructions.
 
 I also walk through the API choices, as well as compiler and runtime integration, showing how we go from high-level Java
-straight to emitting explicit NVIDIA HMMA instructions. Besides, this article show how Java applications can be tuned
-for GPUs using HAT and NVIDIA profilers. 🚀
+straight to emitting explicit NVIDIA HMMA instructions. Besides, this article shows how Java applications can be tuned 
+for GPUs by using the CUDA-generated code by HAT and the NVIDIA profilers. 🚀
 
 📑 **Link to the full article: [link](https://openjdk.org/projects/babylon/articles/hat-tensors/hat-tensors)**
 
