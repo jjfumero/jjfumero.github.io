@@ -26,7 +26,7 @@ Pre-print: [PDF](https://pure.manchester.ac.uk/ws/portalfiles/portal/361946410/m
 
 Code: [Link](https://github.com/beehive-lab/TornadoVM)
 
-Bibtex:
+### Citation
 
 ```bibtex
 @conference{Fumero:2025:TornadoVMOCK,

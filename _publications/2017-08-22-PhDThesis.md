@@ -60,6 +60,11 @@ compared to GNU-R and 1.8x slowdown compared to native OpenCL.
 - [PDF from the Edinburgh Research Archive](https://era.ed.ac.uk/server/api/core/bitstreams/e72d2814-5968-4109-adc8-638d059606f3/content)
 - [Direct link to the PDF](https://github.com/jjfumero/jjfumero.github.io/blob/fc28642dd8cd452c451c656d27186792aae726c4/files/phd-thesis/JuanFumero-PhDThesis-2017.pdf)
 
+### Artifacts
+ 
+- [Marawacc - Java Parallel Programming Framework for GPUs](https://github.com/jjfumero/marawacc)
+- [FastR-GPU](https://github.com/jjfumero/fastr-gpu)
+
 
 ### Citation
 
