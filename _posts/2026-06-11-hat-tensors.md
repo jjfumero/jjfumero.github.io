@@ -21,6 +21,8 @@ I also walk through the API choices, as well as compiler and runtime integration
 straight to emitting explicit NVIDIA HMMA instructions. Besides, this article show how Java applications can be tuned
 for GPUs using HAT and NVIDIA profilers. 🚀
 
+📑 **Link to the full article: [link](https://openjdk.org/projects/babylon/articles/hat-tensors/hat-tensors)**
+
 ### Abstract 
 
 Tensor Cores are dedicated hardware on NVIDIA GPUs that can be programmed to accelerate matrix-multiply-accumulate (MMA)
@@ -50,11 +52,6 @@ platforms, an Apple M4 Max GPU and an NVIDIA Ampere A10 GPU. We show that, by en
 hardware (NVIDIA), we can speed up the naïve matrix multiplication kernel from 240 GFLOP/s to 7.3 TFLOP/s, while the
 application remains portable to run on Apple M4 GPU via OpenCL 1.2, where with some parameter tuning, we can increase
 performance by 8x over the naïve matrix-multiplication.
-
-----------
-🔗 Link to the full article: [link](https://openjdk.org/projects/babylon/articles/hat-tensors/hat-tensors)
-
-----------
 
 ### Current Status
 
