@@ -5,7 +5,7 @@ permalink: /publication/2023-05-16-SPIRV-Toolkit
 excerpt: ''
 date: 16/05/2023
 venue: 'Preprint'
-paperurl: ''
+paperurl: 'https://arxiv.org/pdf/2305.09493'
 citation: 'Fumero, J., Rethy, G., Stratikopoulos, A., Foutris, N., & Kotselidis, C. (2023). Experiences in Building a Composable and Functional API for Runtime SPIR-V Code Generation. ArXiv. /abs/2305.09493' 
 ---
 

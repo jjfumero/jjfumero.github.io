@@ -5,7 +5,7 @@ permalink: /publication/2025-03-24-RISCV-EU-Summit25
 excerpt: ''
 date: 24/03/2025
 venue: 'RISCV EU Summit 2025'
-paperurl: ''
+paperurl: 'https://pure.manchester.ac.uk/ws/portalfiles/portal/361946410/main.pdf'
 citation: 'Juan Fumero Alfonso*, Athanasios Stratikopoulos, Colin Davidson, Harald van Dijk, Uwe Dolinsky, Michail Papadimitriou, Maria Xekalaki, Christos-Efthymios Kotselidis. Leveraging RISC-V Vectorization: Accelerating Java Programs with TornadoVM and OCK. RISCV EU Summit 2025.'
 ---
 
